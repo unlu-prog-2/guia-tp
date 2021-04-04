@@ -1,4 +1,4 @@
-# Práctica de Repaso e Introducción a Delphi
+# Práctica de repaso e introducción a Delphi
 
 ### Ejercicio 1
 Dado un vector de números enteros generados en forma automática (al azar) obtener las
