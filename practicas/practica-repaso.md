@@ -49,13 +49,13 @@ Frase Original: “Hola Mundo Cruel y Despiadado”
 3. HolaMundocruelyDespiadado
 4. odadaipseDyleurCodnuMaloH
 5. TU FRASE TIENE 29 caracteres
-6. H=1l=2 M=1 n=1d=3.....
+6. H=1 l=2 M=1 n=1 d=3 ...
 ```
 
 
 ### Ejercicio 3
-Generar un archivo de texto (TXT) con el Block de Notas o similar. (En el archivo no deben
-existir caracteres como puntos, comas, puntos y comas, dos puntos, etc.)
+Generar un archivo de texto (TXT) con el Block de Notas o similar. En el archivo no deben
+existir caracteres como puntos, comas, puntos y comas, dos puntos, etc.
 
 1. Realizar una rutina que lea el archivo de texto y lo cargue a un control “memo”
 pasando todas las palabras a minúsculas.
@@ -70,8 +70,8 @@ con números generados aleatoriamente entre el `1` y `n`<sup>`2`</sup> (no repet
 
 Ejemplo: Un cuadrado latino de grado 4 es una matriz donde `n=4`
 
+Matrix 4 x 4
 <table>
-    <tr><th colspan="4">Matrix 4 x 4</th></tr>
     <tr><td>5</td><td>7</td><td>1</td><td>15</td></tr>
     <tr><td>12</td><td>11</td><td>2</td><td>14</td></tr>
     <tr><td>9</td><td>16</td><td>8</td><td>4</td></tr>

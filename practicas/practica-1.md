@@ -1,4 +1,4 @@
-# Práctica de Repaso e Introducción a Delphi
+# Práctica 1: Introducción a los TAD
 
 **En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo
 abstracto de dato, permita al usuario el ingreso de una o más instancias (según sea
@@ -16,7 +16,7 @@ Crear un TAD `NúmeroRacional`. El TAD debe disponer de las siguientes operacion
 
 
 ### Ejercicio 2
-Crear un TAD Vector que represente un vector de `N` elementos enteros. El TAD debe
+Crear un TAD Vector que represente un vector de `n` elementos enteros. El TAD debe
 disponer de las siguientes operaciones:
 
 * Cargar Aleatorio dentro de un rango `[Desde, Hasta]` especificado como parámetro.
@@ -27,16 +27,19 @@ No deben existir valores repetidos.
 * Promedio del vector.
 * Devolución de un `string` con los elementos intercalados con un separador pasado
 como parámetro.
+* Multiplicar el valor de cada posición por un escalar. Por ejemplo `n * []`.  Si es `n=2`, el valor de cada posición será multiplicado por `2`.
+* Permitir sumar este vector con otro igual que sea recibido por parámetro.  La suma se realizar posición a posición.
 
 
 ### Ejercicio 3
-Crear un TAD `Matriz` que represente una matriz cuadrada de `n` x `n`. El TAD debe disponer de
+Crear un TAD `Matriz` que represente una matriz cuadrada de `n x n`. El TAD debe disponer de
 las siguientes operaciones:
 * `Sumar`.
 * `Multiplicar`.
 * `DiagonalPrincipal` y `DiagonalOpuesta` que retornan como vectores del [punto 2](#ejercicio-2).
-* `MaximaFila` y `MaximaColumna` que retornan cual es la fila y columna cuya sumatoria
+* `MaximaFila` y `MaximaColumna` que retornan cuál es la fila y columna cuya sumatoria
 es la mayor.
+* `MultiplicarEscalar` para multiplicar la matriz por un escalar.  Por ej. `n * MA[]`.  Cada posición de la matriz es multiplicada por `n`.
 
 
 ### Ejercicio 4
@@ -64,8 +67,8 @@ horario de entrada, el de salida y cuánto es la tarifa por hora a pagar.
 
 * Se pide saber cuánto debe abonar ese vehículo al momento de su retiro.
 * Contemplar un valor fijo por media estadía y estadía completa.
-  * Se paga estadía completa si el auto está más de 5 horas en el estacionamiento.
-  * Se paga media estadía si el auto está más de 2 horas en el estacionamiento.
+  * Se paga estadía completa si el auto está más de 6 horas en el estacionamiento.
+  * Se paga media estadía si el auto está más de 3 horas en el estacionamiento.
   * Se paga la tarifa por hora definida en otro caso.
 
 Por ejemplo: 
@@ -75,6 +78,22 @@ Por ejemplo:
 
 
 ### Ejercicio 7
+
+Del punto anterior se desea:
+
+* dejar registro físico en archivo de los vehículos que ingresan
+al estacionamiento.  Agregar operaciones para poder dejar en un archivo binario secuencial 
+el registro de cada vehículo, horario de ingreso, horario de egreso, la tarifa aplicada 
+(si es por hora, media estadía o estadía completa) y el importe cobrado.
+
+* además se desea dada una fecha determinada poder saber cuánto se percibió por hora, media
+estadía y estadía completa.
+
+* otra operación que se debe agregar es dado un rango de fechas poder determinar cuánto fue
+lo recaudado día x día (o fecha por fecha).
+  
+
+### Ejercicio 8
 En una heladería se ofrecen conos con bochas de 25 gramos de 3 sabores distintos a escoger
 entre chocolate, vainilla, frutilla y limón.
 
@@ -90,7 +109,7 @@ Al congelador se le puede:
 
 Cree un TAD para representar un congelador de helados e implemente los métodos indicados.
 
-### Ejercicio 8
+### Ejercicio 9
 Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal. Una caja permite:
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
