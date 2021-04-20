@@ -112,3 +112,67 @@ Por ejemplo, se tiene la composición:
     <tr><td>.</td><td>C</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
     <tr><td>.</td><td>C</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
 </table>
+
+
+### Ejercicio 11
+
+Uno de los parámetros que utiliza el gobierno para tomar decisiones sobre la ASPO / DISPO durante la pandemia del CODIV 19 es la cantidad de días transcurridos para que se dupliquen la cantidad de casos.
+
+Una simplificación de este cálculo se puede hacer tomando la cantidad de contagiados totales a un cierto día (P<sub>0</sub>) y la cantidad de contagiados durante ese día (c<sub>n</sub>) y el anterior (c<sub>n-1</sub>n). 
+
+Siguiendo la siguiente fórmula:
+> P<sub>n</sub> = P<sub>0</sub> . (c<sub>n</sub>/c<sub>n-1</sub>)<sup>n</sup> 
+
+Realizar una función recursiva que retorne una lista con las cantidades de contagiados totales por día hasta que esa cantidad duplique a la población inicial ingresada.
+
+___Nota__: El cálculo del total de contagiados debe ser recursivo. No se puede usar la función potencia._
+
+
+### Ejercicio 12
+
+Definir una función recursiva que devuelva una lista con los subconjuntos cuyos elementos  de un conjunto dado que tal que la suma de los elementos del subconjunto sumen una cantidad dada.
+
+Por ejemplo: 
+
+Dado el conjunto `A = {10; 3; 1; 7; 4; 2}` 
+
+La lista de los conjuntos que sumen ***7*** sería: `R = {{3, 4}; {1, 4, 2}; {7}}`
+
+
+### Ejercicio 13
+
+Escribir una función que implemente el método que se describe para saber si un número es divisible por 7. 
+>Se separa la primera cifra de la derecha, se la multiplica por 2, y se resta este producto de lo que queda a la izquierda y así sucesivamente, hasta que el resultado obtenido sea un número menor a 70. 
+El número original será multiplo de 7 si el resultado da cero o múltiplo de 7.
+
+Por ejemplo:
+```
+32291   ->  1x2=2.
+3229 - 2 =
+3227    ->  7x2=14.
+322 - 14 =
+308     ->  8x2=16
+30 - 16 =
+14      ->  Múltiplo de 7`
+```
+
+### Ejercicio 14
+
+Se dice que n es un ńumero que explosivo, cuando ́este explota en varios fragmentos más chicos que él, dada una bomba. 
+
+Si se tiene que n es el numero y b la bomba, tales que n es mayor que b, se puede hacer que n explote en dos números n<sub>1</sub> = n / b (división entera) y n<sub>2</sub> = n - (n / b). Pero b es una bomba que produce una reacción en cadena, si n<sub>1</sub> o n<sub>2</sub> son mayores que b, ́estos tambien explotan con la regla anterior, hasta que se encuentre que el número no es mayor que b, entonces se dice que ya no se puede explotar el numero.
+
+Escribe una función que retorne una lista con los pedazos del numero n, dado que se tiene la bomba b.
+
+Por ejemplo:
+
+```
+Número: 10
+Bomba: 3
+Resultado: [3 2 1 1 3]
+```
+```
+Número: 20
+Bomba: 5
+Resultado: [4 3 2 2 1 1 1 1 5]
+```
