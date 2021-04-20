@@ -103,3 +103,35 @@ Se pide además realizar una consulta donde se pueda filtrar por la “Razon_Soc
 El Código identificará la posición del registro del cliente en el archivo. 
 Es decir, el código 250 estará almacenado en la posición 250 del archivo. Contemplar 
 un total máximo de 5000 clientes.
+
+
+### Ejercicio 8
+Dado un archivo de texto que contiene datos de facturas, se pide obtener los totales por
+año/mes en forma de grilla como se muestra debajo.
+
+El archivo contiene los siguientes datos: `NroFactura;Fecha;Importe`.
+El separador de campos es un `;`. Debajo se muestra un pequeño ejemplo.
+```text
+1000;10/01/2019;500.25
+1001;11/01/2020;1200.50
+1002;01/02/2021;950.75
+1003;03/03/2021;480.90
+```
+
+<table>
+    <tr><th>Año / mes</th><th>1</th><th>2</th><th>3</th></tr>
+    <tr><td>2019</td><td>500.25</td><td></td><td></td></tr>
+    <tr><td>2020</td><td>1200.50</td><td></td><td></td></tr>
+    <tr><td>2021</td><td></td><td>970.75</td><td>480.90</td></tr>
+</table>
+
+### Ejercicio 9
+Dado un vector de 1000 elementos números generados en forma aleatoria
+entre 1 y 10000.
+Se pide realizar 3 procesos de ordenamiento diferente y comparar 
+las diferencias de tiempos de procesamiento (sugeridos, burbuja,
+burbuja mejorado, Qsort o selección).
+
+### Ejercicio 10
+Dada una matriz de N x N (cuadrada) se pide realizar un proceso que
+muestre las ambas diagonales en el mismo recorrido.
