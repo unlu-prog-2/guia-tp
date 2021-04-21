@@ -42,7 +42,7 @@ es la mayor.
 * `MultiplicarEscalar` para multiplicar la matriz por un escalar.  Por ej. `n * MA[]`.  Cada posición de la matriz es multiplicada por `n`.
 
 
-### Ejercicio 4
+### Ejercicio 4 (entregable)
 Crear un TAD `Binario` que represente un número binario. El TAD debe disponer de las
 siguientes operaciones:
 
@@ -61,7 +61,7 @@ Crear un TAD Fecha, compuesta de día, mes y año, que defina las siguientes ope
 * Comparar una fecha con otra y retornar: `[ANTERIOR, POSTERIOR, IGUAL]`.
 * Retornar si la fecha corresponde a un año bisiesto.
 
-### Ejercicio 6
+### Ejercicio 6 (entregable)
 Crear un TAD “Estacionamiento” en el cual se digan el número de autos ingresados, el
 horario de entrada, el de salida y cuánto es la tarifa por hora a pagar.
 
@@ -77,8 +77,7 @@ Por ejemplo:
 * en cambio sí ingresa 08:45 y se retira a las 10:15 debe abonar por 1 hs 30 minutos.
 
 
-### Ejercicio 7
-
+### Ejercicio 7 (entregable)
 Del punto anterior se desea:
 
 * dejar registro físico en archivo de los vehículos que ingresan
@@ -109,7 +108,7 @@ Al congelador se le puede:
 
 Cree un TAD para representar un congelador de helados e implemente los métodos indicados.
 
-### Ejercicio 9
+### Ejercicio 9 (entregable)
 Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal. Una caja permite:
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
