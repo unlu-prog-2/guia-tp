@@ -91,7 +91,7 @@ Por ejemplo:
 La serpiente, cuya cabeza es `C`, empezó en `(2,B)` y recorrió `(3,B)`, `(3,C)`, `(4,C)`, `...` , `(8,F)`. Su longitud
 es `15`.
 
-### Ejercicio 10
+### Ejercicio 10 (entregable)
 
 En la química orgánica se tienen cadenas de Carbono e Hidrógeno juntos, que forman distintas clases de alcanos; que se
 diferencian unos de otros por la cantidad de carbonos que existen. La forma de encontrar además la nominación correcta
@@ -114,7 +114,7 @@ Por ejemplo, se tiene la composición:
 </table>
 
 
-### Ejercicio 11
+### Ejercicio 11 (entregable)
 
 Uno de los parámetros que utiliza el gobierno para tomar decisiones sobre la ASPO / DISPO durante la pandemia del CODIV 19 es la cantidad de días transcurridos para que se dupliquen la cantidad de casos.
 
@@ -125,23 +125,26 @@ Siguiendo la siguiente fórmula:
 
 Realizar una función recursiva que retorne una lista con las cantidades de contagiados totales por día hasta que esa cantidad duplique a la población inicial ingresada.
 
-___Nota__: El cálculo del total de contagiados debe ser recursivo. No se puede usar la función potencia._
+> Nota 1: El cálculo del total de contagiados debe ser recursivo.  
+> Nota 2: _No se puede usar la función potencia._
 
 
-### Ejercicio 12
+### Ejercicio 12 (entregable)
 
-Definir una función recursiva que devuelva una lista con los subconjuntos cuyos elementos  de un conjunto dado que tal que la suma de los elementos del subconjunto sumen una cantidad dada.
+Definir una función recursiva que dado un conjunto devuelva una lista con los subconjuntos
+del mismo tales que la suma de los elementos de cada subconjunto sumen una cantidad dada.
 
 Por ejemplo: 
 
-Dado el conjunto `A = {10; 3; 1; 7; 4; 2}` 
+Dado el conjunto `A = {10, 3, 1, 7, 4, 2}` 
 
-La lista de los conjuntos que sumen ***7*** sería: `R = {{3, 4}; {1, 4, 2}; {7}}`
+La lista de los conjuntos que sumen `7` sería: `R = [{3, 4}, {1, 4, 2}, {7}]`
 
 
-### Ejercicio 13
+### Ejercicio 13 (entregable)
 
-Escribir una función que implemente el método que se describe para saber si un número es divisible por 7. 
+Escribir una función que implemente el método que se describe para saber si un número es divisible por `7`. 
+
 >Se separa la primera cifra de la derecha, se la multiplica por 2, y se resta este producto de lo que queda a la izquierda y así sucesivamente, hasta que el resultado obtenido sea un número menor a 70. 
 El número original será multiplo de 7 si el resultado da cero o múltiplo de 7.
 
@@ -156,13 +159,18 @@ Por ejemplo:
 14      ->  Múltiplo de 7`
 ```
 
-### Ejercicio 14
+### Ejercicio 14 (entregable)
 
-Se dice que n es un ńumero que explosivo, cuando ́este explota en varios fragmentos más chicos que él, dada una bomba. 
+Se dice que `n` es un ńumero que explosivo cuando éste explota en varios fragmentos más chicos 
+que él, dada una bomba. 
 
-Si se tiene que n es el numero y b la bomba, tales que n es mayor que b, se puede hacer que n explote en dos números n<sub>1</sub> = n / b (división entera) y n<sub>2</sub> = n - (n / b). Pero b es una bomba que produce una reacción en cadena, si n<sub>1</sub> o n<sub>2</sub> son mayores que b, ́estos tambien explotan con la regla anterior, hasta que se encuentre que el número no es mayor que b, entonces se dice que ya no se puede explotar el numero.
+Si se tiene que `n` es el número y `b` la bomba, tales que `n` es mayor que `b`, se puede hacer
+que `n` explote en dos números n<sub>1</sub> = n / b (división entera) y n<sub>2</sub> = n - (n / b).
+Pero `b` es una bomba que produce una reacción en cadena, si n<sub>1</sub> o n<sub>2</sub> son 
+mayores que `b`, estos también explotan con la regla anterior, hasta que se encuentre que el número
+no es mayor que `b`; entonces se dice que ya no se puede explotar el número.
 
-Escribe una función que retorne una lista con los pedazos del numero n, dado que se tiene la bomba b.
+Escribe una función que retorne una lista con los pedazos del número `n`, dado que se tiene la bomba `b`.
 
 Por ejemplo:
 
