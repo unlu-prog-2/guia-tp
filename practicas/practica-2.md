@@ -4,6 +4,9 @@
 al usuario el ingreso de una o más instancias (según sea necesario), la aplicación de cualquiera de las operaciones y
 luego la obtención del resultado.**
 
+
+## Ejercicios de Práctica opcionales
+
 ### Ejercicio 1
 
 Construir una función recursiva que retorne verdadero si una cadena de caracteres pasada como parámetro es un
@@ -91,7 +94,9 @@ Por ejemplo:
 La serpiente, cuya cabeza es `C`, empezó en `(2,B)` y recorrió `(3,B)`, `(3,C)`, `(4,C)`, `...` , `(8,F)`. Su longitud
 es `15`.
 
-### Ejercicio 10 (entregable)
+## Ejercicios para entregar
+
+### Ejercicio 10
 
 En la química orgánica se tienen cadenas de Carbono e Hidrógeno juntos, que forman distintas clases de alcanos; que se
 diferencian unos de otros por la cantidad de carbonos que existen. La forma de encontrar además la nominación correcta
@@ -114,7 +119,7 @@ Por ejemplo, se tiene la composición:
 </table>
 
 
-### Ejercicio 11 (entregable)
+### Ejercicio 11
 
 Uno de los parámetros que utiliza el gobierno para tomar decisiones sobre la ASPO / DISPO durante la pandemia del CODIV 19 es la cantidad de días transcurridos para que se dupliquen la cantidad de casos.
 
@@ -129,7 +134,7 @@ Realizar una función recursiva que retorne una lista con las cantidades de cont
 > Nota 2: _No se puede usar la función potencia._
 
 
-### Ejercicio 12 (entregable)
+### Ejercicio 12
 
 Definir una función recursiva que dado un conjunto devuelva una lista con los subconjuntos
 del mismo tales que la suma de los elementos de cada subconjunto sumen una cantidad dada.
@@ -141,7 +146,7 @@ Dado el conjunto `A = {10, 3, 1, 7, 4, 2}`
 La lista de los conjuntos que sumen `7` sería: `R = [{3, 4}, {1, 4, 2}, {7}]`
 
 
-### Ejercicio 13 (entregable)
+### Ejercicio 13
 
 Escribir una función que implemente el método que se describe para saber si un número es divisible por `7`. 
 
@@ -159,16 +164,13 @@ Por ejemplo:
 14      ->  Múltiplo de 7`
 ```
 
-### Ejercicio 14 (entregable)
+### Ejercicio 14
 
-Se dice que `n` es un ńumero que explosivo cuando éste explota en varios fragmentos más chicos 
-que él, dada una bomba. 
+Se dice que `n` es un ńumero que explosivo cuando éste explota en varios fragmentos más chicos que él, dada una bomba. 
 
-Si se tiene que `n` es el número y `b` la bomba, tales que `n` es mayor que `b`, se puede hacer
-que `n` explote en dos números n<sub>1</sub> = n / b (división entera) y n<sub>2</sub> = n - (n / b).
-Pero `b` es una bomba que produce una reacción en cadena, si n<sub>1</sub> o n<sub>2</sub> son 
-mayores que `b`, estos también explotan con la regla anterior, hasta que se encuentre que el número
-no es mayor que `b`; entonces se dice que ya no se puede explotar el número.
+Si se tiene que `n` es el número y `b` la bomba, tales que `n` es mayor que `b`, se puede hacer que `n` explote en dos números n<sub>1</sub> = n / b (división entera) y n<sub>2</sub> = n - (n / b).
+
+Pero `b` es una bomba que produce una reacción en cadena, si n<sub>1</sub> o n<sub>2</sub> son mayores que `b`, estos también explotan con la regla anterior, hasta que se encuentre que el número no es mayor que `b`; entonces se dice que ya no se puede explotar el número.
 
 Escribe una función que retorne una lista con los pedazos del número `n`, dado que se tiene la bomba `b`.
 
