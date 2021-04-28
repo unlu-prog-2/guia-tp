@@ -14,7 +14,7 @@ palíndromo. Ej. “neuquen” ya que se lee igual de atrás hacia adelante.
 
 ### Ejercicio 2
 
-Construir un algoritmo recursivo que permita determinar el mínimo común divisor.
+Construir un algoritmo recursivo que permita determinar el máximo común divisor.
 
 ### Ejercicio 3
 
