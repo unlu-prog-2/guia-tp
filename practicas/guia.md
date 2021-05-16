@@ -8,3 +8,4 @@ Cursada 2021 – 1º cuatrimestre
 
 [Práctica 2 - Recursividad](practica-2.md)
 
+[Práctica 3 - Listas](practica-3.md)
