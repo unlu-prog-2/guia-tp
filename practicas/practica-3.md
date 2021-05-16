@@ -6,11 +6,11 @@ luego la obtención del resultado.**
 
 ## Para empezar a trabajar
 
-Construir la TAD de listas correspondientes a las implementaciones de “Arreglos”, “Punteros” y “Cursores” teniendo en cuenta:
+Construir el TAD de listas correspondientes a las implementaciones de “Arreglos”, “Punteros” y “Cursores” teniendo en cuenta:
 
 -   Definir las estructuras de datos en función a las especificaciones dadas en clase y documentadas en los PDF que se encuentran en el aula virtual de la asignatura.
--   Se las debe implementar mediante objetos y respetar estrictamente los nombres y parámetros de cada una de las operaciones del TAD especificadas.
--   Se las debe probar y testear de forma tal que se pueda asegurar que la TAD funciona correctamente.
+-   Se las debe implementar mediante objetos y respetar estríctamente los nombres y parámetros de cada una de las operaciones del TAD especificadas.
+-   Se lo debe probar y testear de forma tal que se pueda asegurar que el TAD funciona correctamente.
 
 **Aclaración:**
 
@@ -33,7 +33,7 @@ Dada una lista cargada con valores al azar realizar los siguientes ejercicios:
 
 Dadas 2 listas (L1 y L2) determinar si L2 es divisible por L1. Se considera divisible si cada elemento de L2 se divide en forma exacta por el valor L1 de la misma posición.
 
-> **Por Ejemplo:** si _L1 = (2, 5, 7, 3)_ y _L2 = (8, 20, 28, 12)_ entonces _L2_ es divisible por _L1_ porque cada posición de _L2_ se divide por el valor de _L1_ de la misma posición en forma exacta. Si el resultado de la división retorna el mismo valor para cada posición se dice que _L2_ es múltiplo de _L1_ por un **_escalar_**. Para este caso _4_ es el ** _escalar_** de _L1_. **El algoritmo debe contemplar esta situación**.
+> **Por Ejemplo:** si _L1 = (2, 5, 7, 3)_ y _L2 = (8, 20, 28, 12)_ entonces _L2_ es divisible por _L1_ porque cada posición de _L2_ se divide por el valor de _L1_ de la misma posición en forma exacta. Si el resultado de la división retorna el mismo valor para cada posición se dice que _L2_ es múltiplo de _L1_ por un **_escalar_**. Para este caso _4_ es el **_escalar_** de _L1_. **El algoritmo debe contemplar esta situación**.
 
 ### Ejercicio 3
 
@@ -49,11 +49,11 @@ Realizar una función que dada un cierto valor de _X_ nos devuelva el valor del 
 
 #### Valores característicos
 
-Agregar al tad funciones que devuelvan el “grado del polinomio”, “el coeficiente principal” y la “ordenada al origen”.
+Agregar al TAD funciones que devuelvan el “grado del polinomio”, “el coeficiente principal” y la “ordenada al origen”.
 
 #### Factorización
 
-Agregar al tad funciones que devuelvan listas con la factorización del polinomio según los siguientes casos de factoreo:
+Agregar al TAD funciones que devuelvan listas con la factorización del polinomio según los siguientes casos de factoreo:
 
 -   Factor común
 -   Binomio cuadrado perfecto
@@ -81,39 +81,52 @@ Generar un algoritmo que determine si una lista es sublista de otra. Se consider
 
 Implementar un algoritmo recursivo genérico que reciba una lista y la devuelva ordenada de manera decreciente utilizando burbujeo. El método se define de la siguiente manera:
 
->     PROCEDURE _Burbujeo(var L:Lista; P, Q: PosicionLista);_
+```
+PROCEDURE Burbujeo(var L: Lista; P, Q: PosicionLista);
+```
 
-Donde _P_ es la posición del primer elemento de la lista y _Q_ la del segundo.
+Donde `P` es la posición del primer elemento de la lista y `Q` la del segundo.
 
 ## Ejercicios para entregar
 
 ### Ejercicio 7
 
-Se necesita saber el puntaje que suma un pacman en su recorrigo hasta llegar a la terminar el nivel.
-En su recorrido se puede encontrar con frutas con distinto puntaje y con el activador del bonus que duplica todos los puntos de las cosas que coma durante 10 pasos y que habilita la posibilidad de comerse el fantasma. Si se _come el fantasma_ si el bonus activado: Pierde.
-Escribir un algoritmo que permita calcular el puntaje dada una lista de objetos que se come el pacman.
-Para el calculo tener en cuenta el siguiente listado de objetos que se come el pacman: (puntito: 1, frutilla: 10, banana: 30, cerezas: 50, fantasma: 100).
+Se necesita saber el puntaje que suma un pacman en su recorrido hasta llegar a terminar el nivel.
 
-> **Por ejemplo:**<br />
-> (puntito,frutilla,puntito,puntito,banana,puntito,puntito,fantasma,puntito,puntito,cerezas,puntito) -> Perdiste.<br />
-> (puntito,puntito,puntito,banana,puntito,puntito,bonus,puntito,puntito,fantasma,puntito,puntito,cerezas,puntito) -> 345.
+En su recorrido se puede encontrar con frutas con distinto puntaje y con el activador del bonus que duplica todos los
+puntos de las cosas que coma durante 10 pasos y que habilita la posibilidad de comerse el fantasma. Si se _come el
+fantasma_ sin el bonus activado: Pierde.
+
+Escribir un algoritmo que permita calcular el puntaje dada una lista de objetos
+que se come el pacman. Para el cálculo tener en cuenta el siguiente listado de objetos que se come el pacman: (puntito:
+1, frutilla: 10, banana: 30, cerezas: 50, fantasma: 100).
+
+#### Por ejemplo:
+
+> (puntito, frutilla, puntito, puntito, banana, puntito, puntito, fantasma, puntito, puntito, cerezas, puntito) -> Perdiste.<br />
+
+> (puntito, puntito, puntito, banana, puntito, puntito, bonus, puntito, puntito, fantasma, puntito, puntito, cerezas, puntito) -> 345.
 
 ### Ejercicio 8
 
-Generar un TAD que permita administrar la agenda de un ejecutivo. Se tiene un listado de tiempo se pretende dedicar a cada actividad: (almuerzo de negocios:120; atender cliente: 10; atender cliente VIP: 30; reunion con gerente:30; etc).
+Generar un TAD que permita administrar la agenda de un ejecutivo. Se tiene un listado de tiempo se pretende dedicar a
+cada actividad: (almuerzo de negocios: 120; atender cliente: 10; atender cliente VIP: 30; reunión con gerente: 30; etc).
 
--   Programar las funciones necesarias que permitan insertar actividades a la agenda, controlando que no se superpongan actividades, guardando solo que actividad se agenda y el horario de comienzo. _Se pide que esta lista se mantenga ordenada por el horario._
+- Programar las funciones necesarias que permitan insertar actividades a la agenda, controlando que no se superpongan
+  actividades, guardando solo qué actividad se agenda y el horario de comienzo. _Se pide que esta lista se mantenga
+  ordenada por el horario_.
 
-    > **Por ejemplo:**
-    > (reunion con gerente, 9:30; atender cliente VIP, 10:30; almuerzo de negocios, 12:0; atender cliente VIP, 16: 30;atender Cliente, 17:10).
+  Por ejemplo:
+  > (reunion con gerente, 9:30; atender cliente VIP, 10:30; almuerzo de negocios, 12:0; atender cliente VIP, 16: 30;atender Cliente, 17:10).
 
--   Agregar una funcion que permita saber que está haciendo el ejecutivo dado un horario.
+- Agregar una funcion que permita saber qué está haciendo el ejecutivo dado un horario.
 
-    > **Por ejemplo:**<br />
+  Por ejemplo:
     > 12:45 -> almuerzo de negocios.<br />
-    > 17:45 -> libre.
+      17:45 -> libre.
 
--   Un índice que le interesa a los ejecutivos es el porcentaje de ocupación de su día. Agregar una función que calcule este indice
+- Un índice que le interesa a los ejecutivos es el porcentaje de ocupación de su día. Agregar una función que calcule
+  este índice.
 
 ### Ejercicio 9
 
@@ -122,6 +135,6 @@ Generar una lista de lista que permita almacenar como clave la patente de un veh
 Se pide:
 
 -   Dado un vehículo determinar el total adeudado por multas, la multa más antigua y la más reciente (comparable por las fechas).
--   ¿Cuál es el vehículo que mayor cantidad de infracciones?
--   ¿Cuál es el que vehículo que más deuda de infracciones tiene?
+-   ¿Cuál es el vehículo con mayor cantidad de infracciones?
+-   ¿Cuál es el vehículo que más deuda de infracciones tiene?
 -   ¿Existe algún vehículo/s que no tenga deuda de infracciones?
