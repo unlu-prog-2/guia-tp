@@ -123,7 +123,7 @@ Por ejemplo, se tiene la composición:
 
 Uno de los parámetros que utiliza el gobierno para tomar decisiones sobre la ASPO / DISPO durante la pandemia del CODIV 19 es la cantidad de días transcurridos para que se dupliquen la cantidad de casos.
 
-Una simplificación de este cálculo se puede hacer tomando la cantidad de contagiados totales a un cierto día (P<sub>0</sub>) y la cantidad de contagiados durante ese día (c<sub>n</sub>) y el anterior (c<sub>n-1</sub>n). 
+Una simplificación de este cálculo se puede hacer tomando la cantidad de contagiados totales a un cierto día (P<sub>0</sub>) y la cantidad de contagiados durante ese día (c<sub>n</sub>) y el anterior (c<sub>n-1</sub>). 
 
 Siguiendo la siguiente fórmula:
 > P<sub>n</sub> = P<sub>0</sub> . (c<sub>n</sub>/c<sub>n-1</sub>)<sup>n</sup> 
