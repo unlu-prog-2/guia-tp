@@ -9,7 +9,7 @@ luego la obtención del resultado.**
 Construir el TAD de listas correspondientes a las implementaciones de “Arreglos”, “Punteros” y “Cursores” teniendo en cuenta:
 
 -   Definir las estructuras de datos en función a las especificaciones dadas en clase y documentadas en los PDF que se encuentran en el aula virtual de la asignatura.
--   Se las debe implementar mediante objetos y respetar estríctamente los nombres y parámetros de cada una de las operaciones del TAD especificadas.
+-   Se las debe implementar mediante objetos y respetar estrictamente los nombres y parámetros de cada una de las operaciones del TAD especificadas.
 -   Se lo debe probar y testear de forma tal que se pueda asegurar que el TAD funciona correctamente.
 
 **Aclaración:**
