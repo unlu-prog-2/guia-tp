@@ -32,13 +32,7 @@ seguir en funcionamiento sin problemas.
 Dada una pila cargada con valores al azar realizar los siguientes ejercicios:
 
 - Buscar una clave y determinar si existe en la Pila.
-- Col
-  
-
-
-
-
-ocar en el fondo de una pila un nuevo elemento.
+- Colocar en el fondo de una pila un nuevo elemento.
 - Eliminar de una pila todas las ocurrencias de un elemento dado.
 - Intercambiar los valores del tope y el fondo de una pila.
 - Duplicar el contenido de una pila.
