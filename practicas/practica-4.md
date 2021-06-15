@@ -133,10 +133,10 @@ recursiva. Al finalizar y hallar el resultado mostrar en pantalla el
 árbol de llamadas.
 
 Ejemplo
-> Al calcular el máximo común divisor entre 20 y 12.
-> mcd(20, 12) ==> mcd(12, 8) ==> mcd(8, 4) ==> mcd(4, 4) ==> 4
-> Resultado a imprimir:
-> mcd(4, 4)
-> mcd(8, 4)
-> mcd(12, 8)
-> mcd(20, 12)
+> Al calcular el máximo común divisor entre 20 y 12.  
+> mcd(20, 12) ==> mcd(12, 8) ==> mcd(8, 4) ==> mcd(4, 4) ==> 4  
+> Resultado a imprimir:  
+> mcd(4, 4)  
+> mcd(8, 4)  
+> mcd(12, 8)  
+> mcd(20, 12)  
