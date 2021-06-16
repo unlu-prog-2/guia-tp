@@ -77,7 +77,7 @@ estructura. No se deben destruir las estructuras originales.
 
 Determinar la complejidad algorítmica de la solución empleada.
 
-> Ejemplo: si `P = (2,5,8,19,3,4)` y `C = (4, 18, 12, 5, 6)` la lista tendría `L = (5:2:4, 4:6:1)`.
+> Ejemplo: si `P = (2, 5, 8, 19, 3, 4)` y `C = (4, 18, 12, 5, 6)` la lista tendría `L = (5:2:4, 4:6:1)`.
 
 ## Ejercicios para entregar
 
