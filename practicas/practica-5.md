@@ -112,7 +112,7 @@ para atenderlo.
 Q = 10  
 Cola1 = (40, 20, 30)  
 Cola2 = (20, 10)  
-Cola3 = (10, 10, 10)
+Cola3 = (10, 10, 10)  
 Resultado =
 Cliente 1 Cola 3,  
 Cliente 1 Cola 2,  
