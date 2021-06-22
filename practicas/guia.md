@@ -13,3 +13,5 @@ Cursada 2021 – 1º cuatrimestre
 [Práctica 4 - Pilas](practica-4.md)
 
 [Práctica 5 - Colas](practica-5.md)
+
+[Práctica 6 - Árboles](practica-6.md)
