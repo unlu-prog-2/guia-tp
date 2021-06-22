@@ -60,14 +60,15 @@ Determinar la complejidad algorítmica de la solución.
 
 ### Ejercicio 4
 
-Dada una cola de valores enteros no repetidos y mayores o iguales a `2`, obtener todos
-los valores que son Divisores Totales. Se dice que un valor es Divisor Total si permite
+Dada una cola de valores enteros no repetidos y mayores o iguales a `2`, obtener el valor
+que es Divisor Total, si es que existe. Se dice que un valor es Divisor Total si permite
 dividir a todos los demás valores de la cola en forma exacta.
 
 Determinar la complejidad algorítmica de la solución.
 
 > Ejemplo: si `C` contiene `(8, 12, 2, 6, 14)` se dice que `2` es el divisor total de la cola
 porque divide al resto en forma exacta.
+
 
 ### Ejercicio 5
 
