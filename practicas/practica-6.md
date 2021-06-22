@@ -18,8 +18,6 @@ Construir el TAD de pilas correspondientes a la implementación de “Punteros�
   funciona correctamente.
 
 
-## Ejercicios de Práctica opcionales
-
 ### Ejercicio 1
 Dado un árbol binario no vacío determinar:
 
