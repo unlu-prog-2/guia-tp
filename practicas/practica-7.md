@@ -36,11 +36,11 @@ Se quieren insertar en `T` elementos con claves `(12, 13, 15, 5, 42, 8, 22, 91, 
 * Determinar el resultado de insertar las claves en T si las colisiones se resuelven por inserción lineal.
 * ¿Considera usted que la tabla T equipada con la función de hash h es buena como tabla de hash? Justifique claramente
   su respuesta con respecto a las condiciones que una función de hash debiese cumplir.
-  
 
-> Los problemas planteados a continuación deben ser resueltos utilizando para ello las
-operaciones definidas del TAD Tabla hash en sus dos modalidades (lista de colisiones y zona de
-overflow).
+  
+| :boom: Aclaración           |
+|:----------------------------|
+| Los problemas planteados a continuación deben ser resueltos utilizando para ello las operaciones definidas del TAD Tabla hash en sus dos modalidades (lista de colisiones y zona de overflow).|
 
 
 ### Ejercicio 3
