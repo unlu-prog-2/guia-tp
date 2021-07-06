@@ -7,7 +7,7 @@ y luego la obtención del resultado.**
 
 ## Para empezar a trabajar
 
-Construir el TAD de pilas correspondientes a la implementación de “Punteros” teniendo en cuenta:
+Construir el TAD de pilas correspondiente a la implementación de “Punteros” teniendo en cuenta:
 
 - Definir las estructuras de datos en función a las especificaciones dadas en
   clase y documentadas en los PDF que se encuentran en el aula virtual de la
