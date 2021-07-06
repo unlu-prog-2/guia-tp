@@ -15,3 +15,7 @@ Cursada 2021 – 1º cuatrimestre
 [Práctica 5 - Colas](practica-5.md)
 
 [Práctica 6 - Árboles](practica-6.md)
+
+[Práctica 7 - Tablas de hash](practica-7.md)
+
+[Práctica 8 - Conjuntos](practica-8.md)
