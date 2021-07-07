@@ -53,7 +53,7 @@ están en el otro.
 
 Determinar la complejidad algorítmica.
 
-> Ejemplo: si `A = (3, 4, 5)` y `B = (1,2,3,4,5,6,7,8,9)` y `C = (2,4,6,8,7)` entonces a `A` es un
+> Ejemplo: si `A = (3, 4, 5)` y `B = (1, 2, 3, 4, 5, 6, 7, 8, 9)` y `C = (2, 4, 6, 8, 7)` entonces a `A` es un
 subconjunto total `B` porque todos los elementos de `A` están en `B`, `C` es un
 subconjunto total de `B` porque todos los elementos de `C` están en `B`. A su vez
 `B` es un subconjunto parcial de `C` porque al menos la mitad de los elementos de
