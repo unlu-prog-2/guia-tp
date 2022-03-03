@@ -151,15 +151,4 @@ muestre las ambas diagonales en el mismo recorrido.
 
 ### Ejercicio 11
 
-Dado un archivo de texto que contiene datos demograficos de ciudades argentinas, se pide obtener la población por
-ciudad y por provincia y  en forma de grilla como se muestra debajo.
-
-El archivo contiene los siguientes datos: `NroFactura;Fecha;Importe`.
-El separador de campos es un `;`. Debajo se muestra un pequeño ejemplo.
-```text
-1000;10/01/2019;500.25
-1000;11/01/2019;50.10
-1001;11/01/2020;1200.50
-1002;01/02/2021;950.75
-1003;03/03/2021;480.90
-```
+Agregar un caso más de corte de control
