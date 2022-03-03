@@ -28,8 +28,8 @@ Generar un algoritmo recursivo que calcule el k-ésimo número de la serie de Fi
 ### Ejercicio 5
 
 Dados los números enteros m y n, construir una función recursiva que devuelva el cociente de ambos, calculando el mismo
-mediante restas sucesivas. Se deberá tener en cuenta que en el caso de que la división no sea exacta, se devolverán dos
-cifras decimales.
+mediante restas sucesivas. Se deberá tener en cuenta que en el caso de que la división no sea exacta, se devolverán hasta 4
+cifras decimales (si es necesario).
 
 ### Ejercicio 6
 
@@ -118,23 +118,7 @@ Por ejemplo, se tiene la composición:
     <tr><td>.</td><td>C</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
 </table>
 
-
 ### Ejercicio 11
-
-Uno de los parámetros que utiliza el gobierno para tomar decisiones sobre la ASPO / DISPO durante la pandemia del CODIV 19 es la cantidad de días transcurridos para que se dupliquen la cantidad de casos.
-
-Una simplificación de este cálculo se puede hacer tomando la cantidad de contagiados totales a un cierto día (P<sub>0</sub>) y la cantidad de contagiados durante ese día (c<sub>n</sub>) y el anterior (c<sub>n-1</sub>). 
-
-Siguiendo la siguiente fórmula:
-> P<sub>n</sub> = P<sub>0</sub> . (c<sub>n</sub>/c<sub>n-1</sub>)<sup>n</sup> 
-
-Realizar una función recursiva que retorne una lista con las cantidades de contagiados totales por día hasta que esa cantidad duplique a la población inicial ingresada.
-
-> Nota 1: El cálculo del total de contagiados debe ser recursivo.  
-> Nota 2: _No se puede usar la función potencia._
-
-
-### Ejercicio 12
 
 Definir una función recursiva que dado un conjunto devuelva una lista con los subconjuntos
 del mismo tales que la suma de los elementos de cada subconjunto sumen una cantidad dada.
@@ -146,7 +130,7 @@ Dado el conjunto `A = {10, 3, 1, 7, 4, 2}`
 La lista de los conjuntos que sumen `7` sería: `R = [{3, 4}, {1, 4, 2}, {7}]`
 
 
-### Ejercicio 13
+### Ejercicio 12
 
 Escribir una función que implemente el método que se describe para saber si un número es divisible por `7`. 
 
@@ -164,7 +148,7 @@ Por ejemplo:
 14      ->  Múltiplo de 7`
 ```
 
-### Ejercicio 14
+### Ejercicio 13
 
 Se dice que `n` es un ńumero que explosivo cuando éste explota en varios fragmentos más chicos que él, dada una bomba. 
 

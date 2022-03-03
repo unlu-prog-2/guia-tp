@@ -1,6 +1,6 @@
 GUÍA DE TRABAJOS PRÁCTICOS
 
-Cursada 2021 – 1º cuatrimestre
+Cursada 2022 – 1º cuatrimestre
 
 [Práctica de repaso e introducción a Delphi](practica-repaso.md)
 

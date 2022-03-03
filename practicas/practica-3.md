@@ -23,21 +23,23 @@ Los siguientes ejercicios siguientes deben ser implementados y resueltos en form
 Dada una lista cargada con valores al azar realizar los siguientes ejercicios:
 
 -   Mostrar una lista desde el último elemento al primero.
--   Que calcule el mayor de los datos e indique la posición ordinal.
--   Que calcule el dato mínimo y cuente la cantidad de veces que se repita.
--   Que obtenga el promedio de los datos de una lista. El proceso debe ser recursivo.
--   Que retorne otra lista con los números múltiplos de otro número que recibe como parámetro. El proceso debe ser recursivo.
+-   Que calcule el menor de los datos e indique la posición ordinal.
+-   Que calcule el dato máximo y cuente la cantidad de veces que se repita.
+-   Que obtenga el promedio de los datos de una lista. *El proceso debe ser recursivo.*
+-   Que retorne otra lista con los números múltiplos de otro número que recibe como parámetro. *El proceso debe ser recursivo.*
 -   Generar un algoritmo que genere números al azar únicos dentro de la lista.
 
 ### Ejercicio 2
 
-Dadas 2 listas (L1 y L2) determinar si L2 es divisible por L1. Se considera divisible si cada elemento de L2 se divide en forma exacta por el valor L1 de la misma posición.
+Dadas 2 listas (L1 y L2) determinar si L2 es múltiplo de L1. Se considera múltiplo si cada elemento L2 se divide en forma exacta por el valor L1 de la misma posición.
 
 > **Por Ejemplo:** si _L1 = (2, 5, 7, 3)_ y _L2 = (8, 20, 28, 12)_ entonces _L2_ es divisible por _L1_ porque cada posición de _L2_ se divide por el valor de _L1_ de la misma posición en forma exacta. Si el resultado de la división retorna el mismo valor para cada posición se dice que _L2_ es múltiplo de _L1_ por un **_escalar_**. Para este caso _4_ es el **_escalar_** de _L1_. **El algoritmo debe contemplar esta situación**.
 
 ### Ejercicio 3
 
-Dadas dos listas, informar si son iguales. Se consideran iguales si cada elemento de _L1_ está en _L2_ sin importar la posición, ni la cantidad de ocurrencias. Por otro lado todos los elementos de _L2_ también deben estar en _L1_, sin importar la posición, ni la cantidad de ocurrencias. Determinar la complejidad algorítmica de la solución empleada.
+Dadas dos listas _l1_ y _l2_ se pide compararlas siempre en el sentido _l1_ -> _l2_. Por lo tanto puede suceder que: _l1_ > _l2_; _l1_ = _l2_ o _l1_ < _l2_.La forma de obtener la comparación es por la clave, posición a posición, donde si _l1_ tiene más cantidad de claves mayores que _l2_ se considera que _l1_ > _l2_, por el contrario se consireda _l1_ < _l2_. Se consideran iguales si cada elemento de _L1_ está en _L2_ sin importar la posición, ni la cantidad de ocurrencias. Por otro lado todos los elementos de _L2_ también deben estar en _L1_, sin importar la posición, ni la cantidad de ocurrencias.
+
+**Determinar la complejidad algorítmica de la solución empleada.**
 
 ### Ejercicio 4
 
@@ -62,7 +64,7 @@ Agregar al TAD funciones que devuelvan listas con la factorización del polinomi
 
 Dado un rango de valores de “X” y un valor de intervalo “I”, retorne una lista con los valores de “Y” o “F(x)”.
 
-> **Ejemplo**: si el polinomio es F(x) = 2x + 1. Se pide retornar los valores de F(x) entre los “X” -1 y 1 de a “0,5”. Es decir se deberían retornar los valores de F(-1), F(-0,5), F(0), F(0,5) y F(1).
+> **Ejemplo**: si el polinomio es F(x) = 2x + 1. Se pide retornar los valores de F(x) con `-1 < x < 1` de a `0,5`. Es decir se deberían retornar los valores de `F(-1)`, `F(-0,5)`, `F(0)`, `F(0,5)` y `F(1)`.
 
 #### Operar 2 polinomios
 
@@ -87,9 +89,21 @@ PROCEDURE Burbujeo(var L: Lista; P, Q: PosicionLista);
 
 Donde `P` es la posición del primer elemento de la lista y `Q` la del segundo.
 
+### Ejercicio 7
+
+Generar una lista de lista que permita almacenar como clave la patente de un vehículo (campo clave) y como valores de la clave las multas que se le realizaron a dicho vehículo. Se debe guardar como datos de la multa el número de acta (campo clave), la fecha y el importe (como valores), estado (Pendiente, Abonada, Anulada).
+
+Se pide:
+
+-   Dado un vehículo determinar el total adeudado por multas, la multa más antigua y la más reciente (comparable por las fechas).
+-   ¿Cuál es el vehículo con mayor cantidad de infracciones?
+-   ¿Cuál es el vehículo que más deuda de infracciones tiene?
+-   ¿Existe algún vehículo/s que no tenga deuda de infracciones?
+
+
 ## Ejercicios para entregar
 
-### Ejercicio 7
+### Ejercicio 8
 
 Se necesita saber el puntaje que suma un pacman en su recorrido hasta llegar a terminar el nivel.
 
@@ -107,7 +121,7 @@ que se come el pacman. Para el cálculo tener en cuenta el siguiente listado de 
 
 > (puntito, puntito, puntito, banana, puntito, puntito, bonus, puntito, puntito, fantasma, puntito, puntito, cerezas, puntito) -> 345.
 
-### Ejercicio 8
+### Ejercicio 9
 
 Generar un TAD que permita administrar la agenda de un ejecutivo. Se tiene un listado de tiempo se pretende dedicar a
 cada actividad: (almuerzo de negocios: 120; atender cliente: 10; atender cliente VIP: 30; reunión con gerente: 30; etc).
@@ -128,13 +142,13 @@ cada actividad: (almuerzo de negocios: 120; atender cliente: 10; atender cliente
 - Un índice que le interesa a los ejecutivos es el porcentaje de ocupación de su día. Agregar una función que calcule
   este índice.
 
-### Ejercicio 9
-
-Generar una lista de lista que permita almacenar como clave la patente de un vehículo (campo clave) y como valores de la clave las multas que se le realizaron a dicho vehículo. Se debe guardar como datos de la multa el número de acta (campo clave), la fecha y el importe (como valores), estado (Pendiente, Abonada, Anulada).
+### Ejercicio 10
+Generar una **lista de lista** que permita almacenar como clave el rubro del material (campo clave) y como valores de la clave las materiales que forman ese rubro.  Se debe guardar como datos del material código (campo clave), la descripción, el stock, el stock mínimo, la unidad de medida (como valores).  Para el rubro se debe guardar su código (clave) y descripción (valor). Las unidades de medida son: `UND`, `KG` y `MTS`.
 
 Se pide:
+-	Dado un rubro determinar los materiales que lo conforman.
+-	¿Existen materiales agotados (0 stock)? ¿cuáles son?
+-	¿Cuáles son los materiales cuyo stock está por debajo del mínimo?
+-	¿Existe algún rubro que todos sus materiales están por debajo del stock mínimo?
 
--   Dado un vehículo determinar el total adeudado por multas, la multa más antigua y la más reciente (comparable por las fechas).
--   ¿Cuál es el vehículo con mayor cantidad de infracciones?
--   ¿Cuál es el vehículo que más deuda de infracciones tiene?
--   ¿Existe algún vehículo/s que no tenga deuda de infracciones?
+![Lista de Rubros](imagenes/lista_de_rubros.svg)

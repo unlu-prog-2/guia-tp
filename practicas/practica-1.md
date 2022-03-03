@@ -20,11 +20,11 @@ Crear un TAD Vector que represente un vector de `n` elementos enteros. El TAD de
 disponer de las siguientes operaciones:
 
 * Cargar Aleatorio dentro de un rango `[Desde, Hasta]` especificado como parámetro.
-No deben existir valores repetidos.
+Agregar un tercer parámetro para indicar si permite o no repeticiones.
 * Sumatoria de los elementos del vector.
+* Promedio del vector.
 * Máximo valor del vector (debe además retornar la posición donde se ubica).
 * Mínimo valor del vector (debe además retornar la posición donde se ubica).
-* Promedio del vector.
 * Devolución de un `string` con los elementos intercalados con un separador pasado
 como parámetro.
 * Multiplicar el valor de cada posición por un escalar. Por ejemplo `n * []`.  Si es `n=2`, el valor de cada posición será multiplicado por `2`.
@@ -40,6 +40,7 @@ las siguientes operaciones:
 * `MaximaFila` y `MaximaColumna` que retornan cuál es la fila y columna cuya sumatoria
 es la mayor.
 * `MultiplicarEscalar` para multiplicar la matriz por un escalar.  Por ej. `n * MA[]`.  Cada posición de la matriz es multiplicada por `n`.
+* `Buscar` que recibe el valor a buscar y retorna la fila y la columna de la primera ocurrencia.
 
 
 ### Ejercicio 4 (entregable)
@@ -93,8 +94,8 @@ lo recaudado día x día (o fecha por fecha).
   
 
 ### Ejercicio 8
-En una heladería se ofrecen conos con bochas de 25 gramos de 3 sabores distintos a escoger
-entre chocolate, vainilla, frutilla y limón.
+En una heladería se ofrecen conos con bochas de 25 gramos de 2 y 3 sabores distintos a escoger
+entre chocolate, crema americana, frutilla y limón.
 
 El congelador de helados almacena un balde por cada
 sabor, cada balde con su cantidad de helado disponible.
@@ -102,8 +103,8 @@ sabor, cada balde con su cantidad de helado disponible.
 Al congelador se le puede:
 
 * Aumentar una cantidad de helado de un determinado sabor, 
-* Consultar si alcanza el helado para crear un cono dados tres sabores disponibles,
-* Consultar las combinaciones de bochas de helado disponibles para crear conos.
+* Consultar si alcanza el helado para crear un cono dados 2 o 3 sabores disponibles,
+* Consultar las combinaciones bochas de helado disponibles para crear conos de ambos tipos.
 * También se puede servir un helado siempre y cuando haya suficiente cantidad de helado de los sabores deseados.
 
 Cree un TAD para representar un congelador de helados e implemente los métodos indicados.
@@ -112,5 +113,5 @@ Cree un TAD para representar un congelador de helados e implemente los métodos 
 Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal. Una caja permite:
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
-* `EstadoYSaldo`: devuelve el saldo total del cajero y la disponibilidad de cada tipo de
-billete.
+* `Saldo`: devuelve el saldo total del cajero 
+* `CerrarCaja`: retorna los billetes y monedas que quedaron al final del turno en la caja registradora.
