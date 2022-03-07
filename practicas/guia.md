@@ -2,8 +2,9 @@ GUÍA DE TRABAJOS PRÁCTICOS
 
 Cursada 2022 – 1º cuatrimestre
 
-[Práctica de repaso e introducción a Delphi](practica-repaso.md)
+[Práctica de repaso - Introducción a Delphi](practica-repaso.md)
 
+<!---
 [Práctica 1 - Introducción a los TAD](practica-1.md)
 
 [Práctica 2 - Recursividad](practica-2.md)
@@ -19,3 +20,4 @@ Cursada 2022 – 1º cuatrimestre
 [Práctica 7 - Tablas de hash](practica-7.md)
 
 [Práctica 8 - Conjuntos](practica-8.md)
+-->
