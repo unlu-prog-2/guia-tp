@@ -57,7 +57,7 @@ Frase Original: “Hola Mundo Cruel y Despiadado”
 5. TU FRASE TIENE 29 caracteres
 6. H=1 l=2 M=1 n=1 d=3 ...
 ```
-
+> [Descargar archivo](archivos/practica-0-cadenas.zip)
 
 ### Ejercicio 3
 Generar un archivo de texto (TXT) con el Block de Notas o similar. En el archivo no deben
@@ -134,6 +134,8 @@ El separador de campos es un `;`. Debajo se muestra un pequeño ejemplo.
     <tr><td>2020</td><td>1200.50</td><td></td><td></td><td></td><td>1200.50</td></tr>
     <tr><td>2021</td><td></td><td>970.75</td><td>480.90</td><td></td><td>1451.65</td></tr>
 </table>
+
+> [Descargar archivo](archivos/practica-0-ejercicio-8.zip)
 
 
 ### Ejercicio 9
