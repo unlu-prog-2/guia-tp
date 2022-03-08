@@ -151,4 +151,28 @@ muestre las ambas diagonales en el mismo recorrido.
 
 ### Ejercicio 11
 
-Agregar un caso más de corte de control
+Dado un archivo de texto que contiene datos de minutos trabajos por personal
+de una consultora de sistemas informáticos a diferentes clientes, se pide
+obtener los totales por cliente/año en forma de grilla como se muestra debajo.
+
+El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un “Tabulador”.
+
+A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente contenido:
+```text
+Cliente Anio    Mes Minutos_Trabajados
+2019    1000    50  1001
+1000    2019    01  50
+1001    2020    02  120
+1001    2021    03  96
+1001    2022    01  48
+```
+
+La tabla a producir por el programa debería ser:
+
+| Clientes / Años | 2019 | 2020 | 2021 | 2022 |
+|-----------------|------|------|------|------|
+| 1000            | 50   |      |      |      |
+| 1001            |      | 120  | 95   | 48   |
+
+Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre
+[practica-0-ejercicio-11.txt](archivos/practica-0-ejercicio-11.txt) que contiene aprox. unas 400.000 filas a procesar.
