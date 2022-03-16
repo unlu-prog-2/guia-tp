@@ -94,6 +94,8 @@ Generar un programa que resuelva sopas de letras. Debe permitirle al usuario:
 3. Disponer la resolución de la sopa (una vez cargadas la grilla y las palabras). La
 aplicación listará, para cada palabra las celdas de la grilla que ocupa.
 
+> [Descargar archivo](archivos/practica-0-sopa-de-letras.zip)
+
 
 ### Ejercicio 6
 Generar un programa que permita ingresar un número en cualquiera de los siguientes
