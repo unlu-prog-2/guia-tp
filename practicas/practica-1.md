@@ -115,3 +115,44 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
 * `Saldo`: devuelve el saldo total del cajero 
 * `CerrarCaja`: retorna los billetes y monedas que quedaron al final del turno en la caja registradora.
+
+### Ejercicio 10 (entregable)
+
+Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de vencimiento y los límites de crédito en una cuota y en cuotas. Este TAD debe permitir:
+* `ValidarNro`: Validar **recursivamente** si el número de tarjeta usando el siguiente algoritmo:
+  -	Duplicar el valor de uno de cada dos dígitos, empezando desde la derecha. Es decir, el último dígito no cambia; el penúltimo es duplicado; el anterior no cambia; y sigue así. Por ejemplo, [1,3,8,6] se vuelve [2,3,16,6].
+  -	Sumar los dígitos de los valores duplicados y los dígitos no duplicados del número original. Por ejemplo, [2,3,16,6] se vuelve 2+3+1+6+6 = 18.
+  -	Calcular el resto cuando esa suma es dividida por 10. En el ejemplo anterior, el resto sería 8.
+  - Si el resultado es 0 entonces el número es válido.
+* `EntidadEmisora`: El primer/os digito/s, a la izquierda, representa/n la entidad emisora, a saber:
+
+<table border="2" align="center">
+  <tr>  
+  <th> Rangos de INN</th>
+  <th> Emisora</th>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Visa</td>
+  </tr>
+  <tr>
+    <td>2021-2720; 51-55</td>
+    <td>Mastercard</td>
+  </tr>
+   <tr>
+    <td>34-37</td>
+    <td>American Express</td>
+  </tr>    
+  <tr>
+    <td>50, 56-58</td>
+    <td>Maestro</td>
+  </tr>
+</table>
+
+* `Comprar`: Se requiere validar la compra, a saber: 
+  que el número sea correcto, que la tarjeta no se encuentre vencida y que le alcance el límite de crédito para realizar la compra. 
+  
+  Una vez aceptado el movimiento, se debe reducir el límite de crédito en una cuota teniendo en cuenta que si la tarjeta es una *Visa* o una *American Express* se descuenta el 80% del monto, en el resto de las tarjetas se descuenta el monto completo. 
+  En cambio si se trata de una compra en cuotas, todas las tarjetas descuentan, en compras hasta 6 cuotas, el 90% del monto adeudado (cuotas de la 2da en adelante) al limite de compras en cuotas, y descuentan del límite de compras en una cuota el monto de la primera cuota. En compras de más de 6 cuotas es igual, salvo que descuentan sólo el 70% de las cuotas adeudas del limite de compra en cuotas.
+
+* `MostrarLimites`: Informar los límites de compras disponibles.
