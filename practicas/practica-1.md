@@ -43,7 +43,7 @@ es la mayor.
 * `Buscar` que recibe el valor a buscar y retorna la fila y la columna de la primera ocurrencia.
 
 
-### Ejercicio 4 (entregable)
+### Ejercicio 4
 Crear un TAD `Binario` que represente un número binario. El TAD debe disponer de las
 siguientes operaciones:
 
