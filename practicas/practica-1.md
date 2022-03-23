@@ -119,7 +119,7 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 ### Ejercicio 10 (entregable)
 
 Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de vencimiento y los límites de crédito en una cuota y en cuotas. Este TAD debe permitir:
-* `ValidarNro`: Validar, **recursivamente**, si el número de tarjeta (de 16 dígitos) usando el siguiente algoritmo:
+* `ValidarNro`: Validar si el número de tarjeta (de 16 dígitos) usando el siguiente algoritmo:
   -	Duplicar el valor de uno de cada dos dígitos, empezando desde la derecha. Es decir, el último dígito no cambia; el penúltimo es duplicado; el anterior no cambia; y sigue así. Por ejemplo, [1,3,8,6] se vuelve [2,3,16,6].
   -	Sumar los dígitos de los valores duplicados y los dígitos no duplicados del número original. Por ejemplo, [2,3,16,6] se vuelve 2+3+1+6+6 = 18.
   -	Calcular el resto cuando esa suma es dividida por 10. En el ejemplo anterior, el resto sería 8.
