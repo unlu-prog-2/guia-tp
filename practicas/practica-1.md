@@ -67,15 +67,17 @@ Crear un TAD “Estacionamiento” en el cual se digan el número de autos ingre
 horario de entrada, el de salida y cuánto es la tarifa por hora a pagar.
 
 * Se pide saber cuánto debe abonar ese vehículo al momento de su retiro.
+* La tarifa minima a abonar es de 1 hora, luego se fracciona el tiempo cada 10 minutos.
 * Contemplar un valor fijo por media estadía y estadía completa.
   * Se paga estadía completa si el auto está más de 6 horas en el estacionamiento.
   * Se paga media estadía si el auto está más de 3 horas en el estacionamiento.
   * Se paga la tarifa por hora definida en otro caso.
 
 Por ejemplo: 
-* si el auto ingresa a las 08:00 y se retira a las 12:00 le corresponde “media estadía”
-* si ingresa a las 10:00 y se retira a las 16:00 le corresponde “estadía completa”. 
-* en cambio sí ingresa 08:45 y se retira a las 10:15 debe abonar por 1 hs 30 minutos.
+* si el auto ingresa a las 08:00 y se retira a las 12:00 le corresponde "media estadía"
+* si ingresa a las 10:00 y se retira a las 16:00 le corresponde "estadía completa". 
+* sí ingresa 08:45 y se retira a las 10:15 debe abonar por 1 hs 30 minutos.
+* en cambio si ingresa 10:30 y se retira 11:44 debe abonar 1 hs 20 minutos.
 
 
 ### Ejercicio 7 (entregable)
