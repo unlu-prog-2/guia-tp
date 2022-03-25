@@ -4,7 +4,7 @@ Cursada 2022 – 1º cuatrimestre
 
 [Práctica de repaso - Introducción a Delphi](practica-repaso.md)
 
-[Práctica 1 - Introducción a los TAD](practica-1.md) - (Entrega: 30/03)
+[Práctica 1 - Introducción a los TAD](practica-1.md) - (Entrega: 01/04)
 
 <!---
 [Práctica 2 - Recursividad](practica-2.md)
