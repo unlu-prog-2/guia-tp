@@ -27,10 +27,13 @@ cifras decimales (si es necesario).
 
 ### Ejercicio 5
 
-Se tiene el siguiente problema problematico, de generar una cadena parsimoniosa y armoniosa que va asi:
+Se tiene el siguiente problema problemático, de generar una cadena parsimoniosa y armoniosa que va así:
 > parmoniosa(1) =       **\/**
+
 > parmoniosa(2) =    ++\**\/**/++
+
 > parmoniosa(3) = **\++\**\/**/++/**
+
 Se te pide encontrar la solución recursiva para parmoniosa(n).
 
 ### Ejercicio 6
