@@ -1,8 +1,6 @@
 # Práctica 2: Recursividad
 
-**En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita
-al usuario el ingreso de una o más instancias (según sea necesario), la aplicación de cualquiera de las operaciones y
-luego la obtención del resultado.**
+**En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita al usuario el ingreso de una o más instancias (según sea necesario), la aplicación de cualquiera de las operaciones y luego la obtención del resultado.**
 
 
 ## Ejercicios de Práctica opcionales
@@ -14,48 +12,28 @@ palíndromo. Ej. “neuquen” ya que se lee igual de atrás hacia adelante.
 
 ### Ejercicio 2
 
-Construir un algoritmo recursivo que permita determinar el máximo común divisor.
-
-### Ejercicio 3
-
 Dados dos números enteros m y n, construir una función recursiva que devuelva el producto de ambos, calculando el mismo
 como sumas sucesivas. Esto es: m*n=m+m+...+m, n veces.
 
-### Ejercicio 4
+### Ejercicio 3
 
 Generar un algoritmo recursivo que calcule el k-ésimo número de la serie de Fibonacci.
 
-### Ejercicio 5
+### Ejercicio 4
 
 Dados los números enteros m y n, construir una función recursiva que devuelva el cociente de ambos, calculando el mismo
 mediante restas sucesivas. Se deberá tener en cuenta que en el caso de que la división no sea exacta, se devolverán hasta 4
 cifras decimales (si es necesario).
 
+### Ejercicio 5
+
+Se tiene el siguiente problema problematico, de generar una cadena parsimoniosa y armoniosa que va asi:
+> parmoniosa(1) =       **\/**
+> parmoniosa(2) =    ++\**\/**/++
+> parmoniosa(3) = **\++\**\/**/++/**
+Se te pide encontrar la solución recursiva para parmoniosa(n).
+
 ### Ejercicio 6
-
-Generar un algoritmo recursivo que le ponga los “.” de los miles a un String de números.
-
-### Ejercicio 7
-
-Se conoce que la mafia china es muy organizada y protege mucho a sus miembros, cuando deciden asistir a una reunión se
-dispone de una cantidad de chinos que asisten, y ellos se ubican de forma que al mirarlos frontalmente generan cierto
-respeto y temor.
-
-A continuación, se tiene una serie de posibles reuniones y su nivel y la apariencia que se tiene del grupo que va a la
-reunión vistos frontalmente:
-
-```text
-Nivel reunión  Vista frontal de la delegación
-      1                  (-.-) 
-      2               (-.(-.-).-) 
-      3            (-.(-.(-.-).-).-) 
-      4         (-.(-.(-.(-.-).-).-).-) 
-```
-
-Considerando esta descripción, diseñar los procesos recursivos que permitan mostrar la apariencia del grupo de chinos
-que asisten a una reunión de nivel n.
-
-### Ejercicio 8
 
 Se tiene una cadena que representa una onda digital de señales L (Low) y H (High). Se pide mostrar la onda que
 representa utilizando `_` y `|`.
@@ -67,7 +45,7 @@ _ _ _ _            _ _ _ _ _         _ _         _ _
        | _ _ _ _ |           | _ _ |     | _ _ |    
 ```
 
-### Ejercicio 9
+### Ejercicio 7
 
 En el juego de Snake, una serpiente recorre una grilla para comer manzanas y así poder crecer. La serpiente siempre se
 mueve a los cuadros adyacentes (nunca en diagonal) y no puede chocarse con sí misma ni rozarse, es decir, un cuadro que
@@ -94,9 +72,29 @@ Por ejemplo:
 La serpiente, cuya cabeza es `C`, empezó en `(2,B)` y recorrió `(3,B)`, `(3,C)`, `(4,C)`, `...` , `(8,F)`. Su longitud
 es `15`.
 
+
+### Ejercicio 8
+
+Escribir una función que implemente el método que se describe para saber si un número es divisible por `7`. 
+
+>Se separa la primera cifra de la derecha, se la multiplica por 2, y se resta este producto de lo que queda a la izquierda y así sucesivamente, hasta que el resultado obtenido sea un número menor a 70. 
+El número original será multiplo de 7 si el resultado da cero o múltiplo de 7.
+
+Por ejemplo:
+```
+32291   ->  1x2=2.
+3229 - 2 =
+3227    ->  7x2=14.
+322 - 14 =
+308     ->  8x2=16
+30 - 16 =
+14      ->  Múltiplo de 7`
+```
+
+
 ## Ejercicios para entregar
 
-### Ejercicio 10
+### Ejercicio 9
 
 En la química orgánica se tienen cadenas de Carbono e Hidrógeno juntos, que forman distintas clases de alcanos; que se
 diferencian unos de otros por la cantidad de carbonos que existen. La forma de encontrar además la nominación correcta
@@ -118,7 +116,7 @@ Por ejemplo, se tiene la composición:
     <tr><td>.</td><td>C</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
 </table>
 
-### Ejercicio 11
+### Ejercicio 10
 
 Definir una función recursiva que dado un conjunto devuelva una lista con los subconjuntos
 del mismo tales que la suma de los elementos de cada subconjunto sumen una cantidad dada.
@@ -129,26 +127,7 @@ Dado el conjunto `A = {10, 3, 1, 7, 4, 2}`
 
 La lista de los conjuntos que sumen `7` sería: `R = [{3, 4}, {1, 4, 2}, {7}]`
 
-
-### Ejercicio 12
-
-Escribir una función que implemente el método que se describe para saber si un número es divisible por `7`. 
-
->Se separa la primera cifra de la derecha, se la multiplica por 2, y se resta este producto de lo que queda a la izquierda y así sucesivamente, hasta que el resultado obtenido sea un número menor a 70. 
-El número original será multiplo de 7 si el resultado da cero o múltiplo de 7.
-
-Por ejemplo:
-```
-32291   ->  1x2=2.
-3229 - 2 =
-3227    ->  7x2=14.
-322 - 14 =
-308     ->  8x2=16
-30 - 16 =
-14      ->  Múltiplo de 7`
-```
-
-### Ejercicio 13
+### Ejercicio 11
 
 Se dice que `n` es un ńumero que explosivo cuando éste explota en varios fragmentos más chicos que él, dada una bomba. 
 
@@ -170,3 +149,38 @@ Número: 20
 Bomba: 5
 Resultado: [4 3 2 2 1 1 1 1 5]
 ```
+
+### Ejercicio 12
+
+En la guerra de los “UNLuBots” se han diseñado robots que permiten explorar caminos seguros en campos minados. Los humanos deben caminar por este campo minado buscando documentos secretos que están ubicados en algún lugar del campo. La misión de estos robots es indicar cuál es el camino más seguro, además de informar en qué posiciones están las minas para que los exploradores humanos no las pisen y puedan cumplir con su objetivo.
+
+En este campo minado existen alambres de puas que no pueden ser sobrepasados, espacios seguros de camino, minas, el lugar donde están los exploradores humanos y el lugar donde se encuentran los documentos secretos.
+
+Por ejemplo:
+---------------------
+|P|P|P|P|P|M|P|P|M|M|
+---------------------
+|P|E|S|S|S|S|M|S|S|P|
+---------------------
+|S|S|S|P|P|P|P|S|S|S|
+---------------------
+|S|M|S|S|P|P|P|M|S|M|
+---------------------
+|S|S|S|S|S|D|S|S|M|S|
+---------------------
+|P|P|P|S|S|S|S|M|S|S|
+---------------------
+|S|S|M|S|M|S|M|S|M|S|
+---------------------
+
+Donde `E` representa la posición en la que están los exploradores , `P` identifica la existencia de puas, `M` indica la existencia de una mina y `D` indica el lugar donde están los documentos secretos.
+
+Los robots sólo se mueven en línea recta, es decir jamás diagonal, considerando estas condiciones encuentra el camino más seguro de exploración.
+
+Tomando en cuenta el ejemplo anterior, el camino más seguro sería:
+    > (R,S),(D,S),(D,S),(D,S),(R,S),(R,S),(R,D)
+
+En este caso se ha encontrado un camino sin minas, pero en caso de que no exista tal camino, se debe devolver el camino que tiene menos minas e informar dónde estan para que los exploradores tengan cuidado.
+
+Para aclarar, en el camino se tiene una lista de pasos que deben dar, cada uno de estos pasos es de la forma `(DIRECCION, SITUACION)`, por ejemplo `(R,S)` dice que el movimiento es a la *derecha=*`RIGHT` y la situacion es *segura=*`S`.(Para completar la dirección puede ser: `R`*=derecha*, `L`*=izquierda*, `D`*=abajo*, `U`*=arriba*; la situación puede ser: `M`*=mina*, `D`*=documento*, `S`*=segura*)
+Realiza el (los) procesos recursivos necesarios, para que dado un campo minado, la ubicación de los exploradores, la ubicación de los documentos; se encuentre el camino “más” seguro de exploración.
