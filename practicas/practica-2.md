@@ -34,7 +34,7 @@ Se tiene el siguiente problema problemático, de generar una cadena parsimoniosa
 
 > parmoniosa(3) = \*\*\\++\\\*\*\\/\*\*/++/\*\*
 
-Se te pide encontrar la solución recursiva para parmoniosa(n).
+Se pide encontrar la solución recursiva para parmoniosa(n).
 
 ### Ejercicio 6
 
@@ -160,30 +160,105 @@ En la guerra de los “UNLuBots” se han diseñado robots que permiten explorar
 En este campo minado existen alambres de puas que no pueden ser sobrepasados, espacios seguros de camino, minas, el lugar donde están los exploradores humanos y el lugar donde se encuentran los documentos secretos.
 
 Por ejemplo:
----------------------
-|P|P|P|P|P|M|P|P|M|M|
----------------------
-|P|E|S|S|S|S|M|S|S|P|
----------------------
-|S|S|S|P|P|P|P|S|S|S|
----------------------
-|S|M|S|S|P|P|P|M|S|M|
----------------------
-|S|S|S|S|S|D|S|S|M|S|
----------------------
-|P|P|P|S|S|S|S|M|S|S|
----------------------
-|S|S|M|S|M|S|M|S|M|S|
----------------------
+<table align="center">
+    <tr>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>M</td>
+        <td>P</td>
+        <td>P</td>
+        <td>M</td>
+        <td>M</td>
+    </tr>  
+    <tr>
+        <td>P</td>
+        <td>E</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+        <td>S</td>
+        <td>P</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+        <td>S</td>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>M</td>
+        <td>S</td>
+        <td>M</td>
+    </tr>  
+    <tr>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>D</td>
+        <td>S</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+    </tr>    
+    <tr>
+        <td>P</td>
+        <td>P</td>
+        <td>P</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+        <td>S</td>
+    </tr>
+    <tr>
+        <td>S</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+        <td>M</td>
+        <td>S</td>
+    </tr>
+</table>
 
 Donde `E` representa la posición en la que están los exploradores , `P` identifica la existencia de puas, `M` indica la existencia de una mina y `D` indica el lugar donde están los documentos secretos.
 
 Los robots sólo se mueven en línea recta, es decir jamás diagonal, considerando estas condiciones encuentra el camino más seguro de exploración.
 
 Tomando en cuenta el ejemplo anterior, el camino más seguro sería:
-    > (R,S),(D,S),(D,S),(D,S),(R,S),(R,S),(R,D)
+
+> (R, S); (D, S); (D, S); (D, S); (R, S); (R, S); (R, D)
 
 En este caso se ha encontrado un camino sin minas, pero en caso de que no exista tal camino, se debe devolver el camino que tiene menos minas e informar dónde estan para que los exploradores tengan cuidado.
 
-Para aclarar, en el camino se tiene una lista de pasos que deben dar, cada uno de estos pasos es de la forma `(DIRECCION, SITUACION)`, por ejemplo `(R,S)` dice que el movimiento es a la *derecha=*`RIGHT` y la situacion es *segura=*`S`.(Para completar la dirección puede ser: `R`*=derecha*, `L`*=izquierda*, `D`*=abajo*, `U`*=arriba*; la situación puede ser: `M`*=mina*, `D`*=documento*, `S`*=segura*)
-Realiza el (los) procesos recursivos necesarios, para que dado un campo minado, la ubicación de los exploradores, la ubicación de los documentos; se encuentre el camino “más” seguro de exploración.
+Para aclarar, en el camino se tiene una lista de pasos que deben dar, cada uno de estos pasos es de la forma `(DIRECCION, SITUACION)`, por ejemplo `(R,S)` dice que el movimiento es a la *derecha=*`RIGHT` y la situacion es *segura=*`S`. 
+
+Para completar la dirección puede ser: `R`*=derecha*, `L`*=izquierda*, `D`*=abajo*, `U`*=arriba*; la situación puede ser: `M`*=mina*, `D`*=documento*, `S`*=segura*
+
+Realizar el (los) procesos recursivos necesarios, para que, dado un campo minado, la ubicación de los exploradores y la ubicación de los documentos; se encuentre el camino “más” seguro de exploración.
