@@ -28,11 +28,11 @@ cifras decimales (si es necesario).
 ### Ejercicio 5
 
 Se tiene el siguiente problema problemático, de generar una cadena parsimoniosa y armoniosa que va así:
-> parmoniosa(1) =       **\/**
+> parmoniosa(1) = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \*\*\\/\*\*
 
-> parmoniosa(2) =    ++\**\/**/++
+> parmoniosa(2) = &nbsp;&nbsp;&nbsp;&nbsp;++\\\*\*\\/\*\*/++
 
-> parmoniosa(3) = **\++\**\/**/++/**
+> parmoniosa(3) = \*\*\\++\\\*\*\\/\*\*/++/\*\*
 
 Se te pide encontrar la solución recursiva para parmoniosa(n).
 
