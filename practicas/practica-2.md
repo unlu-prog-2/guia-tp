@@ -256,7 +256,7 @@ Tomando en cuenta el ejemplo anterior, el camino más seguro sería:
 
 > (R, S); (D, S); (D, S); (D, S); (R, S); (R, S); (R, D)
 
-En este caso se ha encontrado un camino sin minas, pero en caso de que no exista tal camino, se debe devolver el camino que tiene menos minas e informar dónde estan para que los exploradores tengan cuidado.
+En este caso se ha encontrado un camino sin minas, pero en caso de que no exista tal camino, se debe devolver el camino que tiene menos minas e informar dónde están para que los exploradores tengan cuidado.
 
 Para aclarar, en el camino se tiene una lista de pasos que deben dar, cada uno de estos pasos es de la forma `(DIRECCION, SITUACION)`, por ejemplo `(R,S)` dice que el movimiento es a la *derecha=*`RIGHT` y la situacion es *segura=*`S`. 
 
