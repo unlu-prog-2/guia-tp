@@ -99,13 +99,14 @@ Por ejemplo:
 
 ### Ejercicio 9
 
-En la química orgánica se tienen cadenas de Carbono e Hidrógeno juntos, que forman distintas clases de alcanos; que se
+En la química orgánica se tienen cadenas de Carbono e Hidrógeno juntos, que forman distintas clases de alcanos, que se
 diferencian unos de otros por la cantidad de carbonos que existen. La forma de encontrar además la nominación correcta
 es considerando la cadena lineal más larga que se pueda tener, la misma que da la nominación básica y encima de esa se
 obtienen otras más, que se basan en las ramificaciones existentes sobre la cadena lineal principal. Lo importante por el
-momento es identificar la cadena lineal de carbono más larga que se pueda hallar en una composición. Se pide, dada una
-composición, representada en una matriz de símbolos {C,.}, encontrar la cadena lineal más larga de carbonos; para ello
-debes plantear un algoritmo recursivo.
+momento es identificar la cadena lineal de carbono más larga que se pueda hallar en una composición.
+
+Dada una composición representada en una matriz de símbolos {`C`, `.`}, se pide escribir un algoritmo recursivo para
+encontrar la cadena lineal más larga de carbonos. La cadena siempre empieza en la posición (1, 1).
 
 Por ejemplo, se tiene la composición:
 
@@ -121,7 +122,7 @@ Por ejemplo, se tiene la composición:
 
 ### Ejercicio 10
 
-Definir una función recursiva que dado un conjunto devuelva una lista con los subconjuntos
+Definir una función recursiva que dado un conjunto de números naturales devuelva una lista con los subconjuntos
 del mismo tales que la suma de los elementos de cada subconjunto sumen una cantidad dada.
 
 Por ejemplo: 
