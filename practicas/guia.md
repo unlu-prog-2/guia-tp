@@ -8,7 +8,7 @@ Cursada 2022 – 1º cuatrimestre
 
 [Práctica 2 - Recursividad](practica-2.md) - <del>(Entrega: 08/04)</del> [VENCIDO]
 
-[Práctica 3 - Listas](practica-3.md) - (Entrega: 20/04)
+[Práctica 3 - Listas](practica-3.md) - (Entrega: 22/04)
 
 <!---
 [Práctica 4 - Pilas](practica-4.md)
