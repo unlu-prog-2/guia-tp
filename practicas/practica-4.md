@@ -133,3 +133,20 @@ Ejemplo
 > mcd(8, 4)  
 > mcd(12, 8)  
 > mcd(20, 12)  
+
+<!--
+### Ejercicio 11
+
+Programar un TAD llamado UNO que implemente algunas funcionalidades del juego UNO con unas reglas simplificadas.
+Es necesario implentar una pila con las cartas del mazo, una lista de cartas para cada jugador y una pila de cartas donde se van ubicando las cartas que se juegan.
+Las reglas para jugar:
+- Se arma una pila inicializada con una carta al azar.
+- Cada jugador tiene que ubicar una de sus cartas en la pila central siempre y cuando la carta sea del mismo color o valor numérico que la carta de la cima de la pila central.
+- Si el jugador no puede ubicar una carta, debe agarrar cartas del maso, una a una, hasta que encuentre una que pueda ubicar en la pila central.
+
+Se pide implementar:
+  UNO.puedeUbicar(mano: ListaDeCartas): boolean; -> esta función retorna `true` si en la mano hay alguna carta que se pueda ubicar en la pila central, en caso contrario retornará `false`.
+  UNO.ubicar(mano: ListaDeCartas, carta: posicionLista): boolean; -> esta función controlará si la carta en elegida es ubicable en la pila central y de ser así la apilará. Retornará `true` si la acción fue exitosa, `false`en el caso contrario.
+  UNO.agarrarCarta(mano: ListaDeCartas): posicionLista; -> esta función deberá agarrar cartas del maso hasta que la carta agarrada sea ubicable en la pila central.
+  UNO.topePilaCentral(): carta -> esta función retorna la carta que se encuentra en el tope de la pila de cartas central.
+-->
