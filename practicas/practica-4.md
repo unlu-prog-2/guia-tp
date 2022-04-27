@@ -147,6 +147,7 @@ Las reglas para jugar:
 - Si el jugador no puede ubicar una carta, debe agarrar cartas del maso, una a una, hasta que encuentre una que pueda ubicar en la pila central.
 
 Se pide implementar:
+  UNO.iniciarJuego(): ListaDecartas; -> esta función inicializa las funciones del juego. Mezcla el maso, inicializa la pila central con la 1er carta del maso y genera la lista de cartas que será la mano de un jugador. Esta lista de cartas se formará por las 5 cartas siguientes del maso.
   UNO.puedeUbicar(mano: ListaDeCartas): boolean; -> esta función retorna `true` si en la mano hay alguna carta que se pueda ubicar en la pila central, en caso contrario retornará `false`.
   UNO.ubicar(mano: ListaDeCartas, carta: posicionLista): boolean; -> esta función controlará si la carta en elegida es ubicable en la pila central y de ser así la apilará. Retornará `true` si la acción fue exitosa, `false`en el caso contrario.
   UNO.agarrarCarta(mano: ListaDeCartas): posicionLista; -> esta función deberá agarrar cartas del maso hasta que la carta agarrada sea ubicable en la pila central.
