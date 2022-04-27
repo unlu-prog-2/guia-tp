@@ -47,20 +47,12 @@ Determinar la complejidad algorítmica de la solución.
 
 ### Ejercicio 3
 
-Construir un algoritmo que, utilizando el TAD Pila, permita convertir un número
-decimal pasado como parámetro, a su correspondiente valor expresado en una base
-de 2 a 16 (hexadecimal).
-
-Determinar la complejidad algorítmica de la solución.
-
-### Ejercicio 4
-
 Invertir el contenido de una pila sin destruir la pila original. Se debe
 retornar la nueva pila invertida y la original no se debe perder.
 
 Determinar la complejidad algorítmica de la solución.
 
-### Ejercicio 5
+### Ejercicio 4
 
 Dada una pila con valores al azar eliminar todas las ocurrencias de un
 determinado ítem sin perder la pila original. Deberá retornar una nueva pila sin
@@ -71,7 +63,7 @@ Determinar la complejidad algorítmica de ambas soluciones.
 > Ejemplo: si `P` contiene `(A, B, A, C, D, A, F)` y el ítem a eliminar es `A`
 > entonces la pila resultante sería `(B, C, D, F)`.
 
-### Ejercicio 6
+### Ejercicio 5
 
 Dada una pila con valores al azar realizar una operación que permite insertar un
 ítem en una determinada posición ordinal. El proceso recibe la Pila, el dato a
@@ -81,7 +73,7 @@ Determinar la complejidad algorítmica de la solución.
 
 > Ejemplo: si `P` contiene `(A, B, C, D, F)` y el ítem a insertar es `E` en la posición `5` entonces la pila resultante sería `(A, B, C, D, E, F)`.
 
-### Ejercicio 7
+### Ejercicio 6
 
 Dada dos pilas realizar una operación que permite determinar si poseen los
 mismos elementos sin importar sus posiciones, ni sus repeticiones. El proceso
@@ -95,7 +87,7 @@ Determinar la complejidad algorítmica de la solución.
 
 ## Ejercicios para entregar
 
-### Ejercicio 8
+### Ejercicio 7
 
 Generar un algoritmo que determine si los paréntesis de una expresión matemática
 son correctos, validando que la expresión sea correcta. Determinar la
@@ -112,20 +104,21 @@ Ejemplos:
 * `(k*g) / ) (r + s)` = Incorrecto
 * `(ab)` = Incorrecto (falta un operador)
 
+### Ejercicio 8
+
+Verificar si el contenido de una pila de caracteres es un palíndromo, sin destruir la pila original.
+
+**Determinar la complejidad algorítmica de la solución.**
+
 ### Ejercicio 9
-
-Verificar si el contenido de una pila de caracteres es un palíndromo, sin 
-destruir la pila original.
-
-
-### Ejercicio 10
 
 Dado un número decimal `n` y una base `b` (entre 2 y 16), convertir `n` a su 
 representación 
 en base `b` utilizando una pila como estructura de soporte.
 
+**Determinar la complejidad algorítmica de la solución.**
 
-### Ejercicio 11
+### Ejercicio 10
 
 Dado el ejercicio 2 de la práctica de recursividad (cálculo del máximo común 
 dividir) utilizar una pila para guardar cada vez que se hace una llamada 
