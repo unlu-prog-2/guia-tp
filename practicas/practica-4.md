@@ -139,6 +139,8 @@ Ejemplo
 
 Programar un TAD llamado UNO que implemente algunas funcionalidades del juego UNO con unas reglas simplificadas.
 Es necesario implentar una pila con las cartas del mazo, una lista de cartas para cada jugador y una pila de cartas donde se van ubicando las cartas que se juegan.
+El mazo del UNO está compuesto de cuatro colores: *azul, verde, rojo y amarillo*. Las cartas comunes van del *1 al 9* y cada color tiene repetido 2 veces cada número, menos el *cero* que viene una sola vez en cada color.
+
 Las reglas para jugar:
 - Se arma una pila inicializada con una carta al azar.
 - Cada jugador tiene que ubicar una de sus cartas en la pila central siempre y cuando la carta sea del mismo color o valor numérico que la carta de la cima de la pila central.
