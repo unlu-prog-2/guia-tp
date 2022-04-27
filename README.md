@@ -2,7 +2,7 @@
 
 Docentes
 * Mario Perello
-* Pablo Chale
-* Mariano Goldman
+* [Pablo Chale](pcchale@gmail.com)
+* [Mariano Goldman](marianogoldman@gmail.com)
 
 [Guía de trabajos prácticos](practicas/guia.md)
