@@ -138,18 +138,23 @@ Ejemplo
 ### Ejercicio 11
 
 Programar un TAD llamado UNO que implemente algunas funcionalidades del juego UNO con unas reglas simplificadas.
-Es necesario implentar una pila con las cartas del mazo, una lista de cartas para cada jugador y una pila de cartas donde se van ubicando las cartas que se juegan.
+Es necesario implementar una pila con las cartas del mazo, una lista de cartas para cada jugador y una pila de cartas donde se van ubicando las cartas que se juegan.
 El mazo del UNO está compuesto de cuatro colores: *azul, verde, rojo y amarillo*. Las cartas comunes van del *1 al 9* y cada color tiene repetido 2 veces cada número, menos el *cero* que viene una sola vez en cada color.
 
 Las reglas para jugar:
 - Se arma una pila inicializada con una carta al azar.
 - Cada jugador tiene que ubicar una de sus cartas en la pila central siempre y cuando la carta sea del mismo color o valor numérico que la carta de la cima de la pila central.
-- Si el jugador no puede ubicar una carta, debe agarrar cartas del maso, una a una, hasta que encuentre una que pueda ubicar en la pila central.
+- Si el jugador no puede ubicar una carta, debe agarrar cartas del mazo, una a una, hasta que encuentre una que pueda ubicar en la pila central.
 
 Se pide implementar:
-  UNO.iniciarJuego(): ListaDecartas; -> esta función inicializa las funciones del juego. Mezcla el maso, inicializa la pila central con la 1er carta del maso y genera la lista de cartas que será la mano de un jugador. Esta lista de cartas se formará por las 5 cartas siguientes del maso.
-  UNO.puedeUbicar(mano: ListaDeCartas): boolean; -> esta función retorna `true` si en la mano hay alguna carta que se pueda ubicar en la pila central, en caso contrario retornará `false`.
-  UNO.ubicar(mano: ListaDeCartas, carta: posicionLista): boolean; -> esta función controlará si la carta en elegida es ubicable en la pila central y de ser así la apilará. Retornará `true` si la acción fue exitosa, `false`en el caso contrario.
-  UNO.agarrarCarta(mano: ListaDeCartas): posicionLista; -> esta función deberá agarrar cartas del maso hasta que la carta agarrada sea ubicable en la pila central.
-  UNO.topePilaCentral(): carta -> esta función retorna la carta que se encuentra en el tope de la pila de cartas central.
+
+  `UNO.iniciarJuego(): ListaDeCartas;` esta función inicializa las funciones del juego. Mezcla el mazo, inicializa la pila central con la primera carta del mazo y genera la lista de cartas que será la mano de un jugador. Esta lista de cartas se formará por las 5 cartas siguientes del mazo.
+
+  `UNO.puedeUbicar(mano: ListaDeCartas): Boolean;` -> esta función retorna `true` si en la mano hay alguna carta que se pueda ubicar en la pila central, en caso contrario retornará `false`.
+
+  `UNO.ubicar(mano: ListaDeCartas, carta: PosicionLista): Boolean;` -> esta función controlará si la carta elegida es ubicable en la pila central y de ser así la apilará. Retornará `true` si la acción fue exitosa, `false` en el caso contrario.
+
+  `UNO.agarrarCarta(mano: ListaDeCartas): PosicionLista;` -> esta función deberá agarrar cartas del mazo hasta que la carta agarrada sea ubicable en la pila central.
+
+  `UNO.topePilaCentral(): Carta;` -> esta función retorna la carta que se encuentra en el tope de la pila de cartas central.
 -->
