@@ -120,10 +120,7 @@ en base `b` utilizando una pila como estructura de soporte.
 
 ### Ejercicio 10
 
-Dado el ejercicio 2 de la práctica de recursividad (cálculo del máximo común 
-dividir) utilizar una pila para guardar cada vez que se hace una llamada 
-recursiva. Al finalizar y hallar el resultado mostrar en pantalla el 
-árbol de llamadas.
+Construir un algoritmo recursivo que permita determinar el máximo común divisor. Utilizar una pila para guardar la signatura de la llamada a la función cada vez que se hace una llamada recursiva. Al finalizar y hallar el resultado mostrar en pantalla la pila de llamadas.
 
 Ejemplo
 > Al calcular el máximo común divisor entre 20 y 12.  
@@ -148,13 +145,13 @@ Las reglas para jugar:
 
 Se pide implementar:
 
-  `UNO.iniciarJuego(): ListaDeCartas;` esta función inicializa las funciones del juego. Mezcla el mazo, inicializa la pila central con la primera carta del mazo y genera la lista de cartas que será la mano de un jugador. Esta lista de cartas se formará por las 5 cartas siguientes del mazo.
+  `UNO.iniciarJuego(): ListaDeCartas;` inicializa las funciones del juego. Mezcla el mazo, inicializa la pila central con la primera carta del mazo y genera la lista de cartas que será la mano de un jugador. Esta lista de cartas se formará por las 5 cartas siguientes del mazo.
 
-  `UNO.puedeUbicar(mano: ListaDeCartas): Boolean;` -> esta función retorna `true` si en la mano hay alguna carta que se pueda ubicar en la pila central, en caso contrario retornará `false`.
+  `UNO.puedeUbicar(mano: ListaDeCartas): Boolean;` retorna `true` si en la mano hay alguna carta que se pueda ubicar en la pila central, en caso contrario retornará `false`.
 
-  `UNO.ubicar(mano: ListaDeCartas, carta: PosicionLista): Boolean;` -> esta función controlará si la carta elegida es ubicable en la pila central y de ser así la apilará. Retornará `true` si la acción fue exitosa, `false` en el caso contrario.
+  `UNO.ubicar(mano: ListaDeCartas, carta: PosicionLista): Boolean;` controla si la carta elegida es ubicable en la pila central y de ser así la apilará. Retornará `true` si la acción fue exitosa, `false` en el caso contrario.
 
-  `UNO.agarrarCarta(mano: ListaDeCartas): PosicionLista;` -> esta función deberá agarrar cartas del mazo hasta que la carta agarrada sea ubicable en la pila central.
+  `UNO.agarrarCarta(mano: ListaDeCartas): PosicionLista;` agarrar cartas del mazo hasta encontrar una carta ubicable en la pila central.
 
-  `UNO.topePilaCentral(): Carta;` -> esta función retorna la carta que se encuentra en el tope de la pila de cartas central.
+  `UNO.topePilaCentral(): Carta;` retorna la carta que se encuentra en el tope de la pila de cartas central.
 -->
