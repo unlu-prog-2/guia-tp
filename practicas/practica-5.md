@@ -7,7 +7,7 @@ y luego la obtención del resultado.**
 
 ## Para empezar a trabajar
 
-Construir el TAD de pilas correspondientes a las implementaciones de “Arreglos”,
+Construir el TAD de colas correspondientes a las implementaciones de “Arreglos”,
 “Punteros” y “Cursores” teniendo en cuenta:
 
 - Definir las estructuras de datos en función a las especificaciones dadas en
@@ -49,13 +49,13 @@ Determinar la complejidad algorítmica de la solución.
 
 ### Ejercicio 3
 
-Dada una cola de números enteros, ordenada, construir un algoritmo que permita
+Dada una cola de números enteros, **no** ordenada, construir un algoritmo que permita
 pasar a otra cola todos los elementos que no se repiten en la primera, sin destruir el
 contenido de la cola original y dejándola en su estado inicial.
 
 Determinar la complejidad algorítmica de la solución.
 
-> Ejemplo: si `C` contiene `(5, 6, 8, 8, 12, 12)` la cola resultado del proceso sería `(5, 6)`.
+> Ejemplo: si `C` contiene `(12, 6, 8, 5, 8, 12, 12)` la cola resultado del proceso sería `(6, 5)`.
 
 
 ### Ejercicio 4
@@ -70,6 +70,8 @@ Determinar la complejidad algorítmica de la solución.
 porque divide al resto en forma exacta.
 
 
+## Ejercicios para entregar
+
 ### Ejercicio 5
 
 Dada una pila y una cola generada con valores al azar retornar en una lista todos los
@@ -80,14 +82,12 @@ Determinar la complejidad algorítmica de la solución empleada.
 
 > Ejemplo: si `P = (2, 5, 8, 19, 3, 4)` y `C = (4, 18, 12, 5, 6)` la lista tendría `L = (5:2:4, 4:6:1)`.
 
-## Ejercicios para entregar
-
 
 ### Ejercicio 6
 
 Dadas 2 colas cargadas con valores alfanuméricos se pide determinar si ambas
 contienen los mismos elementos. Se considera que contendrán los mismos elementos
-sin importar su posición o las repeticiones.
+sin importar su posición o las repeticiones. No se deben perder las colas originales.
 
 Determinar la complejidad algorítmica de la solución.
 

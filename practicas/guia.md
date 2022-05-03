@@ -12,8 +12,9 @@ Cursada 2022 – 1º cuatrimestre
 
 [Práctica 4 - Pilas](practica-4.md) - (Entrega: 06/05)
 
+[Práctica 5 - Colas](practica-5.md) - (Entrega: a definir)
+
 <!---
-[Práctica 5 - Colas](practica-5.md)
 
 [Práctica 6 - Árboles](practica-6.md)
 
