@@ -10,13 +10,12 @@ Cursada 2022 – 1º cuatrimestre
 
 [Práctica 3 - Listas](practica-3.md) - <del>(Entrega: 22/04)</del> [VENCIDO]
 
-[Práctica 4 - Pilas](practica-4.md) - (Entrega: 06/05)
+[Práctica 4 - Pilas](practica-4.md) - <del>(Entrega: 06/05)</del> [VENCIDO]
 
-[Práctica 5 - Colas](practica-5.md) - (Entrega: a definir)
+[Práctica 5 - Colas](practica-5.md) - <del>(Entrega: 27/05)</del> [VENCIDO]
 
-<!---
 
-[Práctica 6 - Árboles](practica-6.md)
+[Práctica 6 - Árboles](practica-6.md) - (Entrega: 08/06)
 
 [Práctica 7 - Tablas de hash](practica-7.md)
 
