@@ -17,6 +17,7 @@ Cursada 2022 – 1º cuatrimestre
 
 [Práctica 6 - Árboles](practica-6.md) - (Entrega: 08/06)
 
+<!--
 [Práctica 7 - Tablas de hash](practica-7.md)
 
 [Práctica 8 - Conjuntos](practica-8.md)
