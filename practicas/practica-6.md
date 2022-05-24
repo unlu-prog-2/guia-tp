@@ -90,7 +90,7 @@ A continuación, eliminar los elementos: `18`, `11` y `16`.
 
 Determinar si un árbol binario cargado puede ser un árbol de expresión.
 
-Ver en la bibliografía o PDF de la asignatura qué es un árbol de expresión. También pueden consultarse más detalles en el [siguiente enlace](http://www.dirinfo.unsl.edu.ar/eda/teorias-ant/t10-19-Arboles-de-Expresio%CC%81n.pdf).
+Ver en la bibliografía o PDF de la asignatura qué es un árbol de expresión. También pueden consultarse más detalles en el [siguiente enlace](https://miguelangelperezautomatas.blogspot.com/2019/09/arboles-de-expresiones.html).
 
 Características de un árbol de expresión:
 
