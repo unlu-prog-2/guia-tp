@@ -2,7 +2,7 @@
 
 ## Actividades de Aprendizaje
 
-> Para la resolución de esta práctica ponemos a tu disposición el archivo de encabezados [TP0_Repaso.h](archivos/TP0_Repaso.h "Archivo de encabezado de la Práctica de Repaso del lenguaje C") de tal manera que solo te queda implementar las funciones que te pedimos y alguna forma de probar los algoritmos que escribiste.
+> Para la resolución de esta práctica ponemos a tu disposición el archivo de encabezados [TP0_Repaso.h](C/TP0_Repaso.h "Archivo de encabezado de la Práctica de Repaso del lenguaje C") de tal manera que solo te queda implementar las funciones que te pedimos y alguna forma de probar los algoritmos que escribiste.
 
 ### Ejercicio 1 <a id="EJ1"></a>
 
