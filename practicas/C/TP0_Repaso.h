@@ -37,9 +37,9 @@ struct Jugador {
     int edad, partidosJugados;
 };
 
-struct Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[]);
-struct Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[]);
-float promedioDePartidosJugados(struct Jugador equipo[], int edad);
+struct Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]);
+struct Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
+float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 
 // Ejercicio 5
 

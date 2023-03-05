@@ -54,7 +54,28 @@ bool digitoEnNumero(long n, short d) {
     --------- -
 */
 
-enum Referencia dondeEstaElPuntoBis(struct Punto centroC, int rc, struct Punto p) { };
+enum Referencia dondeEstaElPuntoBis(struct Punto centroC, int rc, struct Punto p) { 
+     enum Referencia ref;
+
+    // calcular la distancia entre el centro de la circunferencia y el punto a evaluar
+    float d = sqrt(pow((p.x - centroC.x), 2) + pow((p.y - centroC.y), 2));
+
+    // evaluar la ubicación del punto con respecto a la circunferencia y asignar la referencia correspondiente
+    if (d == rc)
+    {
+        ref = EN_CIRCUNFERENCIA;
+    }
+    else if (d < rc)
+    {
+        ref = INTERNO;
+    }
+    else
+    {
+        ref = EXTERNO;
+    }
+
+    return ref;
+};
 
 
 /* 

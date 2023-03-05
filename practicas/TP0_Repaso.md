@@ -65,6 +65,19 @@ donde Punto se define así:
     };
 ```
 
+### Casos de Testeo
+
+```C
+    struct Punto centro = {0, 0};
+    struct Punto p1 = {1, 1};
+    struct Punto p2 = {1, 0};
+
+   dondeEstaElPuntoBis(centro, 2, p1) => INTERNO
+   dondeEstaElPuntoBis(centro, 1, p1) => EXTERNO
+   dondeEstaElPuntoBis(centro, 1, p2) => EN_CIRCUNFERENCIA
+```
+
+
 ### Ejercicio 4
 
 Es necesario administrar los datos de los jugadores de un equipo de futbol (nombre, edad, partidosJugados).
@@ -76,22 +89,23 @@ Se pide escribir funciones que informen:
 * La cantidad de partidos jugados en promedio dada una edad.
 
 ```C
-    const TAMANO_STRING = 50;
+    #define TAMANO_STRING 50
+    #define CANT_JUGADORES 11
 
     struct Jugador {
-        char[TAMANO_STRING] nombre;
+        char nombre[TAMANO_STRING];
         int edad, partidosJugados;
     };
 
-    struct Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[]);
-    struct Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[]);
-    float promedioDePartidosJugados(struct Jugador equipo[], int edad);
+    struct Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]);
+    struct Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
+    float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 ```
 
 #### Casos de testeo
 
 ```C
-    struct Jugador equipo[] = {
+    struct Jugador equipo[CANT_JUGADORES] = {
         {"Messi", 34, 800},
         {"Ronaldo", 37, 900},
         {"Neymar Jr.", 29, 500},
@@ -105,9 +119,9 @@ Se pide escribir funciones que informen:
         {"Davies", 20, 100}
     };
     
-    Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[]);
-    Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[]);
-    float promedioDePartidosJugados(struct Jugador equipo[], int edad);
+    char apellidos[CANT_JUGADORES][TAMANO_STRING] jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]) =>
+    char apellidos[CANT_JUGADORES][TAMANO_STRING] jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
+    float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 ```
 
 ### Ejercicio 5
@@ -121,25 +135,24 @@ Se pide escribir funciones que informen:
 * el promedio de habitantes por departamento.
 
 ```C
-    const CANT_PISOS = 8;
-    const CANT_DEPARTAMENTOS = 5;
-    const CANT_VIVIENDAS = CANT_PISOS * CANT_DEPTOS;
+#define CANT_PISOS 8
+#define CANT_DEPARTAMENTOS 5
 
-    struct Vivienda {
-        short piso;
-        char depto;
-    }
+typedef struct ViviendaRep {
+    short piso;
+    char depto;
+} Vivienda;
 
-    int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
-    int cantidadDeViviendasVacias(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
-    float promedioHabitantesPorVivienda(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
-    Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
+int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
+int cantidadDeViviendasVacias(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
+float promedioHabitantesPorVivienda(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
+Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 ```
 
 #### Casos de testeo
 
 ```C
-    int edificio[PISOS][DEPARTAMENTOS] = {
+    int edificio[CANT_PISOS][CANT_DEPARTAMENTOS] = {
         {3, 5, 2, 1, 0},
         {2, 4, 3, 0, 2},
         {1, 0, 1, 2, 1},
@@ -164,12 +177,15 @@ El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados
 
 A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente contenido:
 
-Cliente Anio    Mes Minutos_Trabajados
-2019    1000    50  1001
-1000    2019    01  50
-1001    2020    02  120
-1001    2021    03  96
-1001    2022    01  48
+```
+    // Cliente Anio    Mes Minutos_Trabajados
+        2019    1000    50  1001
+        1000    2019    01  50
+        1001    2020    02  120
+        1001    2021    03  96
+        1001    2022    01  48
+    ...
+```
 
 La tabla a producir por el programa debería ser:
 
@@ -178,7 +194,7 @@ La tabla a producir por el programa debería ser:
 | 1000            | 50   |      |      |      |
 | 1001            |      | 120  | 95   | 48   |
 
-Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre practica-0-ejercicio-11.txt que contiene aprox. unas 400.000 filas a procesar.
+Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [c/archivos/TP_0_EJ6.txt](TP_0_EJ6.txt) que contiene aprox. unas 400.000 filas a procesar.
 
 ---
 
