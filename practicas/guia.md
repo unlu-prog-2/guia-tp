@@ -2,7 +2,7 @@
 
 ## Cursada 2023 – 1º cuatrimestre
 
-* [Práctica de repaso - Introducción a C](TP0_Repaso.md "Acceso a los enunciados de la Práctica")
+* [Práctica de repaso - Introducción a C](TP0_Repaso.html "Acceso a los enunciados de la Práctica")
 
 <!--
 [Práctica 1 - Introducción a los TAD](practica-1.md)
