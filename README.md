@@ -1,6 +1,7 @@
-# Programación II - UNLu - Chivilcoy
+# Programación II - UNLu
 
 Docentes
+
 * Mario Perello
 * Pablo Chale (email: pcchale@gmail.com)
 * Jose Racker (email: jeracker@yahoo.com.ar)

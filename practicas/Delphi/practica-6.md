@@ -104,7 +104,7 @@ Características de un árbol de expresión:
 - Un nodo puede contener como hijo un subárbol que contiene una pequeña expresión.
 - Los paréntesis no se representan porque no son necesarios.
 
-## Ejercicios Obligatorios.
+## Ejercicios Obligatorios
 
 ### Ejercicio 7
 

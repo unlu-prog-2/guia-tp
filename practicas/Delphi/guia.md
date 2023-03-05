@@ -1,10 +1,9 @@
-# GUÍA DE TRABAJOS PRÁCTICOS
+GUÍA DE TRABAJOS PRÁCTICOS
 
-## Cursada 2023 – 1º cuatrimestre
+Cursada 2022 – 1º cuatrimestre
 
-* [Práctica de repaso - Introducción a C](C/TP0_Repaso.md "Acceso a la Práctica")
+[Práctica de repaso - Introducción a Delphi](practica-repaso.md)
 
-<!--
 [Práctica 1 - Introducción a los TAD](practica-1.md)
 
 [Práctica 2 - Recursividad](practica-2.md)
@@ -20,4 +19,3 @@
 [Práctica 7 - Tablas de hash](practica-7.md)
 
 [Práctica 8 - Conjuntos](practica-8.md)
--->
