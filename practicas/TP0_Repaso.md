@@ -39,7 +39,7 @@ enum Referencia dondeEstaElPunto(int xc, int yc, int rc, int xp, int yp);
 Necesitamos una función que reciba un valor entero `n` y un dígito `d` (entero entre 0 y 9), y confirme que dicho dígito `d` está (o no) entre los del número `n`.
 
 ```C
-Boolean digitoEnNumero(long n, short d);
+bool digitoEnNumero(long n, short d);
 ```
 
 #### Casos de testeo
@@ -77,15 +77,14 @@ donde Punto se define así:
    dondeEstaElPuntoBis(centro, 1, p2) => EN_CIRCUNFERENCIA
 ```
 
-
 ### Ejercicio 4
 
 Es necesario administrar los datos de los jugadores de un equipo de futbol (nombre, edad, partidosJugados).
 
 Se pide escribir funciones que informen:
 
-* Los nombres de los jugadores ordenados desde el que más partidos jugó hasta el que menos.
-* Los nombres de los jugadores ordenados desde el más joven al más grande.
+* Los apellidos de los jugadores ordenados desde el que más partidos jugó hasta el que menos.
+* Los apellidos de los jugadores ordenados desde el más joven al más grande.
 * La cantidad de partidos jugados en promedio dada una edad.
 
 ```C
@@ -97,8 +96,8 @@ Se pide escribir funciones que informen:
         int edad, partidosJugados;
     };
 
-    struct Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]);
-    struct Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
+    char *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]);
+    char *jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
     float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 ```
 
@@ -119,9 +118,11 @@ Se pide escribir funciones que informen:
         {"Davies", 20, 100}
     };
     
-    char apellidos[CANT_JUGADORES][TAMANO_STRING] jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]) =>
-    char apellidos[CANT_JUGADORES][TAMANO_STRING] jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
-    float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
+    jugadoresOrdenadosPorCantDePartidos(equipo) => {"Ronaldo", "Messi", "Neuer", "Lewandowski", "Ramos", "De Bruyne", "Neymar Jr.", "Salah", "van Dijk", "Mbappe", "Davies"}
+
+    jugadoresOrdenadosPorEdad(equipo); => {"Davies", "Mbappe", "Neymar Jr.", "Salah", "De Bruyne", "van Dijk", "Messi", "Ramos", "Neuer", "Lewandowski", "Ronaldo"}
+
+    promedioDePartidosJugados(equipo, 35); => 725.0 
 ```
 
 ### Ejercicio 5
