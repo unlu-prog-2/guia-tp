@@ -174,14 +174,14 @@ Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 
 Dado un archivo de texto que contiene datos de minutos trabajos por personal de una consultora de sistemas informáticos a diferentes clientes, se pide obtener los totales por cliente/año en forma de grilla como se muestra debajo.
 
-El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un “Tabulador”.
+El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un ***Tabulador***.
 
 A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente contenido:
 
-```
+```txt
     // Cliente Anio    Mes Minutos_Trabajados
-        2019    1000    50  1001
-        1000    2019    01  50
+        1000    2019    01  1001
+        1000    2019    02  50
         1001    2020    02  120
         1001    2021    03  96
         1001    2022    01  48
@@ -195,7 +195,7 @@ La tabla a producir por el programa debería ser:
 | 1000            | 50   |      |      |      |
 | 1001            |      | 120  | 95   | 48   |
 
-Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [c/archivos/TP_0_EJ6.txt](TP_0_EJ6.txt) que contiene aprox. unas 400.000 filas a procesar.
+Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [TP0_EJ6.txt](c/archivos/TP0_EJ6.txt) que contiene aprox. unas 400.000 filas a procesar.
 
 ---
 
