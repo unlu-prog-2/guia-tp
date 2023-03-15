@@ -17,10 +17,12 @@ Informe si el punto `(xp, yp)` está ubicado sobre la circunferencia, o dentro o
 Nota: Se utilizará un enumerado Referencia que incluirá las opciones INTERNO, EXTERNO y EN_CIRCUNFERENCIA.
 
 ```C
-enum Referencia {
-    INTERNO, // el punto está dentro del círculo
-    EXTERNO, // el punto está fuera del círculo
-    EN_CIRCUNFERENCIA // el punto está en la circunferencia
+
+enum Referencia
+{
+    INTERNO = -1, // el punto está dentro del círculo
+    EN_CIRCUNFERENCIA, // el punto está en la circunferencia
+    EXTERNO // el punto está fuera del círculo
 };
 
 enum Referencia dondeEstaElPunto(int xc, int yc, int rc, int xp, int yp);
@@ -83,8 +85,8 @@ Es necesario administrar los datos de los jugadores de un equipo de futbol (nomb
 
 Se pide escribir funciones que informen:
 
-* Los apellidos de los jugadores ordenados desde el que más partidos jugó hasta el que menos.
-* Los apellidos de los jugadores ordenados desde el más joven al más grande.
+* Los jugadores ordenados desde el que más partidos jugó hasta el que menos.
+* Los jugadores ordenados desde el más joven al más grande.
 * La cantidad de partidos jugados en promedio dada una edad.
 
 ```C
@@ -118,7 +120,7 @@ Se pide escribir funciones que informen:
         {"Davies", 20, 100}
     };
     
-    jugadoresOrdenadosPorCantDePartidos(equipo) => {"Ronaldo", "Messi", "Neuer", "Lewandowski", "Ramos", "De Bruyne", "Neymar Jr.", "Salah", "van Dijk", "Mbappe", "Davies"}
+    jugadoresOrdenadosPorCantDePartidos(equipo); => {"Ronaldo", "Messi", "Neuer", "Lewandowski", "Ramos", "De Bruyne", "Neymar Jr.", "Salah", "van Dijk", "Mbappe", "Davies"}
 
     jugadoresOrdenadosPorEdad(equipo); => {"Davies", "Mbappe", "Neymar Jr.", "Salah", "De Bruyne", "van Dijk", "Messi", "Ramos", "Neuer", "Lewandowski", "Ronaldo"}
 

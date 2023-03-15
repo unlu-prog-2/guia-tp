@@ -121,7 +121,25 @@ fecha_nombreMes(f1); => "Enero"
 
 ## Ejercicio 3
 
-Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal. Una caja permite:
+Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal.
+
+```C
+    struct Contenedor {
+        float denominacion;
+        unsigned int cantidad;
+    };
+
+    struct CajaRegistradora {
+        struct Contenedor contenedores[];
+    };
+```
+
+El TAD debe disponer de las siguientes operaciones:
+
+```C
+struct contenedor contenedor_crear(float denominacion, unsigned int cantidad);
+
+struct contenedor contenedor_crear(float denominacion, unsigned int cantidad);
 
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
