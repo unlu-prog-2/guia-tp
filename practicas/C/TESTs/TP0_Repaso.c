@@ -1,7 +1,7 @@
 #include <math.h>
-#include <stdio.h>
 
 #include <stdbool.h>
+#include <stdlib.h>
 
 #include "../TP0_Repaso.h"
 
@@ -15,7 +15,7 @@ enum Referencia dondeEstaElPunto(int xc, int yc, int rc, int xp, int yp)
     enum Referencia ref;
 
     // calcular la distancia entre el centro de la circunferencia y el punto a evaluar
-    float d = sqrt(pow((xp - xc), 2) + pow((yp - yc), 2));
+    double d = sqrt(pow((xp - xc), 2) + pow((yp - yc), 2));
 
     // evaluar la ubicación del punto con respecto a la circunferencia y asignar la referencia correspondiente
     if (d == rc)
@@ -44,7 +44,7 @@ bool digitoEnNumero(long n, short d)
 
     while (n != 0 && !encontroDigito)
     {
-        short digito = n % 10;
+        long digito = n % 10;
         encontroDigito = (digito == d);
         n /= 10;
     }
@@ -61,7 +61,7 @@ enum Referencia dondeEstaElPuntoBis(struct Punto centroC, int rc, struct Punto p
     enum Referencia ref;
 
     // calcular la distancia entre el centro de la circunferencia y el punto a evaluar
-    float d = sqrt(pow((p.x - centroC.x), 2) + pow((p.y - centroC.y), 2));
+    double d = sqrt(pow((p.x - centroC.x), 2) + pow((p.y - centroC.y), 2));
 
     // evaluar la ubicación del punto con respecto a la circunferencia y asignar la referencia correspondiente
     if (d == rc)
@@ -78,7 +78,7 @@ enum Referencia dondeEstaElPuntoBis(struct Punto centroC, int rc, struct Punto p
     }
 
     return ref;
-};
+}
 
 /*
     Ejercicio 4
@@ -99,15 +99,6 @@ int cmpEdad(const void *a, const void *b)
     struct Jugador *jugadorA = (struct Jugador *)a;
     struct Jugador *jugadorB = (struct Jugador *)b;
     return jugadorA->edad - jugadorB->edad;
-}
-
-// Función para imprimir los nombres de los jugadores
-void imprimirNombres(struct Jugador jugadores[])
-{
-    for (int i = 0; i < CANT_JUGADORES; i++)
-    {
-        printf("%s\n", jugadores[i].nombre);
-    }
 }
 
 // Función para ordenar jugadores por cantidad de partidos jugados
