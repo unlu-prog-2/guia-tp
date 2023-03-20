@@ -17,7 +17,7 @@ Crear un TAD `NRacional`.
 El TAD debe disponer de las siguientes operaciones:
 
 ```C
-bool nRacional_crear(int numerador, unsigned int denominador, struct NRacional f);
+bool nRacional_inicializar(int numerador, unsigned int denominador, struct NRacional f);
 
 struct nRacional nRacional_simplificar(struct NRacional f1);
 
@@ -44,10 +44,10 @@ enum COMPARACION nRacional_comparar(struct NRacional f1, struct NRacional f2);
 
 struct NRacional f1, f2, f3;
 
-nRacional_crear(2, 3, f1) => True
-nRacional_crear(4, 5, f2) => True
-nRacional_crear(2, 0, f3) => False
-nRacional_crear(-4, 6, f3) => False
+nRacional_inicializar(2, 3, f1) => True
+nRacional_inicializar(4, 5, f2) => True
+nRacional_inicializar(2, 0, f3) => False
+nRacional_inicializar(-4, 6, f3) => False
 
 nRacional_simplificar(f1); => {2, 3}
 nRacional_simplificar(f3); => {-2, 3}
@@ -80,7 +80,7 @@ Crear un TAD Fecha, compuesta de día, mes y año.
 El TAD debe disponer de las siguientes operaciones:
 
 ```C
-bool Fecha_crear(unsigned short dia, unsigned short mes, unsigned long anio, struct Fecha f);
+bool fecha_inicilizar(unsigned short dia, unsigned short mes, unsigned long anio, struct Fecha f);
 
 struct Fecha fecha_sumarDias(struct fecha f, int dias);
 
@@ -102,10 +102,10 @@ char* fecha_nombreMes(struct fecha f);
 ```C
 struct Fecha fecha1, fecha2, fecha3;
 
-fecha_crear(20,1,2023, f1); => True
-fecha_crear(30,1,2023, f2); => True
-fecha_crear(30,2,2023, f3); => False
-fecha_crear(29,2,2024, f3); => True
+fecha_inicializar(20,1,2023, f1); => True
+fecha_inicializar(30,1,2023, f2); => True
+fecha_inicializar(30,2,2023, f3); => False
+fecha_inicializar(29,2,2024, f3); => True
 
 fecha_sumarDias(f1, 13) => {2,2,2023}
 fecha_distanciaEnDias(f1,f2); => 10
@@ -137,9 +137,9 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 El TAD debe disponer de las siguientes operaciones:
 
 ```C
-struct contenedor contenedor_crear(float denominacion, unsigned int cantidad);
+struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
 
-struct contenedor contenedor_crear(float denominacion, unsigned int cantidad);
+struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
 
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.

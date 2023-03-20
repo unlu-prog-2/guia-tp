@@ -8,9 +8,9 @@
 
 Escribir una función que dadas:
 
-* las coordenadas `(xc, yc)` de un punto que consideramos centro de una circunferencia;
-* el valor del radio de la circunferencia;
-* las coordenadas `(xp, yp)` de un punto del plano;
+- las coordenadas `(xc, yc)` de un punto que consideramos centro de una circunferencia;
+- el valor del radio de la circunferencia;
+- las coordenadas `(xp, yp)` de un punto del plano;
 
 Informe si el punto `(xp, yp)` está ubicado sobre la circunferencia, o dentro o fuera del círculo.
 
@@ -85,9 +85,9 @@ Es necesario administrar los datos de los jugadores de un equipo de futbol (nomb
 
 Se pide escribir funciones que informen:
 
-* Los jugadores ordenados desde el que más partidos jugó hasta el que menos.
-* Los jugadores ordenados desde el más joven al más grande.
-* La cantidad de partidos jugados en promedio dada una edad.
+- Los jugadores ordenados desde el que más partidos jugó hasta el que menos.
+- Los jugadores ordenados desde el más joven al más grande.
+- La cantidad de partidos jugados en promedio dada una edad.
 
 ```C
     #define TAMANO_STRING 50
@@ -98,8 +98,8 @@ Se pide escribir funciones que informen:
         int edad, partidosJugados;
     };
 
-    char *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]);
-    char *jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
+    struct Jugador *jugadoresOrdenadosPorCantDePartidos(struct Jugador equipo[CANT_JUGADORES]);
+    struct Jugador *jugadoresOrdenadosPorEdad(struct Jugador equipo[CANT_JUGADORES]);
     float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 ```
 
@@ -119,12 +119,38 @@ Se pide escribir funciones que informen:
         {"Neuer", 35, 800},
         {"Davies", 20, 100}
     };
+
+    jugadoresOrdenadosPorCantDePartidos(equipo); =>
+                {
+                    {"Ronaldo", 37, 900},
+                    {"Messi", 34, 800},
+                    {"Neuer", 35, 800},
+                    {"Lewandowski", 33, 700},
+                    {"Ramos", 35, 650},
+                    {"De Bruyne", 30, 600},
+                    {"Neymar Jr.", 29, 500},
+                    {"Salah", 29, 400},
+                    {"van Dijk", 30, 400},
+                    {"Mbappe", 22, 200},
+                    {"Davies", 20, 100}
+                }
+
+    jugadoresOrdenadosPorEdad(equipo); => 
+                {
+                    {"Davies", 20, 100},
+                    {"Mbappe", 22, 200},
+                    {"Neymar Jr.", 29, 500},
+                    {"Salah", 29, 400},
+                    {"De Bruyne", 30, 600},
+                    {"van Dijk", 30, 400},
+                    {"Lewandowski", 33, 700},
+                    {"Messi", 34, 800},
+                    {"Ramos", 35, 650},
+                    {"Neuer", 35, 800},
+                    {"Ronaldo", 37, 900},
+                }
     
-    jugadoresOrdenadosPorCantDePartidos(equipo); => {"Ronaldo", "Messi", "Neuer", "Lewandowski", "Ramos", "De Bruyne", "Neymar Jr.", "Salah", "van Dijk", "Mbappe", "Davies"}
-
-    jugadoresOrdenadosPorEdad(equipo); => {"Davies", "Mbappe", "Neymar Jr.", "Salah", "De Bruyne", "van Dijk", "Messi", "Ramos", "Neuer", "Lewandowski", "Ronaldo"}
-
-    promedioDePartidosJugados(equipo, 35); => 725.0 
+    promedioDePartidosJugados(equipo, 35); => 725.0
 ```
 
 ### Ejercicio 5
@@ -132,10 +158,10 @@ Se pide escribir funciones que informen:
 Se quiere controlar el número de habitantes de un edificio con 8 pisos y 5 departamentos (A, B, C, D y E) en cada piso.
 Se pide escribir funciones que informen:
 
-* el departamento que más habitantes tiene de todo el edificio.
-* el piso que más habitantes tiene de todo el edificio.
-* las viviendas vacias.
-* el promedio de habitantes por departamento.
+- el departamento que más habitantes tiene de todo el edificio.
+- el piso que más habitantes tiene de todo el edificio.
+- la cantidad de viviendas vacias.
+- el promedio de habitantes por departamento.
 
 ```C
 #define CANT_PISOS 8
@@ -168,7 +194,7 @@ Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 
     pisoConMasHabitantes(edificio) => 2
     cantidadDeViviendasVacias(edificio) => 12
-    promedioHabitantesPorVivienda(edificio) => 1.325     
+    promedioHabitantesPorVivienda(edificio) => 1.325
     viviendaConMasHabitantes(edificio) => 1-B
 ```
 
@@ -176,7 +202,7 @@ Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 
 Dado un archivo de texto que contiene datos de minutos trabajos por personal de una consultora de sistemas informáticos a diferentes clientes, se pide obtener los totales por cliente/año en forma de grilla como se muestra debajo.
 
-El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un ***Tabulador***.
+El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un **_Tabulador_**.
 
 A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente contenido:
 
@@ -193,7 +219,7 @@ A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente conte
 La tabla a producir por el programa debería ser:
 
 | Clientes / Años | 2019 | 2020 | 2021 | 2022 |
-|-----------------|------|------|------|------|
+| --------------- | ---- | ---- | ---- | ---- |
 | 1000            | 50   |      |      |      |
 | 1001            |      | 120  | 95   | 48   |
 
@@ -214,9 +240,9 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 ```C
     int i = 4, x = 5;
     for (i = 0; i < 10; i++) {
-        if ( i < x ) 
+        if ( i < x )
             printf("%d ", i);
-        else 
+        else
             printf("%d ", i-x);
     }
 ```
@@ -291,7 +317,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
     struct medidas{
         int alto, ancho, largo;
     };
-    
+
     void main(void){
         int i;
         struct medidas cajas[5];
@@ -302,6 +328,6 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
         }
         for(i=0;i<5;i++) {
             printf("Medidas de cubilete Nº%d: %d alto, %d ancho, %d largo", cubiletes[i].alto, cubilietes[i].ancho, cubilietes[i].largo);
-        }   
+        }
     }
 ```
