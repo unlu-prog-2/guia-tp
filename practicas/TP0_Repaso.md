@@ -223,7 +223,7 @@ La tabla a producir por el programa debería ser:
 | 1000            | 50   |      |      |      |
 | 1001            |      | 120  | 95   | 48   |
 
-Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [TP0_EJ6.txt](c/archivos/TP0_EJ6.txt) que contiene aprox. unas 400.000 filas a procesar.
+Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [TP0_EJ6.txt](C/archivos/TP0_EJ6.txt) que contiene aprox. unas 400.000 filas a procesar.
 
 ---
 
