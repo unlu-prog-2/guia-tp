@@ -32,4 +32,14 @@ void assert_float_lt(float real, float esperado);
 
 void assert_float_lte(float real, float esperado);
 
+void assert_double_eq(double real, double esperado);
+
+void assert_double_gt(double real, double esperado);
+
+void assert_double_gte(double real, double esperado);
+
+void assert_double_lt(double real, double esperado);
+
+void assert_double_lte(double real, double esperado);
+
 #endif // TP0_ASSERT_H

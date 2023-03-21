@@ -67,3 +67,33 @@ void assert_float_lte(float real, float esperado) {
         printf("%s Valor recibido '%f' NO es menor o igual al esperado '%f'.\n", ERROR, real, esperado);
     }
 }
+
+void assert_double_eq(double real, double esperado) {
+    if (real != esperado) {
+        printf("%s Valor recibido '%f' es distinto al esperado '%f'.\n", ERROR, real, esperado);
+    }
+}
+
+void assert_double_gt(double real, double esperado) {
+    if (real <= esperado) {
+        printf("%s Valor recibido '%f' NO es mayor al esperado '%f'.\n", ERROR, real, esperado);
+    }
+}
+
+void assert_double_gte(double real, double esperado) {
+    if (real < esperado) {
+        printf("%s Valor recibido '%f' NO es mayor o igual al esperado '%f'.\n", ERROR, real, esperado);
+    }
+}
+
+void assert_double_lt(double real, double esperado) {
+    if (real >= esperado) {
+        printf("%s Valor recibido '%f' NO es menor al esperado '%f'.\n", ERROR, real, esperado);
+    }
+}
+
+void assert_double_lte(double real, double esperado) {
+    if (real > esperado) {
+        printf("%s Valor recibido '%f' NO es menor o igual al esperado '%f'.\n", ERROR, real, esperado);
+    }
+}
