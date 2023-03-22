@@ -47,7 +47,7 @@ float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad)
 #define CANT_DEPARTAMENTOS 5
 
 typedef struct ViviendaRep {
-    short piso;
+    int piso;
     char depto;
 } Vivienda;
 

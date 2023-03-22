@@ -28,7 +28,7 @@ Agregar un tercer parámetro para indicar si permite o no repeticiones.
 * Devolución de un `string` con los elementos intercalados con un separador pasado
 como parámetro.
 * Multiplicar el valor de cada posición por un escalar. Por ejemplo `n * []`.  Si es `n=2`, el valor de cada posición será multiplicado por `2`.
-* Permitir sumar este vector con otro igual que sea recibido por parámetro.  La suma se realizar posición a posición.
+* Permitir sumar este vector con otro igual que sea recibido por parámetro.  La suma se realizará posición a posición.
 
 
 ### Ejercicio 3
@@ -77,7 +77,7 @@ Por ejemplo:
 * si el auto ingresa a las 08:00 y se retira a las 12:00 le corresponde "media estadía"
 * si ingresa a las 10:00 y se retira a las 16:00 le corresponde "estadía completa". 
 * sí ingresa 08:45 y se retira a las 10:15 debe abonar por 1 hs 30 minutos.
-* en cambio si ingresa 10:30 y se retira 11:44 debe abonar 1 hs 20 minutos.
+* en cambio, si ingresa 10:30 y se retira 11:44 debe abonar 1 hs 20 minutos.
 
 
 ### Ejercicio 7 (entregable)
@@ -88,7 +88,7 @@ al estacionamiento.  Agregar operaciones para poder dejar en un archivo binario 
 el registro de cada vehículo, horario de ingreso, horario de egreso, la tarifa aplicada 
 (si es por hora, media estadía o estadía completa) y el importe cobrado.
 
-* además se desea dada una fecha determinada poder saber cuánto se percibió por hora, media
+* además, se desea dada una fecha determinada poder saber cuánto se percibió por hora, media
 estadía y estadía completa.
 
 * otra operación que se debe agregar es dado un rango de fechas poder determinar cuánto fue
@@ -106,7 +106,7 @@ Al congelador se le puede:
 
 * Aumentar una cantidad de helado de un determinado sabor, 
 * Consultar si alcanza el helado para crear un cono dados 2 o 3 sabores disponibles,
-* Consultar las combinaciones bochas de helado disponibles para crear conos de ambos tipos.
+* Consultar las combinaciones de bochas de helado disponibles para crear conos de ambos tipos.
 * También se puede servir un helado siempre y cuando haya suficiente cantidad de helado de los sabores deseados.
 
 Cree un TAD para representar un congelador de helados e implemente los métodos indicados.
@@ -122,39 +122,23 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 
 Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de vencimiento y los límites de crédito en una cuota y en cuotas. Este TAD debe permitir:
 * `ValidarNro`: Validar si el número de tarjeta (de 16 dígitos) usando el siguiente algoritmo:
-  -	Duplicar el valor de uno de cada dos dígitos, empezando desde la derecha. Es decir, el último dígito no cambia; el penúltimo es duplicado; el anterior no cambia; y sigue así. Por ejemplo, [1,3,8,6] se vuelve [2,3,16,6].
-  -	Sumar los dígitos de los valores duplicados y los dígitos no duplicados del número original. Por ejemplo, [2,3,16,6] se vuelve 2+3+1+6+6 = 18.
-  -	Calcular el resto cuando esa suma es dividida por 10. En el ejemplo anterior, el resto sería 8.
-  - Si el resultado es 0 entonces el número es válido.
+  -	Duplicar el valor de uno de cada dos dígitos, empezando desde la derecha. Es decir, el último dígito no cambia; el penúltimo es duplicado; el anterior no cambia; y sigue así. Por ejemplo, `[1,3,8,6]` se vuelve `[2,3,16,6]`.
+  -	Sumar los dígitos de los valores duplicados y los dígitos no duplicados del número original. Por ejemplo, `[2,3,16,6]` se vuelve `2+3+1+6+6 = 18`.
+  -	Calcular el resto cuando esa suma es dividida por `10`. En el ejemplo anterior, el resto sería `8`.
+  - Si el resultado es `0` entonces el número es válido.
 * `EntidadEmisora`: El primer/os digito/s, a la izquierda, representa/n la entidad emisora, a saber:
 
-<table border="2" align="center">
-  <tr>  
-  <th> Rangos de INN</th>
-  <th> Emisora</th>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Visa</td>
-  </tr>
-  <tr>
-    <td>2021-2720; 51-55</td>
-    <td>Mastercard</td>
-  </tr>
-   <tr>
-    <td>34-37</td>
-    <td>American Express</td>
-  </tr>    
-  <tr>
-    <td>50, 56-58</td>
-    <td>Maestro</td>
-  </tr>
-</table>
+| Rangos de INN    | Emisora          |
+|------------------|------------------|
+| 4                | VISA             |
+| 2021-2720; 51-55 | Mastercard       |
+| 34-37            | American Express |
+| 50, 56-58        | Maestro          |
 
 * `Comprar`: Se requiere validar la compra, a saber: 
   que el número sea correcto, que la tarjeta no se encuentre vencida y que le alcance el límite de crédito para realizar la compra. 
   
   Una vez aceptado el movimiento, se debe reducir el límite de crédito en una cuota teniendo en cuenta que si la tarjeta es una *Visa* o una *American Express* se descuenta el 80% del monto, en el resto de las tarjetas se descuenta el monto completo. 
-  En cambio si se trata de una compra en cuotas, todas las tarjetas descuentan, en compras hasta 6 cuotas, el 90% del monto adeudado (cuotas de la 2da en adelante) al limite de compras en cuotas, y descuentan del límite de compras en una cuota el monto de la primera cuota. En compras de más de 6 cuotas es igual, salvo que descuentan sólo el 70% de las cuotas adeudas del limite de compra en cuotas.
+  En cambio, si se trata de una compra en cuotas, todas las tarjetas descuentan, en compras hasta 6 cuotas, el 90% del monto adeudado (cuotas de la 2ª en adelante) al límite de compras en cuotas, y descuentan del límite de compras en una cuota el monto de la primera cuota. En compras de más de 6 cuotas es igual, salvo que descuentan solo el 70% de las cuotas adeudas del límite de compra en cuotas.
 
 * `MostrarLimites`: Informar los límites de compras disponibles.

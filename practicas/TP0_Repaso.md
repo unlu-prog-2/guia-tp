@@ -4,7 +4,7 @@
 
 > Para la resolución de esta práctica ponemos a tu disposición el archivo de encabezados [TP0_Repaso.h](C/TP0_Repaso.h "Archivo de encabezado de la Práctica de Repaso del lenguaje C") de tal manera que solo te queda implementar las funciones que te pedimos y alguna forma de probar los algoritmos que escribiste.
 
-### Ejercicio 1 <a id="EJ1"></a>
+### Ejercicio 1
 
 Escribir una función que dadas:
 
@@ -53,7 +53,7 @@ bool digitoEnNumero(long n, short d);
 
 ### Ejercicio 3
 
-Refactorizar el **[Ejercicio 1](#EJ1)** para que los parámetros recibidos sean:
+Refactorizar el **[Ejercicio 1](#ejercicio-1)** para que los parámetros recibidos sean:
 
 ```C
     enum Referencia dondeEstaElPuntoBis(Punto centroC, int rc, Punto p);
@@ -219,7 +219,7 @@ A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente conte
 La tabla a producir por el programa debería ser:
 
 | Clientes / Años | 2019 | 2020 | 2021 | 2022 |
-| --------------- | ---- | ---- | ---- | ---- |
+|-----------------|------|------|------|------|
 | 1000            | 50   |      |      |      |
 | 1001            |      | 120  | 95   | 48   |
 

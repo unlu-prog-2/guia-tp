@@ -66,7 +66,6 @@ existir caracteres como puntos, comas, puntos y comas, dos puntos, etc.
 1. Realizar una rutina que lea el archivo de texto y lo cargue a un control “memo”
 pasando todas las palabras a minúsculas.
 
-
 2. Cargar un vector de String con todas las palabras distintas del archivo. Realizar el
 parsing o split (división palabra por palabra) de cada línea por espacios.
 

@@ -118,7 +118,7 @@ void ejercicio5() {
     printf("cantidadDeViviendasVacias(edificio) =>  %d\n", cantidadDeViviendasVacias(edificio));
     assert_int_eq(cantidadDeViviendasVacias(edificio), 12);
     printf("promedioHabitantesPorVivienda(edificio) %f\n", promedioHabitantesPorVivienda(edificio));
-    assert_float_lt(fabs(promedioHabitantesPorVivienda(edificio) - 1.325f), 0.00001f);
+    assert_double_lt(fabs(promedioHabitantesPorVivienda(edificio) - 1.325), 0.00001);
 
     Vivienda v = viviendaConMasHabitantes(edificio);
     printf("viviendaConMasHabitantes(edificio) =>   %d%c\n", v.piso, v.depto);

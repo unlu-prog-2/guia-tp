@@ -132,7 +132,7 @@ float promedioDePartidosJugados(struct Jugador equipo[], int edad)
     {
         return 0;
     }
-    return (float)totalPartidos / cantJugadores;
+    return (float) totalPartidos / (float) cantJugadores;
 }
 
 /*
@@ -140,24 +140,17 @@ float promedioDePartidosJugados(struct Jugador equipo[], int edad)
     --------- -
 */
 
+const char DEPTOS[5] = "ABCDE";
+
 // Función que devuelve el departamento con más habitantes
-Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS])
-{
-    Vivienda v; // = (Vivienda) malloc(sizeof(struct ViviendaRep));
+Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]) {
+    Vivienda v;
     int maxHabitantes = -1;
-    char deptoConMasHabitantes = ' ';
-    for (int piso = 0; piso < CANT_PISOS; piso++)
-    {
-        for (int depto = 0; depto < CANT_DEPARTAMENTOS; depto++)
-        {
-            if (edificio[piso][depto] > maxHabitantes)
-            {
+    for (int piso = 0; piso < CANT_PISOS; piso++) {
+        for (int depto = 0; depto < CANT_DEPARTAMENTOS; depto++) {
+            if (edificio[piso][depto] > maxHabitantes) {
                 maxHabitantes = edificio[piso][depto];
-                /*Para generar los caracteres que nombran a los dptos le suma la posicion de la columna a la letra A.
-                De tal manera que A + 1 es B, y A + 2 es B.
-                Esto es porque es un char, por lo cual al 97 que es el ASCII de A le suma del 0 al 4 para formar las letras A, B, C, D y E.
-                */
-                v.depto = 'A' + depto;
+                v.depto = DEPTOS[depto];
                 v.piso = piso + 1;
             }
         }
