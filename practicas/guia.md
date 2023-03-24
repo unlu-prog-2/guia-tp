@@ -4,10 +4,11 @@
 
 * [Práctica de repaso - Introducción a C](TP0_Repaso.md)
 
+* [Práctica 1 - Recursividad](TP1_Recursividad.md)
+
 <!--
 [Práctica 1 - Introducción a los TAD](practica-1.md)
 
-[Práctica 2 - Recursividad](practica-2.md)
 
 [Práctica 3 - Listas](practica-3.md)
 
