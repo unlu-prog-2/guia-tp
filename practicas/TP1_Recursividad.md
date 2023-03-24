@@ -73,14 +73,14 @@ Se conoce que la mafia china es muy organizada y protege mucho a sus miembros,
 cuando deciden asistir a una reunión se dispone de una cantidad de chinos que
 asisten, y ellos se ubican de forma que al mirarlos frontalmente generan cierto respeto y temor. A continuación, se tiene una serie de posibles reuniones y su nivel y la apariencia que se tiene del grupo que va a la reunión vistos frontalmente:
 
-```text
+
 | Nivel reunión | Vista frontal de la delegación |
-| ------------- | ------------------------------ |
+| :-----------: | :----------------------------: |
 | 1             |             (-.-)              | 
 | 2             |          (-.(-.-).-)           |
 | 3             |       (-.(-.(-.-).-).-)        |
 | 4             |    (-.(-.(-.(-.-).-).-).-)     |
-```
+
 
 Considerando esta descripción, diseñar los procesos recursivos que permitan mostrar
 la apariencia del grupo de chinos que asisten a una reunión de nivel ´n´
@@ -152,20 +152,27 @@ Escribe una función que retorne una lista con los pedazos del número `n`, dado
 
 Por ejemplo:
 
-Llamado original con `n = 10` y `b = 3` el proceso sería en el siguiente orden
-`n1 = 3` y  `n2 = 7` Como `n2` es mayor 3, explota.
-Llamado recursivo con `n = 7` y `b = 3`: 
+Llamado original con `n = 10` y `b = 3` el proceso sería en el siguiente orden:
+
+* `n1 = 3` y  `n2 = 7` Como `n2` es mayor 3, explota.
+
+* Llamado recursivo con `n = 7` y `b = 3`: 
 `n1 = 2` y  `n2 = 5` Como `n2` es mayor 3, explota.
-Llamado recursivo con `n = 5` y `b = 3`: 
+
+* Llamado recursivo con `n = 5` y `b = 3`: 
 `n1 = 1` y  `n2 = 4` Como `n2` es mayor 3, explota.
-Llamado recursivo con `n = 4` y `b = 3`: 
+
+* Llamado recursivo con `n = 4` y `b = 3`: 
 `n1 = 1` y  `n2 = 3` Como ambos son menores o iguales a 3, se terminan las explosiones.
 
-Segun la pila de ejecuciones, lista resultante sería:
+* Según la pila de ejecuciones, lista resultante sería:
 [3, 7] -> Arrancamos la lista con el 3 (n1 de la llamada original), y el 7 (n2) que explota.
-[3, 2, 5] -> Reemplazamos el 7 por el 2 (n1) y el 5 (n2) que explota.
-[3, 2, 1, 4] -> Reemplazamos el 5 por el 1 (n1) y el 4 (n2) que explota.
-[3, 2, 1, 1, 3] -> Reemplazamos el 4 por el 1 (n1) y el 3 (n2) que explota.
+
+*[3, 2, 5] -> Reemplazamos el 7 por el 2 (n1) y el 5 (n2) que explota.
+
+*[3, 2, 1, 4] -> Reemplazamos el 5 por el 1 (n1) y el 4 (n2) que explota.
+
+* [3, 2, 1, 1, 3] -> Reemplazamos el 4 por el 1 (n1) y el 3 (n2) que explota.
 
 
 ### Casos de testeo

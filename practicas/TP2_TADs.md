@@ -140,6 +140,7 @@ El TAD debe disponer de las siguientes operaciones:
 struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
 
 struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
+```
 
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
