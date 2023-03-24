@@ -158,8 +158,8 @@ Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de ven
   * Si el resultado es 0 entonces el número es válido.
 * `EntidadEmisora`: El primer/os digito/s, a la izquierda, representa/n la entidad emisora, a saber:
 
-| Rangos de INN | Emisora |
-| :--: | :--: |
+| Rangos de INN    | Emisora            |
+| :--:             | :--:               |
 | 4                | *Visa*             |
 | 2021-2720; 51-55 | *Mastercard*       |
 | 34-37            | *American Express* |
@@ -168,5 +168,5 @@ Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de ven
 * `Comprar`: Se requiere validar la compra, a saber:
   * que el número sea correcto, que la tarjeta no se encuentre vencida y que le alcance el límite de crédito para realizar la compra.
   * Una vez aceptado el movimiento, se debe reducir el límite de crédito en una cuota teniendo en cuenta que si la tarjeta es una *Visa* o una *American Express* se descuenta el 80% del monto, en el resto de las tarjetas se descuenta el monto completo.
-  * En cambio si se trata de una compra en cuotas, todas las tarjetas descuentan, en compras hasta 6 cuotas, el 90% del monto adeudado (cuotas de la 2da en adelante) al límite de compras en cuotas, y descuentan del límite de compras en una cuota el monto de la primera cuota. En compras de más de 6 cuotas es igual, salvo que descuentan sólo el 70% de las cuotas adeudas del limite de compra en cuotas.
+  * En cambio, si se trata de una compra en cuotas, todas las tarjetas descuentan, en compras hasta 6 cuotas, el 90% del monto adeudado (cuotas de la 2ª en adelante) al límite de compras en cuotas, y descuentan del límite de compras en una cuota el monto de la primera cuota. En compras de más de 6 cuotas es igual, salvo que descuentan solo el 70% de las cuotas adeudas del límite de compra en cuotas.
 * `MostrarLimites`: Informar los límites de compras disponibles.
