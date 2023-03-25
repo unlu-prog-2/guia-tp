@@ -8,13 +8,13 @@
 
 Construir una función recursiva que retorne verdadero si una cadena de caracteres pasada como parámetro es un palíndromo. 
 
-Ej. “neuquen” ya que se lee igual de atrás hacia adelante.
+Ej. "neuquen" ya que se lee igual de atrás hacia adelante.
 
 #### Casos de testeo
 
 ```C
-palindromo(“neuquen”) => verdadero
-palindromo(“palindromo”) => falso
+palindromo("neuquen") => verdadero
+palindromo("palindromo") => falso
 ```
 
 ### Ejercicio 2
@@ -50,15 +50,15 @@ Nota: El resto siempre es positivo.
 #### Casos de testeo
 
 ```C
-resto(10,2) => 0
-resto(22,3) => 1
-division(-22,3) => 2
-division(22,-3) => 2
+resto(10,2)  => 0
+resto(22,3)  => 1
+resto(-22,3) => 2
+resto(22,-3) => 2
 ```
+
 ### Ejercicio 5
 
-Generar un algoritmo recursivo que le ponga los “.” de los miles a un String de números.
-
+Generar un algoritmo recursivo que le ponga los "." de los miles a un String de números.
 
 #### Casos de testeo
 
