@@ -41,7 +41,7 @@ La palabra "neuquen" ya que se lee igual de atrás hacia adelante.
 #### Casos de testeo
 
 ```C
-    esPalindromo("neuquen"); => true
+    esPalindromo("neuquen");    => true
     esPalindromo("palindromo"); => false
 ```
 
@@ -242,14 +242,15 @@ Llamado original con `n = 10` y `b = 3` el proceso sería en el siguiente orden:
 * Llamado recursivo con `n = 4` y `b = 3`:
 `n1 = 1` y  `n2 = 3` Como ambos son menores o iguales a 3, se terminan las explosiones.
 
-* Según la pila de ejecuciones, lista resultante sería:
-[3, 7] -> Arrancamos la lista con el 3 (n1 de la llamada original), y el 7 (n2) que explota.
+**La lista resultante sería**:
 
-* [3, 2, 5] -> Reemplazamos el 7 por el 2 (n1) y el 5 (n2) que explota.
+* `[3, 7]` -> Arrancamos la lista con el `3` (n1 de la llamada original), y el `7` (n2) que explota.
 
-* [3, 2, 1, 4] -> Reemplazamos el 5 por el 1 (n1) y el 4 (n2) que explota.
+* `[3, 2, 5]` -> Reemplazamos el `7` por el `2` (n1) y el `5` (n2) que explota.
 
-* [3, 2, 1, 1, 3] -> Reemplazamos el 4 por el 1 (n1) y el 3 (n2) que explota.
+* `[3, 2, 1, 4]` -> Reemplazamos el `5` por el `1` (n1) y el `4` (n2) que explota.
+
+* `[3, 2, 1, 1, 3]` -> Reemplazamos el `4` por el `1` (n1) y el `3` (n2) que explota.
 
 #### Declaración / Prototipo
 
@@ -260,7 +261,7 @@ Llamado original con `n = 10` y `b = 3` el proceso sería en el siguiente orden:
 ### Casos de testeo
 
 ```C
-    explosion(10, 3 , &size); => [3 2 1 1 3]
+    explosion(10, 3 , &size); => {3, 2, 1, 1, 3}
 
-    explosion(20, 5 , &size); => [4 3 2 2 1 1 1 1 5]
+    explosion(20, 5 , &size); => {4, 3, 2, 2, 1, 1, 1, 1, 5}
 ```
