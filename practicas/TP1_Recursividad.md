@@ -19,9 +19,9 @@ Construir una función recursiva que retorne verdadero si un número entero reci
 #### Casos de testeo
 
 ```C
-    esCapicua(161) => true
-    esCapicua(2992) => true
-    esCapicua(2993) => false
+    esCapicua(161);  => true
+    esCapicua(2992); => true
+    esCapicua(2993); => false
 ```
 
 ### Ejercicio 2
@@ -41,8 +41,8 @@ La palabra "neuquen" ya que se lee igual de atrás hacia adelante.
 #### Casos de testeo
 
 ```C
-    esPalindromo("neuquen") => true
-    esPalindromo("palindromo") => false
+    esPalindromo("neuquen"); => true
+    esPalindromo("palindromo"); => false
 ```
 
 ### Ejercicio 3
@@ -58,10 +58,10 @@ Dados dos números enteros `m` y `n`, construir una función recursiva que devue
 #### Casos de testeo
 
 ```C
-    productoRecursivo(3, 2) => 6
-    productoRecursivo(5, -2) => -10
-    productoRecursivo(-5, 2) => -10
-    productoRecursivo(-5, -2) => 10
+    productoRecursivo(3, 2);   => 6
+    productoRecursivo(5, -2);  => -10
+    productoRecursivo(-5, 2);  => -10
+    productoRecursivo(-5, -2); => 10
 ```
 
 ### Ejercicio 4
@@ -77,8 +77,8 @@ Generar un algoritmo recursivo que calcule el k-ésimo número de la serie de Fi
 #### Casos de testeo
 
 ```C
-    terminoSerieDeFibonacci(1) => 1
-    terminoSerieDeFibonacci(6) => 8
+    terminoSerieDeFibonacci(1); => 1
+    terminoSerieDeFibonacci(6); => 8
 ```
 
 ### Ejercicio 5
@@ -94,11 +94,11 @@ Dados los números enteros m y n, construir una función recursiva que devuelva 
 #### Casos de testeo
 
 ```C
-    restoRecursivo(10, 2)  => 0
-    restoRecursivo(22, 3)  => 1
-    restoRecursivo(-22, 3) => -1
-    restoRecursivo(-22, -3) => 1
-    restoRecursivo(22, -3) => -1
+    restoRecursivo(10, 2);   => 0
+    restoRecursivo(22, 3);   => 1
+    restoRecursivo(-22, 3);  => -1
+    restoRecursivo(-22, -3); => 1
+    restoRecursivo(22, -3);  => -1
 ```
 
 ### Ejercicio 6
@@ -114,8 +114,8 @@ char *agregarSeparadorMiles(char *);
 #### Casos de testeo
 
 ```C
-    agregarSeparadorMiles("123456") => "123.456"
-    agregarSeparadorMiles ("12345678") => "12.345.678"
+    agregarSeparadorMiles("123456");    => "123.456"
+    agregarSeparadorMiles ("12345678"); => "12.345.678"
 ```
 
 ### Ejercicio 7
@@ -129,7 +129,7 @@ Se conoce que la mafia china es muy organizada y protege mucho a sus miembros, c
 | 3             |       (-.(-.(-.-).-).-)        |
 | 4             |    (-.(-.(-.(-.-).-).-).-)     |
 
-Considerando esta descripción, diseñar los procesos recursivos que permitan mostrar la apariencia del grupo de chinos que asisten a una reunión de nivel `n`
+Considerando esta descripción, diseñar los procesos recursivos que permitan mostrar la apariencia del grupo de chinos que asisten a una reunión de nivel `n`.
 
 #### Declaración / Prototipo
 
@@ -164,10 +164,10 @@ Si se tiene la cadena `HHHHLLLLHHHHHLLHHLLHH`, su onda digital se debe ver así:
 #### Casos de testeo
 
 ```C
-    ondaDigital("HL") => "‾ | _"
-    ondaDigital("LH") => "_ | ‾"
-    ondaDigital("HLHL") => "‾ | _ | ‾ | _"
-    ondaDigital("HLLHHL") => "‾ | _ _  | ‾ ‾ | _"
+    ondaDigital("HL");     => "‾ | _"
+    ondaDigital("LH");     => "_ | ‾"
+    ondaDigital("HLHL");   => "‾ | _ | ‾ | _"
+    ondaDigital("HLLHHL"); => "‾ | _ _  | ‾ ‾ | _"
 ```
 
 ### Ejercicio 9
@@ -212,8 +212,8 @@ Escribir una función que implemente el método que se describe para saber si un
 #### Casos de testeo
 
 ```C
-    esDvisiblePor7(32291) => true
-    esDivisiblePor7(110) => false
+    esDvisiblePor7(32291); => true
+    esDivisiblePor7(110);  => false
 ```
 
 ### Ejercicio 10
