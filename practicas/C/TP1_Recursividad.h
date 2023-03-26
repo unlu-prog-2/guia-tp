@@ -14,7 +14,7 @@ int terminoSerieDeFibonacci(int n);
 
 int restoRecursivo(int dividendo, int divisor);
 
-char *agregarSeparadorMiles(char *);
+char *agregarSeparadorMiles(char *numero);
 
 char* chinos(unsigned int nivel);
 

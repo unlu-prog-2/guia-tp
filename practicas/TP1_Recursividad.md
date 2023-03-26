@@ -108,7 +108,7 @@ Generar un algoritmo recursivo que le ponga los `.` de los miles a un String de 
 #### Declaración / Prototipo
 
 ```C
-char *agregarSeparadorMiles(char *);
+char *agregarSeparadorMiles(char *numero);
 ```
 
 #### Casos de testeo
