@@ -7,5 +7,8 @@ insert_final_newline = true
 indent_style = space
 trim_trailing_whitespace = true
 
+
 [*.md]
 trim_trailing_whitespace = false
+max_line_length = 2000
+ij_markdown_wrap_text_if_long = false
