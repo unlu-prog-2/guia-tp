@@ -1,4 +1,4 @@
-# Práctica 1: Recursividad
+# Práctica 2: Listas
 
 ## Actividades de Aprendizaje
 
