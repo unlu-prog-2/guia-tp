@@ -25,7 +25,7 @@ c. Se los debe probar y testear de forma tal que se pueda asegurar que el TAD fu
 
 Dada una lista implementar las siguientes funcionalidades:
 
-- Mostrar una lista desde el último elemento al primero.
+- Invertir una lista devolviendo una nueva lista que tenga los elementos de la original pero ordenados desde el último al primero.
 
 - Calcular el menor de los datos e indicar la posición ordinal.
 
