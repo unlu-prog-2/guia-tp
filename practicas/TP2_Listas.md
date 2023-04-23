@@ -29,9 +29,9 @@ Invertir una lista devolviendo una nueva lista que tenga los elementos de la ori
 #### Casos de prueba
 
 ```C
-lista => [6, 7, 8]
+    lista => [6, 7, 8]
 
-invertirLista(lista) -> [8, 7, 6]
+    invertirLista(lista) -> [8, 7, 6]
 ```
 
 ### Encontrar el menor de la lista
@@ -39,20 +39,20 @@ invertirLista(lista) -> [8, 7, 6]
 Calcular el menor de los datos e indicar la posición ordinal.
 
 ```C
-struct ElementoYPosicion {
-    int valor;
-    int ordinal;
-};
+    struct ElementoYPosicion {
+        int valor;
+        int ordinal;
+    };
 
-struct ElementoYPosicion menorYPosicion(Lista l);
+    struct ElementoYPosicion menorYPosicion(Lista l);
 ```
 
 #### Casos de prueba
 
 ```C
-lista => [7, 6, 8]
+    lista => [7, 6, 8]
 
-menorYPosicion(lista) -> Menor: 6; Ordinal: 2
+    menorYPosicion(lista) -> Menor: 6; Ordinal: 2
 ```
 
 ### Encontrar el mayor de la lista
@@ -60,20 +60,20 @@ menorYPosicion(lista) -> Menor: 6; Ordinal: 2
 Calcular el dato máximo y contar la cantidad de veces que se repite.
 
 ```C
-struct ElementoYOcurrencias {
-    int valor;
-    int ocurrencias;
-};
+    struct ElementoYOcurrencias {
+        int valor;
+        int ocurrencias;
+    };
 
-struct ElementoYOcurrencias mayorYOcurrencias(Lista l);
+    struct ElementoYOcurrencias mayorYOcurrencias(Lista l);
 ```
 
 #### Casos de prueba
 
 ```C
-lista => [7, 6, 8, 7, 8, 8, 8, 8, 6]
+    lista => [7, 6, 8, 7, 8, 8, 8, 8, 6]
 
-mayorYOcurrencias(lista) -> Mayor: 8; Ocurrencias: 5
+    mayorYOcurrencias(lista) -> Mayor: 8; Ocurrencias: 5
 ```
 
 ### Calcular promedio
@@ -87,9 +87,9 @@ mayorYOcurrencias(lista) -> Mayor: 8; Ocurrencias: 5
  #### Casos de prueba
 
 ```C
-lista => [7, 6, 8, 7, 8, 8, 8, 8, 6, 6]
+    lista => [7, 6, 8, 7, 8, 8, 8, 8, 6, 6]
 
-promedio(lista) -> 7.2
+    promedio(lista) -> 7.2
 ```
 
 ### Calcular Múltiplos
@@ -129,10 +129,10 @@ Retornar una lista reflejada o espejada. La función recibirá un parámetro adi
 #### Casos de prueba
 
 ```C
-lista => [6, 7, 8]
+    lista => [6, 7, 8]
 
-reflejarLista(lista, false) -> [6, 7, 8, 7, 6]
-reflejarLista(lista, true) -> [6, 7, 8, 8, 7, 6]
+    reflejarLista(lista, false) -> [6, 7, 8, 7, 6]
+    reflejarLista(lista, true) -> [6, 7, 8, 8, 7, 6]
 ```
 
 #### Lista con números que son múltiplos
@@ -258,6 +258,6 @@ lista de los conjuntos que sumen 7 sería: R = [{3, 4}, {1, 4, 2}, {7}]
 Ejemplos:
 
 ```C
-subconjuntosQueSumanN ({10, 3, 1, 7, 4, 2}, 7) => { {3, 4}, {1, 4, 2}, {7} }
-subconjuntosQueSumanN ({10, 3, 1, 7, 4, 2}, 10) => { {10}, {3,7}, {3, 1, 4, 2}, {1, 7, 2} }
+    subconjuntosQueSumanN ({10, 3, 1, 7, 4, 2}, 7) => { {3, 4}, {1, 4, 2}, {7} }
+    subconjuntosQueSumanN ({10, 3, 1, 7, 4, 2}, 10) => { {10}, {3,7}, {3, 1, 4, 2}, {1, 7, 2} }
 ```
