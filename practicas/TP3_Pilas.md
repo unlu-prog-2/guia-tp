@@ -232,15 +232,15 @@ Casos de prueba
 
 #### Mazo de cartas
 
-Modelar un TAD que represente un mazo de cartas españolas y programar las siguientes funcionalidades
+Modelar un TAD que represente un mazo de cartas españolas y programar las siguientes funcionalidades:
 
 - Crear Mazo:
 
-    Generar una pila de cartas. Utilizar el TAD Tipo Elemento donde la clave es el `número` de la carta y el valor es el `palo` de la carta.
+    Generar una pila de cartas. Utilizar el TAD `TipoElemento` donde la clave es el `número` de la carta y el valor es el `palo` de la carta.
 
 - Barajar:
 
-    Mezclar las cartas aleatoriamente, encontrando un metodo que emule la mezcla que se hace a mano de las cartas.
+    Mezclar las cartas aleatoriamente, encontrando un método que emule la mezcla que se hace a mano de las cartas.
 
 - Repartir cartas:
 
@@ -252,6 +252,6 @@ Modelar un TAD que represente un mazo de cartas españolas y programar las sigui
 
 - Mayor o Menor
 
-    Dada un mazo de cartas y una pila de apuestas, implementar un algoritmo que corrobore cuantas apuestas a Mayor o Menor ganó el apostador.
+    Dada un mazo de cartas y una pila de apuestas, implementar un algoritmo que corrobore cuántas apuestas a Mayor o Menor ganó el apostador.
     El juego consta de adivinar si la carta siguiente en el mazo es mayor o menor a la que se encuentra en la mesa. El juego comienza dando vuelta sobre la mesa una carta y a partir de esa comienzan las apuestas.
     Por ejemplo si el mazo tiene en este orden las cartas: (3B, 7E, 9O, 10E, 5E, 1C, 3B) y el jugador apostó en este orden (MAYOR, MENOR, MENOR, MENOR, MENOR, MAYOR) se debe retornar que ganó 4 veces y que perdió 2.
