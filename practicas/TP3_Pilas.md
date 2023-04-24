@@ -32,9 +32,9 @@ bool buscarElemento(Pila p, TipoElemento e);
 Casos de prueba
 
 ```C
-Pila p = (1, 6, 3, 7, 4, 8, 3)
-buscarElemento(p,  1) => true
-buscarElemento(p, 13) => false
+Pila p = (1, 6, 3, 7, 4, 8, 3);
+buscarElemento(p,  1); // true
+buscarElemento(p, 13); // false
 ```
 
 #### Insertar elemento
@@ -49,9 +49,9 @@ void insertarElemento(Pila p, TipoElemento e, int pos);
 Casos de prueba
 
 ```C
-Pila p = (1, 6, 3, 7, 4, 8, 3)
-insertarElemento(p, 5, 20) => (1, 6, 13, 3, 20, 7, 4, 8, 3)
-insertarElemento(p, 1, 30) => (30, 1, 6, 13, 3, 20, 7, 4, 8, 3)
+Pila p = (1, 6, 3, 7, 4, 8, 3);
+insertarElemento(p, 5, 20);  // (1, 6, 13, 3, 20, 7, 4, 8, 3)
+insertarElemento(p, 1, 30);  // (30, 1, 6, 13, 3, 20, 7, 4, 8, 3)
 ```
 
 #### Eliminar elemento
@@ -65,10 +65,10 @@ void eliminarElemento(Pila p, int clave);
 Casos de prueba
 
 ```C
-Pila p = (1, 6, 3, 7, 4, 8, 3)
-eliminarElemento(p, 3) => (1, 6, 3, 7, 4, 8)
-eliminarElemento(p, 3) => (1, 6, 7, 4, 8)
-eliminarElemento(p, 1) => (6, 7, 4, 8)
+Pila p = (1, 6, 3, 7, 4, 8, 3);
+eliminarElemento(p, 3);  // (1, 6, 3, 7, 4, 8)
+eliminarElemento(p, 3);  // (1, 6, 7, 4, 8)
+eliminarElemento(p, 1);  // (6, 7, 4, 8)
 ```
 
 #### Switch
@@ -82,9 +82,9 @@ void intercambiarElementos(Pila p, int pos1, int pos2);
 Casos de prueba
 
 ```C
-Pila p = (1, 6, 3, 7, 4, 8, 3)
-intercambiarElementos(p, 2, 6) => (1, 8, 3, 7, 4, 6, 3)
-intercambiarElementos(p, 1, 5) => (4, 8, 3, 7, 1, 6, 3)
+Pila p = (1, 6, 3, 7, 4, 8, 3);
+intercambiarElementos(p, 2, 6);  // (1, 8, 3, 7, 4, 6, 3)
+intercambiarElementos(p, 1, 5);  // (4, 8, 3, 7, 1, 6, 3)
 ```
 
 #### Copia
@@ -98,8 +98,8 @@ Pila copiar(Pila p);
 Casos de prueba
 
 ```C
-Pila p = (1, 6, 3, 7, 4, 8, 3)
-Pila p2 = copiar(p) => (1, 6, 3, 7, 4, 8, 3)
+Pila p = (1, 6, 3, 7, 4, 8, 3);
+copiar(p);  // (1, 6, 3, 7, 4, 8, 3)
 ```
 
 #### Contar elementos
@@ -113,8 +113,8 @@ int contarElementos(Pila p);
 Casos de prueba
 
 ```C
-Pila p = (1, 6, 3, 7, 4, 8, 3)
-contarElementos(p) => 7
+Pila p = (1, 6, 3, 7, 4, 8, 3);
+contarElementos(p);  // 7
 ```
 
 #### Comparar pilas
@@ -129,16 +129,16 @@ bool compararPilas(Pila p1, Pila p2);
 Casos de prueba
 
 ```C
-Pila p1 = (1, 6, 3, 7, 4, 8, 3)
-Pila p2 = (1, 6, 3, 7, 4, 8, 3)
-Pila p3 = (6, 1, 3, 7, 4, 8, 3)
-Pila p4 = (5, 6, 3, 7, 4, 8, 3)
-compararPilas(p1, p2) => true
-compararPilas(p2, p1) => true
-compararPilas(p1, p3) => false
-compararPilas(p1, p4) => false
-compararPilas(p2, p3) => false
-compararPilas(p3, p4) => false
+Pila p1 = (1, 6, 3, 7, 4, 8, 3);
+Pila p2 = (1, 6, 3, 7, 4, 8, 3);
+Pila p3 = (6, 1, 3, 7, 4, 8, 3);
+Pila p4 = (5, 6, 3, 7, 4, 8, 3);
+compararPilas(p1, p2);  // true
+compararPilas(p2, p1);  // true
+compararPilas(p1, p3);  // false
+compararPilas(p1, p4);  // false
+compararPilas(p2, p3);  // false
+compararPilas(p3, p4);  // false
 ```
 
 #### Cambio de Base
@@ -154,11 +154,11 @@ char* cambioDeBase(int numero, int base);
 Casos de prueba
 
 ```C
-cambioDeBase(10, 2) => "1010"
-cambioDeBase(10, 3) => "101"
-cambioDeBase(16, 3) => "121"
-cambioDeBase(567, 16) => "237"
-cambioDeBase(759, 16) => "2F7"
+cambioDeBase(10, 2);    // "1010"
+cambioDeBase(10, 3);    // "101"
+cambioDeBase(16, 3);    // "121"
+cambioDeBase(567, 16);  // "237"
+cambioDeBase(759, 16);  // "2F7"
 ```
 
 #### Invertir Pila
@@ -173,8 +173,8 @@ Pila invertirPila(Pila p);
 Casos de prueba
 
 ```C
-Pila p1 = (1, 6, 3, 7, 4, 8, 3)
-invertirPila(p1) => (3, 8, 4, 7, 3, 6, 1)
+Pila p1 = (1, 6, 3, 7, 4, 8, 3);
+invertirPila(p1);  // (3, 8, 4, 7, 3, 6, 1)
 ```
 
 #### Eliminar todas las ocurrencias
@@ -190,9 +190,9 @@ Pila eliminarTodasOcurrencias(Pila p, int clave);
 Casos de prueba
 
 ```C
-Pila p = (1, 5, 7, 1, 3, 1, 8)
-eliminarTodasOcurrencias(p, 1) => (5, 7, 3, 8)
-eliminarTodasOcurrencias(p, 8) => (1, 5, 7, 1, 3, 1)
+Pila p = (1, 5, 7, 1, 3, 1, 8);
+eliminarTodasOcurrencias(p, 1);  // (5, 7, 3, 8)
+eliminarTodasOcurrencias(p, 8);  // (1, 5, 7, 1, 3, 1)
 ```
 
 #### Elementos en común
@@ -210,7 +210,7 @@ Casos de prueba
 ```C
 Pila p1 = (1, 4, 7, 9, 8);
 Pila p2 = (4, 1, 6, 9, 3);
-elementosEnComun(p1, p2) => (1, 4, 9)
+elementosEnComun(p1, p2);  // (1, 4, 9)
 ```
 
 #### Eliminar repetidos
@@ -229,7 +229,7 @@ Casos de prueba
 
 ```C
 Pila p = (1, 2, 1, 3, 4, 5, 2, 1, 3, 5, 5);
-eliminarRepetidos(p) => (1:3, 2:2, 3:2, 4:1, 5:3)
+eliminarRepetidos(p);  // (1:3, 2:2, 3:2, 4:1, 5:3)
 ```
 
 ### Ejercicios Interesantes
