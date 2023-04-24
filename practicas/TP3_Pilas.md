@@ -208,8 +208,9 @@ Pila elementosEnComun(Pila p1, Pila p2);
 Casos de prueba
 
 ```C
-Ejemplo: si "P1" contiene (1, 4, 7, 9, 8) y "P2" contiene (4,1,6,9,3) el resultado será la
-pila "PR" = (1,4,9).
+Pila p1 = (1, 4, 7, 9, 8);
+Pila p2 = (4, 1, 6, 9, 3);
+elementosEnComun(p1, p2) => (1, 4, 9)
 ```
 
 #### Eliminar repetidos
@@ -227,8 +228,8 @@ Pila eliminarRepetidos(Pila p);
 Casos de prueba
 
 ```C
-Ejemplo: si "P" contiene (1, 2,1, 3, 4, 5, 2, 1, 3, 5, 5), la pila resultado del proceso será
-"PR" = (1:3, 2:2, 3:2, 4:1, 5:3).
+Pila p = (1, 2, 1, 3, 4, 5, 2, 1, 3, 5, 5);
+eliminarRepetidos(p) => (1:3, 2:2, 3:2, 4:1, 5:3)
 ```
 
 ### Ejercicios Interesantes
