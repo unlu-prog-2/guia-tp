@@ -242,19 +242,19 @@ el orden en que fueron atendidos los clientes.
 
 El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas cargadas con clientes, donde cada cliente es la cantidad de tiempo que se necesita para atenderlo.
 ```C
-    int Q = 10;
+    int q = 10;
     Cola c1 = (40, 20, 30);
     Cola c2 = (20, 10);
     Cola c3 = (10, 10, 10);
     
-    procesar(c1, c2, c3); // [
-                          //    "Cliente 1 Cola 3",
-                          //    "Cliente 1 Cola 2",
-                          //    "Cliente 2 Cola 3",
-                          //    "Cliente 2 Cola 2",
-                          //    "Cliente 3 Cola 3",
-                          //    "Cliente 1 Cola 1",
-                          //    "Cliente 2 Cola 1",
-                          //    "Cliente 3 Cola 1"
-                          // ]
+    procesar(q, c1, c2, c3); // [
+                             //    "Cliente 1 Cola 3",
+                             //    "Cliente 1 Cola 2",
+                             //    "Cliente 2 Cola 3",
+                             //    "Cliente 2 Cola 2",
+                             //    "Cliente 3 Cola 3",
+                             //    "Cliente 1 Cola 1",
+                             //    "Cliente 2 Cola 1",
+                             //    "Cliente 3 Cola 1"
+                             // ]
 ```
