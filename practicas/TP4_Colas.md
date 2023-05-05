@@ -18,11 +18,11 @@ Construir el TAD de listas correspondientes a las implementaciones de **"Arreglo
 >
 > Implementar todos los ejercicios que puedan de **forma iterativa y de forma recursiva** para poder analizar la diferencia en la **complejidad algorítmica** en cada caso.
 >
-> En todos los casos es imprescindible no perder la pila con los datos originales.
+> En todos los casos es imprescindible no perder la cola con los datos originales.
 
 #### Buscar elemento
 
-Dada una pila, buscar una clave y determinar si existe en la Cola.
+Dada una cola y una clave, buscar la clave y determinar si existe en la Cola.
 
 ```C
     bool buscarElemento(Cola c, TipoElemento e);
@@ -33,13 +33,13 @@ Casos de prueba
 ```C
     Cola c = (1, 6, 3, 7, 4, 8, 3);
     buscarElemento(c,  1); // true
-    buscarElemento(C, 13); // false
+    buscarElemento(c, 13); // false
 ```
 
 #### Colarse
 
 Dada una cola, colocar en una posición ordinal determinada, recibida por parámetro, un
-nuevo elemento (Insertar un elemento nuevo).
+nuevo elemento (insertar un elemento nuevo).
 
 ```C
     void insertarElemento(Cola c, TipoElemento e, int pos);
@@ -49,13 +49,13 @@ Casos de prueba
 
 ```C
     Cola c = (1, 6, 3, 7, 4, 8, 3);
-    insertarElemento(c, 5, 20);  // (1, 6, 13, 3, 20, 7, 4, 8, 3)
-    insertarElemento(c, 1, 30);  // (30, 1, 6, 13, 3, 20, 7, 4, 8, 3)
+    insertarElemento(c, 5, 20);  // (1, 6, 3, 7, 20, 4, 8, 3)
+    insertarElemento(c, 1, 30);  // (30, 1, 6, 3, 7, 20, 4, 8, 3)
 ```
 
 #### Eliminar elemento
 
-Eliminar de una cola todas las ocurrencias de un elemento dado encontrada por la clave.
+Eliminar de una cola todas las ocurrencias de un elemento dado encontrado por la clave.
 
 ```C
     void eliminarElemento(Cola c, int clave);
@@ -111,7 +111,7 @@ Casos de prueba
 
 ```C
     Cola c = (1, 6, 3, 7, 4, 8, 3);
-    copia(c);  // (3, 7, 4, 7, 3, 6, 1)
+    invertir(c);  // (3, 8, 4, 7, 3, 6, 1)
 ```
 
 #### Comparar colas
@@ -129,7 +129,7 @@ Casos de prueba
 ```C
     Cola c1 = (1, 6, 3, 7, 4, 8, 3);
     Cola c2 = (1, 6, 3, 7, 4, 8, 3);
-    Cola c3 = (1, 6, 3, 7, 4, 8, 5);
+    Cola c3 = (1, 6, 3, 7, 4, 8);
     Cola c4 = (6, 1, 3, 7, 4, 8, 5);
     comparar(c1, c2);  // true
     comparar(c1, c3);  // false
@@ -151,7 +151,9 @@ Casos de prueba
     Cola c2 = (6, 6, 3, 6, 1, 7, 4, 8, 3);
     Cola c3 = (6, 3, 7, 4, 8);
     mismosElementos(c1, c2);  // true
+    mismosElementos(c2, c1);  // true
     mismosElementos(c1, c3);  // false
+    mismosElementos(c3, c1);  // false
 ```
 
 #### Únicos
@@ -170,7 +172,7 @@ Casos de prueba
     Cola c = (1, 6, 3, 7, 4, 8, 3);
     unicos(c);  // (1, 6, 7, 4, 8)
     Cola c1 = (12, 6, 8, 5, 8, 12, 12);
-    unicos(c);  // (6,5)
+    unicos(c);  // (6, 5)
 ```
 
 #### Divisores
@@ -185,7 +187,7 @@ Ejemplo: si “C” contiene (8, 12, 2, 6, 4) se dice que “2” es el divisor 
         Lista parciales;
     }
 
-    struct Divisores buscaDivisores(Cola c);
+    struct Divisores *buscaDivisores(Cola c);
 ```
 
 Casos de prueba
@@ -197,10 +199,12 @@ Casos de prueba
     buscaDivisores(c);  // total: 2, parciales: (6, 4)
 ```
 
+#### Repetidos
+
 Dada una pila y una cola retornar en una lista todos los valores comunes a ambas y en qué posición ordinal se encontró cada uno en su estructura. No se deben destruir las estructuras originales.
 
 ```C
-    struct Repetidos {
+    struct Repetido {
         int clave;
         int posicionEnPila;
         int posicionEnCola;
@@ -214,18 +218,24 @@ Casos de prueba
 ```C
     Pila p = (2, 5, 8, 19, 3, 4);
     Cola c = (4, 18, 12, 5, 6);
-    buscaRepetidos(c);  // [{clave:5, posicionEnPila:2, posicionEnCola: 4}, {clave:4, posicionEnPila:6, posicionEnCola: 5}]
+    buscaRepetidos(c);  // [
+                        //   { clave: 5, posicionEnPila: 2, posicionEnCola: 4 },
+                        //   { clave: 4, posicionEnPila: 6, posicionEnCola: 1 }
+                        // ]
 ```
 
 #### Atención al cliente
 
 Un negocio tiene 3 ventanillas para atender a sus clientes. Los clientes forman cola en
-cada ventanilla. Un día, dos de los tres empleados que atienden las ventanillas no
+cada ventanilla.
+
+Un día, dos de los tres empleados que atienden las ventanillas no
 pueden asistir al trabajo, quedando uno solo para atender a las tres colas. Este
 empleado decide que, a medida que lleguen los clientes, atenderá por cierta cantidad
 de minutos (que denominaremos Q) a cada cola, paseándose por todas las colas
 equitativamente.
-Se pide que implemente un algoritmo que modele esta situación y dé como resultado
+
+Se pide que implemente un algoritmo que modele esta situación y devuelva como resultado
 el orden en que fueron atendidos los clientes.
 
 ##### Ejemplo
@@ -233,7 +243,7 @@ el orden en que fueron atendidos los clientes.
 > El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas cargadas con clientes, donde cada cliente es la cantidad de tiempo que se necesita para atenderlo.
 >
 > Q = 10
->
+
 > Cola1 = (40, 20, 30)
 >
 > Cola2 = (20, 10)
