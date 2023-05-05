@@ -185,7 +185,7 @@ Ejemplo: si “C” contiene (8, 12, 2, 6, 4) se dice que “2” es el divisor 
     struct Divisores {
         int total;
         Lista parciales;
-    }
+    };
 
     struct Divisores *buscaDivisores(Cola c);
 ```
@@ -208,7 +208,7 @@ Dada una pila y una cola retornar en una lista todos los valores comunes a ambas
         int clave;
         int posicionEnPila;
         int posicionEnCola;
-    }
+    };
 
     Lista buscaRepetidos(Pila p, Cola c);
 ```
@@ -240,30 +240,21 @@ el orden en que fueron atendidos los clientes.
 
 ##### Ejemplo
 
-> El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas cargadas con clientes, donde cada cliente es la cantidad de tiempo que se necesita para atenderlo.
->
-> Q = 10
-
-> Cola1 = (40, 20, 30)
->
-> Cola2 = (20, 10)
->
-> Cola3 = (10, 10, 10)
->
-> Resultado =
->
->       Cliente 1 Cola 3,
->
->       Cliente 1 Cola 2,
->
->       Cliente 2 Cola 3,
->
->       Cliente 2 Cola 2,
->
->       Cliente 3 Cola 3,
->
->       Cliente 1 Cola 1,
->
->       Cliente 2 Cola 1,
->
->       Cliente 3 Cola 1.
+El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas cargadas con clientes, donde cada cliente es la cantidad de tiempo que se necesita para atenderlo.
+```C
+    int Q = 10;
+    Cola c1 = (40, 20, 30);
+    Cola c2 = (20, 10);
+    Cola c3 = (10, 10, 10);
+    
+    procesar(c1, c2, c3); // [
+                          //    "Cliente 1 Cola 3",
+                          //    "Cliente 1 Cola 2",
+                          //    "Cliente 2 Cola 3",
+                          //    "Cliente 2 Cola 2",
+                          //    "Cliente 3 Cola 3",
+                          //    "Cliente 1 Cola 1",
+                          //    "Cliente 2 Cola 1",
+                          //    "Cliente 3 Cola 1"
+                          // ]
+```
