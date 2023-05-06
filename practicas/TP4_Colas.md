@@ -193,10 +193,10 @@ Ejemplo: si “C” contiene (8, 12, 2, 6, 4) se dice que “2” es el divisor 
 Casos de prueba
 
 ```C
-    Cola c = (8, 12, 2, 6, 4);
-    buscaDivisores(c);  // total: 2, parciales: (4)
-    Cola c1 = (8, 12, 2, 24, 6, 4);
-    buscaDivisores(c);  // total: 2, parciales: (6, 4)
+    Cola c1 = (8, 12, 2, 6, 4);
+    buscaDivisores(c1);  // total: 2, parciales: (4)
+    Cola c2 = (8, 12, 2, 24, 6, 4);
+    buscaDivisores(c2);  // total: 2, parciales: (6, 4)
 ```
 
 #### Repetidos
@@ -251,7 +251,7 @@ El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas ca
                              //    "Cliente 1 Cola 3",
                              //    "Cliente 1 Cola 2",
                              //    "Cliente 2 Cola 3",
-                             //    "Cliente 2 Cola 2",
+                             // q   "Cliente 2 Cola 2",
                              //    "Cliente 3 Cola 3",
                              //    "Cliente 1 Cola 1",
                              //    "Cliente 2 Cola 1",
