@@ -8,13 +8,13 @@
 
 * [Práctica 2 - Listas](TP2_Listas.md) ~~[Fecha de Entrega: 25/04]~~ **VENCIDA**
 
-* [Práctica 3 - Pilas](TP3_Pilas.md) [Fecha de Entrega: 10/05]
+* [Práctica 3 - Pilas](TP3_Pilas.md) ~~[Fecha de Entrega: 10/05]~~ **VENCIDA**
 
 * [Práctica 4 - Colas](TP4_Colas.md) [Fecha de Entrega: 17/05]
 
-<!--
-[Práctica 5 - Colas](practica-5.md)
+* [Práctica 5 - Colas](practica-5.md) [Fecha de Entrega: 31/05]
 
+<!--
 [Práctica 6 - Árboles](practica-6.md)
 
 [Práctica 7 - Tablas de hash](practica-7.md)

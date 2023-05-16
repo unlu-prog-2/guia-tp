@@ -241,6 +241,7 @@ el orden en que fueron atendidos los clientes.
 ##### Ejemplo
 
 El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas cargadas con clientes, donde cada cliente es la cantidad de tiempo que se necesita para atenderlo.
+
 ```C
     int q = 10;
     Cola c1 = (40, 20, 30);
@@ -251,7 +252,7 @@ El algoritmo recibe un Q de tiempo que atenderá a cada cola y las tres colas ca
                              //    "Cliente 1 Cola 3",
                              //    "Cliente 1 Cola 2",
                              //    "Cliente 2 Cola 3",
-                             // q   "Cliente 2 Cola 2",
+                             //    "Cliente 2 Cola 2",
                              //    "Cliente 3 Cola 3",
                              //    "Cliente 1 Cola 1",
                              //    "Cliente 2 Cola 1",
