@@ -99,7 +99,9 @@ Características de un árbol de expresión:
 - Un nodo puede contener como hijo un subárbol que contiene una pequeña expresión.
 - Los paréntesis no se representan porque no son necesarios.
 
-### Comparando árboles
+### Comparando árboles:
+
+#### Binario vs. AVL
 
 Generar un algoritmo, recursivo o no, que permita construir un árbol binario de búsqueda balanceado (AVL) a partir de un árbol binario sin un orden determinado.
 
@@ -107,13 +109,13 @@ Comparar las alturas de ambos árboles.
 
 Determinar la complejidad algorítmica.
 
-### Ejercicio 10
+#### Binario de Búsqueda vs. AVL
 
-Dada una serie de números generados al azar, cargar la misma serie en un árbol binario de búsqueda y en un árbol binario balanceado “AVL”.
+Cargar la misma serie de números en un árbol binario de búsqueda y en un árbol binario balanceado “AVL”.
 
 Comparar la altura de ambos árboles. Repetir el proceso `n` veces. ¿Qué puede concluir al respecto?
 
-### Ejercicio 11
+#### AVL vs. B vs. B+
 
 Dada una serie de números generados al azar, cargarla en un árbol binario de búsqueda balanceado (AVL), en un Árbol “B” y “B+”. Comparar la altura de los árboles.
 
@@ -121,7 +123,7 @@ Repetir el proceso `n` veces. Se debe poder ingresar la cantidad de claves a gen
 
 ¿Qué puede concluir al respecto?
 
-### Ejercicio 12
+### Texto predictivo (LITE)
 
 Se necesita armar un proceso que pueda ir almacenando palabras a medida que se van “tipeando”, cuando uno va escribiendo que trate de inferir de que palabra se trata.
 
