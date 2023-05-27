@@ -96,10 +96,9 @@ Características de un árbol de expresión:
 - Si un operador tiene mayor prioridad que el que está almacenado en un nodo, se coloca como hijo del mismo.
 - Si un operador tiene igual o menor prioridad que el que está en un nodo, se coloca como padre de éste.
 - Una expresión entre paréntesis tiene mayor prioridad que cualquier otra.
-- Un nodo puede contener como hijo un subárbol que contiene una pequeña expresión.
-- Los paréntesis no se representan porque no son necesarios.
+- Un nodo puede contener como hijo un subárbol que contiene una pequeña expresión.- Los paréntesis no se representan porque no son necesarios.
 
-### Comparando árboles:
+### Comparando árboles
 
 #### Binario vs. AVL
 
