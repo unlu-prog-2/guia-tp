@@ -14,8 +14,8 @@
 
 * [Práctica 5 - Árboles](TP5_Arboles.md) [Fecha de Entrega: 07/06] **ACTUALIZADA**
 
-<!--
-[Práctica 6 - Tablas de hash](TP6_Tabla_Hash.md) [Fecha de Entrega: 14/06]
+* [Práctica 6 - Tablas de hash](TP6_Tabla_Hash.md) [Fecha de Entrega: 16/06]
 
+<!--
 [Práctica 7 - Conjuntos](TP7_Conjuntos.md) [Fecha de Entrega: 21/06]
 -->
