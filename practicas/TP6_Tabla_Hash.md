@@ -40,6 +40,16 @@ Se entregan 4 archivos que contienen datos de un producto (código de 7 dígitos
 * productos_1000.dat (contiene 1000 registros)
 * productos_10000.dat (contiene 10000 registros)
 
+Son archivos binarios que contienen datos correspondientes a los productos que responden a la siguiente estructura:
+```c
+struct Registro {
+    int codigo;
+    char detalle[50];
+    int precio;
+    int stock;
+};
+```
+
 La función `leerArchivoYCargarEstructuras` lee el archivo especificado por parámetro y, para cada registro leido del archivo,
 guardará tanto en la tabla hash como en el árbol AVL, el código del producto como clave y la posición física del registro adentro del archivo como dato.
 
@@ -51,9 +61,11 @@ se procede a generar códigos aleatorios y chequear a ver si se encuentran en la
 se lee el registro del archivo y se muestra por pantalla. De no encontrarse se vuelve a generar otro código aleatorio y se repite 
 el proceso. El proceso termina al haber hecho exactamente la cantidad de búsquedas y lecturas que se especifican por parámetro.
 
-Realizar experimentos para los siguientes casos:
+Se pide realizar los siguientes experimentos modificando las variables del programa: `tamanoTablaHash`, `nombreArchivo` e `iteraciones`.
+Una vez ejecutado, registrar en las siguientes tablas los tiempos de acceso promedio para cada estructura de datos. Y al finalizar,
+responder las preguntas planteadas para cada experimento y para las conclusiones finales.
 
-### Archivo de 10 registros, realizando 500 repeticiones
+#### Archivo de 10 registros, realizando 500 repeticiones
 | Tamaño Tabla Hash | TH c/colisiones | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-----------------|--------------------|----------------------------|
 | 2                 |                 | ------- NO ------- |                            |
@@ -62,7 +74,7 @@ Realizar experimentos para los siguientes casos:
 | 7                 |                 |                    |                            |
 | 11                |                 |                    |                            |
 
-### Archivo de 100 registros, realizando 500 repeticiones
+#### Archivo de 100 registros, realizando 500 repeticiones
 | Tamaño Tabla Hash | TH c/colisiones   | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-------------------|--------------------|----------------------------|
 | 13                |                   | ------- NO ------- |                            |
@@ -71,7 +83,7 @@ Realizar experimentos para los siguientes casos:
 | 67                |                   |                    |                            |
 | 101               |                   |                    |                            |
 
-### Archivo de 1000 registros, realizando 50000 repeticiones
+#### Archivo de 1000 registros, realizando 50000 repeticiones
 | Tamaño Tabla Hash | TH c/colisiones | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-----------------|--------------------|----------------------------|
 | 113               |                 | ------- NO ------- |                            |
@@ -80,7 +92,7 @@ Realizar experimentos para los siguientes casos:
 | 1009              |                 |                    |                            |
 | 1451              |                 |                    |                            |
 
-### Archivo de 10000 registros, realizando 50000 repeticiones
+#### Archivo de 10000 registros, realizando 50000 repeticiones
 | Tamaño Tabla Hash | TH c/colisiones | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-----------------|--------------------|----------------------------|
 | 1433              |                 | ------- NO ------- |                            |
@@ -89,13 +101,15 @@ Realizar experimentos para los siguientes casos:
 | 10093             |                 |                    |                            |
 | 13873             |                 |                    |                            |
 
+#### Preguntas
 Para cada uno de los archivos anteriores, responder y justificar las siguientes preguntas:
-* ¿Cómo afecta, en cada caso, el tamaño de la tabla hash?
+* ¿Cómo afecta, en cada caso, el tamaño de la tabla hash? ¿Se comporta mejor cuando falta espacio o cuando sobra? ¿Es mejor que sobre mucho o que sobre poco? ¿Por qué?
 * ¿Qué funciona mejor, la tabla hash con lista de colisiones o la tabla hash con zona de overflow? ¿Por qué?
 * ¿Qué funciona mejor, la tabla hash con lista de colisiones o el árbol AVL? ¿Por qué?
 * ¿Qué funciona mejor, la tabla hash con zona de overflow o el árbol AVL? ¿Por qué?
+* ¿Por qué hay celdas pre-completadas con `NO` en el caso de la tabla hash con zona de overflow?
 
-Conclusiones generales
+#### Conclusiones generales
 * ¿Cómo afecta los tiempos el tamaño del archivo (cantidad de registros)? ¿Y la cantidad de repeticiones de búsqueda?
 * ¿Cómo se puede explicar el hecho de que se tarde menos en buscar cuando hay muchos registros que cuando hay pocos?
 * Mirando el código, ¿en qué se gasta la mayor parte del tiempo?
