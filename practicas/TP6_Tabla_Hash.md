@@ -1,4 +1,4 @@
-# Práctica 7: Tablas Hash
+# Práctica 6: Tablas Hash
 
 ## Para empezar a trabajar
 
