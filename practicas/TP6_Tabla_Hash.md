@@ -66,6 +66,7 @@ Una vez ejecutado, registrar en las siguientes tablas los tiempos de acceso prom
 responder las preguntas planteadas para cada experimento y para las conclusiones finales.
 
 #### Archivo de 10 registros, realizando 500 repeticiones
+
 | Tamaño Tabla Hash | TH c/colisiones | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-----------------|--------------------|----------------------------|
 | 2                 |                 | ------- NO ------- |                            |
@@ -75,6 +76,7 @@ responder las preguntas planteadas para cada experimento y para las conclusiones
 | 11                |                 |                    |                            |
 
 #### Archivo de 100 registros, realizando 500 repeticiones
+
 | Tamaño Tabla Hash | TH c/colisiones   | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-------------------|--------------------|----------------------------|
 | 13                |                   | ------- NO ------- |                            |
@@ -84,6 +86,7 @@ responder las preguntas planteadas para cada experimento y para las conclusiones
 | 101               |                   |                    |                            |
 
 #### Archivo de 1000 registros, realizando 50000 repeticiones
+
 | Tamaño Tabla Hash | TH c/colisiones | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-----------------|--------------------|----------------------------|
 | 113               |                 | ------- NO ------- |                            |
@@ -93,6 +96,7 @@ responder las preguntas planteadas para cada experimento y para las conclusiones
 | 1451              |                 |                    |                            |
 
 #### Archivo de 10000 registros, realizando 50000 repeticiones
+
 | Tamaño Tabla Hash | TH c/colisiones | TH c/ZO            | Tiempo de acceso Árbol AVL |
 |-------------------|-----------------|--------------------|----------------------------|
 | 1433              |                 | ------- NO ------- |                            |
