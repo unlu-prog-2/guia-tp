@@ -268,8 +268,8 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
     void main(void){
         int y = 3, x = 4;
-        printf(“La function devuelde %d”, mi_funcion(y));
-        printf(“La variable vale %d”, x);
+        printf("La función devuelve %d", mi_funcion(y));
+        printf("La variable vale %d", x);
     }
 ```
 
