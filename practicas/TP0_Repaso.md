@@ -31,9 +31,9 @@ enum Referencia dondeEstaElPunto(int xc, int yc, int rc, int xp, int yp);
 #### Casos de prueba
 
 ```c
-    dondeEstaElPunto(0, 0, 2, 1, 1 ); => INTERNO
-    dondeEstaElPunto(0, 0, 1, 1, 1 ); => EXTERNO
-    dondeEstaElPunto(0, 0, 1, 1, 0 ); => EN_CIRCUNFERENCIA
+    dondeEstaElPunto(0, 0, 2, 1, 1 ); // INTERNO
+    dondeEstaElPunto(0, 0, 1, 1, 1 ); // EXTERNO
+    dondeEstaElPunto(0, 0, 1, 1, 0 ); // EN_CIRCUNFERENCIA
 ```
 
 ### Ejercicio 2
@@ -47,8 +47,8 @@ bool digitoEnNumero(long n, short d);
 #### Casos de prueba
 
 ```c
-    digitoEnNumero(987, 7); => True
-    digitoEnNumero(987, 6); => False
+    digitoEnNumero(987, 7); // True
+    digitoEnNumero(987, 6); // False
 ```
 
 ### Ejercicio 3
@@ -74,9 +74,9 @@ donde `Punto` se define así:
     struct Punto p1 = {1, 1};
     struct Punto p2 = {1, 0};
 
-   dondeEstaElPuntoBis(centro, 2, p1) => INTERNO
-   dondeEstaElPuntoBis(centro, 1, p1) => EXTERNO
-   dondeEstaElPuntoBis(centro, 1, p2) => EN_CIRCUNFERENCIA
+   dondeEstaElPuntoBis(centro, 2, p1) // INTERNO
+   dondeEstaElPuntoBis(centro, 1, p1) // EXTERNO
+   dondeEstaElPuntoBis(centro, 1, p2) // EN_CIRCUNFERENCIA
 ```
 
 ### Ejercicio 4
@@ -120,37 +120,37 @@ Se pide escribir funciones que informen:
         {"Davies", 20, 100}
     };
 
-    jugadoresOrdenadosPorCantDePartidos(equipo); =>
-                {
-                    {"Ronaldo", 37, 900},
-                    {"Messi", 34, 800},
-                    {"Neuer", 35, 800},
-                    {"Lewandowski", 33, 700},
-                    {"Ramos", 35, 650},
-                    {"De Bruyne", 30, 600},
-                    {"Neymar Jr.", 29, 500},
-                    {"Salah", 29, 400},
-                    {"van Dijk", 30, 400},
-                    {"Mbappe", 22, 200},
-                    {"Davies", 20, 100}
-                }
+    jugadoresOrdenadosPorCantDePartidos(equipo);
+    //    {
+    //        {"Ronaldo", 37, 900},
+    //        {"Messi", 34, 800},
+    //        {"Neuer", 35, 800},
+    //        {"Lewandowski", 33, 700},
+    //        {"Ramos", 35, 650},
+    //        {"De Bruyne", 30, 600},
+    //        {"Neymar Jr.", 29, 500},
+    //        {"Salah", 29, 400},
+    //        {"van Dijk", 30, 400},
+    //        {"Mbappe", 22, 200},
+    //        {"Davies", 20, 100}
+    //    }
 
-    jugadoresOrdenadosPorEdad(equipo); => 
-                {
-                    {"Davies", 20, 100},
-                    {"Mbappe", 22, 200},
-                    {"Neymar Jr.", 29, 500},
-                    {"Salah", 29, 400},
-                    {"De Bruyne", 30, 600},
-                    {"van Dijk", 30, 400},
-                    {"Lewandowski", 33, 700},
-                    {"Messi", 34, 800},
-                    {"Ramos", 35, 650},
-                    {"Neuer", 35, 800},
-                    {"Ronaldo", 37, 900},
-                }
+    jugadoresOrdenadosPorEdad(equipo); 
+    //    {
+    //        {"Davies", 20, 100},
+    //        {"Mbappe", 22, 200},
+    //        {"Neymar Jr.", 29, 500},
+    //        {"Salah", 29, 400},
+    //        {"De Bruyne", 30, 600},
+    //        {"van Dijk", 30, 400},
+    //        {"Lewandowski", 33, 700},
+    //        {"Messi", 34, 800},
+    //        {"Ramos", 35, 650},
+    //        {"Neuer", 35, 800},
+    //        {"Ronaldo", 37, 900},
+    //    }
     
-    promedioDePartidosJugados(equipo, 35); => 725.0
+    promedioDePartidosJugados(equipo, 35); // 725.0
 ```
 
 ### Ejercicio 5
@@ -192,10 +192,10 @@ Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
         {0, 0, 1, 1, 1}
     };
 
-    pisoConMasHabitantes(edificio) => 2
-    cantidadDeViviendasVacias(edificio) => 12
-    promedioHabitantesPorVivienda(edificio) => 1.325
-    viviendaConMasHabitantes(edificio) => 1-B
+    pisoConMasHabitantes(edificio) // 2
+    cantidadDeViviendasVacias(edificio) // 12
+    promedioHabitantesPorVivienda(edificio) // 1.325
+    viviendaConMasHabitantes(edificio) // 1B
 ```
 
 ### Ejercicio 6
