@@ -16,7 +16,7 @@ Informe si el punto `(xp, yp)` está ubicado sobre la circunferencia, o dentro o
 
 Nota: Se utilizará un enumerado Referencia que incluirá las opciones INTERNO, EXTERNO y EN_CIRCUNFERENCIA.
 
-```C
+```c
 
 enum Referencia
 {
@@ -28,9 +28,9 @@ enum Referencia
 enum Referencia dondeEstaElPunto(int xc, int yc, int rc, int xp, int yp);
 ```
 
-#### Casos de testeo
+#### Casos de prueba
 
-```C
+```c
     dondeEstaElPunto(0, 0, 2, 1, 1 ); => INTERNO
     dondeEstaElPunto(0, 0, 1, 1, 1 ); => EXTERNO
     dondeEstaElPunto(0, 0, 1, 1, 0 ); => EN_CIRCUNFERENCIA
@@ -40,13 +40,13 @@ enum Referencia dondeEstaElPunto(int xc, int yc, int rc, int xp, int yp);
 
 Necesitamos una función que reciba un valor entero `n` y un dígito `d` (entero entre 0 y 9), y confirme que dicho dígito `d` está (o no) entre los del número `n`.
 
-```C
+```c
 bool digitoEnNumero(long n, short d);
 ```
 
-#### Casos de testeo
+#### Casos de prueba
 
-```C
+```c
     digitoEnNumero(987, 7); => True
     digitoEnNumero(987, 6); => False
 ```
@@ -55,21 +55,21 @@ bool digitoEnNumero(long n, short d);
 
 Refactorizar el **[Ejercicio 1](#ejercicio-1)** para que los parámetros recibidos sean:
 
-```C
+```c
     enum Referencia dondeEstaElPuntoBis(Punto centroC, int rc, Punto p);
 ```
 
-donde Punto se define así:
+donde `Punto` se define así:
 
-```C
+```c
     struct Punto {
         int x, y;
     };
 ```
 
-### Casos de Testeo
+### Casos de prueba
 
-```C
+```c
     struct Punto centro = {0, 0};
     struct Punto p1 = {1, 1};
     struct Punto p2 = {1, 0};
@@ -89,7 +89,7 @@ Se pide escribir funciones que informen:
 - Los jugadores ordenados desde el más joven al más grande.
 - La cantidad de partidos jugados en promedio dada una edad.
 
-```C
+```c
     #define TAMANO_STRING 50
     #define CANT_JUGADORES 11
 
@@ -103,9 +103,9 @@ Se pide escribir funciones que informen:
     float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 ```
 
-#### Casos de testeo
+#### Casos de prueba
 
-```C
+```c
     struct Jugador equipo[CANT_JUGADORES] = {
         {"Messi", 34, 800},
         {"Ronaldo", 37, 900},
@@ -163,7 +163,7 @@ Se pide escribir funciones que informen:
 - la cantidad de viviendas vacias.
 - el promedio de habitantes por departamento.
 
-```C
+```c
 #define CANT_PISOS 8
 #define CANT_DEPARTAMENTOS 5
 
@@ -178,9 +178,9 @@ float promedioHabitantesPorVivienda(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]
 Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 ```
 
-#### Casos de testeo
+#### Casos de prueba
 
-```C
+```c
     int edificio[CANT_PISOS][CANT_DEPARTAMENTOS] = {
         {3, 5, 2, 1, 0},
         {2, 4, 3, 0, 2},
@@ -204,7 +204,7 @@ Dado un archivo de texto que contiene datos de minutos trabajos por personal de 
 
 El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un **_Tabulador_**.
 
-A continuación se muestra un pequeño ejemplo. Si el tuviera el siguiente contenido:
+A continuación se muestra un pequeño ejemplo. Si tuviera el siguiente contenido:
 
 ```txt
     // Cliente Anio    Mes Minutos_Trabajados
@@ -220,12 +220,10 @@ La tabla a producir por el programa debería ser:
 
 | Clientes / Años | 2019 | 2020 | 2021 | 2022 |
 |-----------------|------|------|------|------|
-| 1000            | 50   |      |      |      |
-| 1001            |      | 120  | 95   | 48   |
+| 1000            | 1051 |      |      |      |
+| 1001            |      | 120  | 96   | 48   |
 
-Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [TP0_EJ6.txt](C/archivos/TP0_EJ6.txt) que contiene aprox. unas 400.000 filas a procesar.
-
----
+Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [TP0_EJ6.txt](C/archivos/TP0_EJ6.txt) que contiene aprox. unas 65500 filas a procesar.
 
 ---
 
@@ -237,7 +235,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
 ### Prueba 1
 
-```C
+```c
     int i = 4, x = 5;
     for (i = 0; i < 10; i++) {
         if ( i < x )
@@ -249,7 +247,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
 ### Prueba 2
 
-```C
+```c
     int array[10], i = 0;
     while (i<10) {
         array[i] = i * i;
@@ -262,7 +260,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
 ### Prueba 3
 
-```C
+```c
     int mi_funcion(int x) {
         x=x*5;
         return x;
@@ -277,7 +275,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
 ### Prueba 4
 
-```C
+```c
     int *punta, *puntb;
     int x = 7;
     int y = 5;
@@ -291,7 +289,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
 ### Prueba 5
 
-```C
+```c
     int datos(int x, float y, char c)
     {
         printf("%d %f %c", x, y, c);
@@ -313,7 +311,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
 
 ### Prueba 6
 
-```C
+```c
     struct medidas{
         int alto, ancho, largo;
     };
