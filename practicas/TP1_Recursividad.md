@@ -12,13 +12,13 @@ Construir una función recursiva que retorne verdadero si un número entero reci
 
 #### Declaración / Prototipo
 
-```C
+```c
     bool esCapicua(int numero);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     esCapicua(161);  => true
     esCapicua(2992); => true
     esCapicua(2993); => false
@@ -34,13 +34,13 @@ La palabra "neuquen" ya que se lee igual de atrás hacia adelante.
 
 #### Declaración / Prototipo
 
-```C
+```c
     bool esPalindromo(char *palabra);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     esPalindromo("neuquen");    => true
     esPalindromo("palindromo"); => false
 ```
@@ -51,13 +51,13 @@ Dados dos números enteros `m` y `n`, construir una función recursiva que devue
 
 #### Declaración / Prototipo
 
-```C
+```c
     int productoRecursivo(int m, int n);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     productoRecursivo(3, 2);   => 6
     productoRecursivo(5, -2);  => -10
     productoRecursivo(-5, 2);  => -10
@@ -70,13 +70,13 @@ Generar un algoritmo recursivo que calcule el k-ésimo número de la serie de Fi
 
 #### Declaración / Prototipo
 
-```C
+```c
     int terminoSerieDeFibonacci(int n);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     terminoSerieDeFibonacci(1); => 1
     terminoSerieDeFibonacci(6); => 8
 ```
@@ -87,13 +87,13 @@ Dados los números enteros m y n, construir una función recursiva que devuelva 
 
 #### Declaración / Prototipo
 
-```C
+```c
     int restoRecursivo(int dividendo, int divisor);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     restoRecursivo(10, 2);   => 0
     restoRecursivo(22, 3);   => 1
     restoRecursivo(-22, 3);  => -1
@@ -107,13 +107,13 @@ Generar un algoritmo recursivo que le ponga los `.` de los miles a un String de 
 
 #### Declaración / Prototipo
 
-```C
+```c
 char *agregarSeparadorMiles(char *numero);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     agregarSeparadorMiles("123456");    => "123.456"
     agregarSeparadorMiles ("12345678"); => "12.345.678"
 ```
@@ -133,13 +133,13 @@ Considerando esta descripción, diseñar los procesos recursivos que permitan mo
 
 #### Declaración / Prototipo
 
-```C
+```c
     char* chinos(unsigned int nivel);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     chinos(4) => "(-.(-.(-.(-.-).-).-).-)"
 ```
 
@@ -157,13 +157,13 @@ Si se tiene la cadena `HHHHLLLLHHHHHLLHHLLHH`, su onda digital se debe ver así:
 
 #### Declaración / Prototipo
 
-```C
+```c
     char* ondaDigital(char *);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     ondaDigital("HL");     => "‾ | _"
     ondaDigital("LH");     => "_ | ‾"
     ondaDigital("HLHL");   => "‾ | _ | ‾ | _"
@@ -205,13 +205,13 @@ Escribir una función que implemente el método que se describe para saber si un
 
 #### Declaración / Prototipo
 
-```C
+```c
     bool esDivisiblePor7(int n);
 ```
 
 #### Casos de testeo
 
-```C
+```c
     esDvisiblePor7(32291); => true
     esDivisiblePor7(110);  => false
 ```
@@ -254,13 +254,13 @@ Llamado original con `n = 10` y `b = 3` el proceso sería en el siguiente orden:
 
 #### Declaración / Prototipo
 
-```C
+```c
     int* explosion(int n, int b, int* size);
 ```
 
 ### Casos de testeo
 
-```C
+```c
     explosion(10, 3 , &size); => {3, 2, 1, 1, 3}
 
     explosion(20, 5 , &size); => {4, 3, 2, 2, 1, 1, 1, 1, 5}

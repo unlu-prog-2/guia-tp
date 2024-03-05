@@ -25,13 +25,13 @@ teniendo en cuenta:
 
 Dada una pila, buscar una clave y determinar si existe en la Pila.
 
-```C
+```c
     bool buscarElemento(Pila p, TipoElemento e);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 6, 3, 7, 4, 8, 3);
     buscarElemento(p,  1); // true
     buscarElemento(p, 13); // false
@@ -42,13 +42,13 @@ Casos de prueba
 Dada una pila, colocar en una posición ordinal determinada, recibida por parámetro, un
 nuevo elemento (Insertar un elemento nuevo).
 
-```C
+```c
     void insertarElemento(Pila p, TipoElemento e, int pos);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 6, 3, 7, 4, 8, 3);
     insertarElemento(p, 5, 20);  // (1, 6, 13, 3, 20, 7, 4, 8, 3)
     insertarElemento(p, 1, 30);  // (30, 1, 6, 13, 3, 20, 7, 4, 8, 3)
@@ -58,13 +58,13 @@ Casos de prueba
 
 Eliminar de una pila un elemento dado (primera ocurrencia encontrada por la clave).
 
-```C
+```c
     void eliminarElemento(Pila p, int clave);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 6, 3, 7, 4, 8, 3);
     eliminarElemento(p, 3);  // (1, 6, 3, 7, 4, 8)
     eliminarElemento(p, 3);  // (1, 6, 7, 4, 8)
@@ -75,13 +75,13 @@ Casos de prueba
 
 Intercambiar los valores de 2 posiciones ordinales de la pila, por ejemplo la 2da con la 4ta.
 
-```C
+```c
     void intercambiarElementos(Pila p, int pos1, int pos2);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 6, 3, 7, 4, 8, 3);
     intercambiarElementos(p, 2, 6);  // (1, 8, 3, 7, 4, 6, 3)
     intercambiarElementos(p, 1, 5);  // (4, 8, 3, 7, 1, 6, 3)
@@ -91,13 +91,13 @@ Casos de prueba
 
 Duplicar el contenido de una pila.
 
-```C
+```c
     Pila copiar(Pila p);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 6, 3, 7, 4, 8, 3);
     copiar(p);  // (1, 6, 3, 7, 4, 8, 3)
 ```
@@ -106,13 +106,13 @@ Casos de prueba
 
 Contar los elementos de la pila.
 
-```C
+```c
     int contarElementos(Pila p);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 6, 3, 7, 4, 8, 3);
     contarElementos(p);  // 7
 ```
@@ -121,13 +121,13 @@ Casos de prueba
 
 Dadas dos pilas, determinar si sus contenidos son exactamente iguales (solo por la clave), sin destruirlas. Utilizar para la resolución del problema una única pila auxiliar.
 
-```C
+```c
     bool compararPilas(Pila p1, Pila p2);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p1 = (1, 6, 3, 7, 4, 8, 3);
     Pila p2 = (1, 6, 3, 7, 4, 8, 3);
     Pila p3 = (6, 1, 3, 7, 4, 8, 3);
@@ -146,13 +146,13 @@ Construir un algoritmo que, utilizando el TAD Pila, permita convertir un número
 decimal pasado como parámetro, a su correspondiente valor expresado en una base
 de 2 a 16 (hexadecimal).
 
-```C
+```c
     char* cambioDeBase(int numero, int base);
 ```
 
 Casos de prueba
 
-```C
+```c
     cambioDeBase(10, 2);    // "1010"
     cambioDeBase(10, 3);    // "101"
     cambioDeBase(16, 3);    // "121"
@@ -166,13 +166,13 @@ Invertir el contenido de una pila sin destruir la pila original.
 
 Se debe retornar la nueva pila invertida y la original no se debe perder.
 
-```C
+```c
     Pila invertirPila(Pila p);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p1 = (1, 6, 3, 7, 4, 8, 3);
     invertirPila(p1);  // (3, 8, 4, 7, 3, 6, 1)
 ```
@@ -183,13 +183,13 @@ Dada una pila eliminar todas las ocurrencias de un determinado
 ítem sin perder la pila original. Deberá retornar una nueva pila sin el ítem en
 consideración.
 
-```C
+```c
     Pila eliminarTodasOcurrencias(Pila p, int clave);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 5, 7, 1, 3, 1, 8);
     eliminarTodasOcurrencias(p, 1);  // (5, 7, 3, 8)
     eliminarTodasOcurrencias(p, 8);  // (1, 5, 7, 1, 3, 1)
@@ -199,13 +199,13 @@ Casos de prueba
 
 Dada dos pilas realizar una función que permita determinar los elementos que tienen en común. Debe retornar una nueva pila con esos elementos (los que están en ambas pilas) sin perder las pilas originales.
 
-```C
+```c
     Pila elementosEnComun(Pila p1, Pila p2);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p1 = (1, 4, 7, 9, 8);
     Pila p2 = (4, 1, 6, 9, 3);
     elementosEnComun(p1, p2);  // (1, 4, 9)
@@ -217,13 +217,13 @@ Dada una pila con valores repetidos, se desea obtener una nueva pila con todos l
 
 Usar el `valor` del `TipoElemento` guardar la cantidad de ocurrencias en la pila resultado.
 
-```C
+```c
     Pila contarRepetidos(Pila p);
 ```
 
 Casos de prueba
 
-```C
+```c
     Pila p = (1, 2, 1, 3, 4, 5, 2, 1, 3, 5, 5);
     contarRepetidos(p);  // (1:3, 2:2, 3:2, 4:1, 5:3)
 ```

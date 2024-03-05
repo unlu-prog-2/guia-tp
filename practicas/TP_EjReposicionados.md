@@ -22,7 +22,7 @@ Por ejemplo:
 La serpiente, cuya cabeza es `C`, empezó en `(2,B)` y recorrió `(3,B)`, `(3,C)`, `(4,C)`, `...` , `(8,F)`. Su longitud
 es `15`.
 
-```C
+```c
 struct Casilla {
     int fila, columna;
 }

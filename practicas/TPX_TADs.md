@@ -7,7 +7,7 @@ necesario), la aplicación de cualquiera de las operaciones y luego la obtenció
 
 Crear un TAD `NRacional`.
 
-```C
+```c
     struct NRacional {
         int numerador;
         unsigned int denominador;
@@ -16,7 +16,7 @@ Crear un TAD `NRacional`.
 
 El TAD debe disponer de las siguientes operaciones:
 
-```C
+```c
 bool nRacional_inicializar(int numerador, unsigned int denominador, struct NRacional f);
 
 struct nRacional nRacional_simplificar(struct NRacional f1);
@@ -40,7 +40,7 @@ enum COMPARACION nRacional_comparar(struct NRacional f1, struct NRacional f2);
 
 ### Casos de testeo
 
-```C
+```c
 
 struct NRacional f1, f2, f3;
 
@@ -70,7 +70,7 @@ nRacional_comparar(f1, f2); => MENOR
 
 Crear un TAD Fecha, compuesta de día, mes y año.
 
-```C
+```c
     struct Fecha {
         unsigned short dia, mes;
         unsigned long anio;
@@ -79,7 +79,7 @@ Crear un TAD Fecha, compuesta de día, mes y año.
 
 El TAD debe disponer de las siguientes operaciones:
 
-```C
+```c
 bool fecha_inicilizar(unsigned short dia, unsigned short mes, unsigned long anio, struct Fecha f);
 
 struct Fecha fecha_sumarDias(struct fecha f, int dias);
@@ -99,7 +99,7 @@ char* fecha_nombreMes(struct fecha f);
 
 ### Casos de testeo
 
-```C
+```c
 struct Fecha fecha1, fecha2, fecha3;
 
 fecha_inicializar(20,1,2023, f1); => True
@@ -123,7 +123,7 @@ fecha_nombreMes(f1); => "Enero"
 
 Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal.
 
-```C
+```c
     struct Contenedor {
         float denominacion;
         unsigned int cantidad;
@@ -136,7 +136,7 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 
 El TAD debe disponer de las siguientes operaciones:
 
-```C
+```c
 struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
 
 struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);

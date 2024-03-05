@@ -1,9 +1,10 @@
 # GUÍA DE TRABAJOS PRÁCTICOS
 
-## Cursada 2023 – 1º cuatrimestre
+## Cursada 2024 – 1º cuatrimestre
 
 * [Práctica de repaso - Introducción a C](TP0_Repaso.md)
 
+<!--
 * [Práctica 1 - Recursividad](TP1_Recursividad.md) ~~[Fecha de Entrega: 11/04]~~ **VENCIDA**
 
 * [Práctica 2 - Listas](TP2_Listas.md) ~~[Fecha de Entrega: 25/04]~~ **VENCIDA**
@@ -16,6 +17,5 @@
 
 * [Práctica 6 - Tablas de hash](TP6_Tabla_Hash.md) [Fecha de Entrega: 16/06]
 
-<!--
 [Práctica 7 - Conjuntos](TP7_Conjuntos.md) [Fecha de Entrega: 21/06]
 -->

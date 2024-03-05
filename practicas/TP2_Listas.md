@@ -22,13 +22,13 @@ c. Se los debe probar y testear de forma tal que se pueda asegurar que el TAD fu
 
 Invertir una lista devolviendo una nueva lista que tenga los elementos de la original pero ordenados desde el último al primero.
 
-```C
+```c
     Lista invertirLista(Lista l);
 ```
 
 #### Casos de prueba
 
-```C
+```c
     lista = [6, 7, 8]
 
     invertirLista(lista) // [8, 7, 6]
@@ -38,7 +38,7 @@ Invertir una lista devolviendo una nueva lista que tenga los elementos de la ori
 
 Calcular el menor de los datos e indicar la posición ordinal.
 
-```C
+```c
     struct ElementoYPosicion {
         int valor;
         int ordinal;
@@ -49,7 +49,7 @@ Calcular el menor de los datos e indicar la posición ordinal.
 
 #### Casos de prueba
 
-```C
+```c
     lista = [7, 6, 8]
 
     menorYPosicion(lista) // Menor: 6; Ordinal: 2
@@ -59,7 +59,7 @@ Calcular el menor de los datos e indicar la posición ordinal.
 
 Calcular el dato máximo y contar la cantidad de veces que se repite.
 
-```C
+```c
     struct ElementoYOcurrencias {
         int valor;
         int ocurrencias;
@@ -70,7 +70,7 @@ Calcular el dato máximo y contar la cantidad de veces que se repite.
 
 #### Casos de prueba
 
-```C
+```c
     lista = [7, 6, 8, 7, 8, 8, 8, 8, 6]
 
     mayorYOcurrencias(lista) // Mayor: 8; Ocurrencias: 5
@@ -80,13 +80,13 @@ Calcular el dato máximo y contar la cantidad de veces que se repite.
 
  Obtener el promedio de los datos de una lista.
 
- ```C
+ ```c
     double promedio(Lista l);
  ```
 
  #### Casos de prueba
 
-```C
+```c
     lista = [7, 6, 8, 7, 8, 8, 8, 8, 6, 6]
 
     promedio(lista) // 7.2
@@ -96,13 +96,13 @@ Calcular el dato máximo y contar la cantidad de veces que se repite.
 
 Retornar otra lista con los números múltiplos de otro número que recibe como parámetro.
 
-```C
+```c
     Lista multiplos(Lista l, int n);
 ```
 
  #### Casos de prueba
 
-```C
+```c
     lista = [7, 6, 8, 1]
 
     multiplos(lista,3) // [21, 18, 24, 3]
@@ -112,13 +112,13 @@ Retornar otra lista con los números múltiplos de otro número que recibe como 
 
 Escribir un algoritmo que genere números al azar únicos dentro de la lista.
 
-```C
+```c
     Lista numerosAlAzar(int cantidad);
 ```
 
  #### Casos de prueba
 
-```C
+```c
     numeroAlAzar(3) -> Controlar que sean 3 elementos con valores distintos.
 ```
 
@@ -128,7 +128,7 @@ Retornar una lista reflejada o espejada. La función recibirá un parámetro adi
 
 #### Casos de prueba
 
-```C
+```c
     lista => [6, 7, 8]
 
     reflejarLista(lista, false) // [6, 7, 8, 7, 6]
@@ -151,13 +151,13 @@ forma exacta (sin decimales).
 
 Para este caso `4` es el escalar de `L1`.
 
-```C
+```c
     bool listaEsMultiplo(Lista l1, Lista l2);
 ```
 
 #### Casos de prueba
 
-```C
+```c
     lista1 = [2, 5, 7, 3];
     lista2 = [8, 20, 28, 12];
     lista3 = [8, 21, 28, 12];
@@ -175,7 +175,7 @@ Dadas dos listas L1 y L2, se pide compararlas siempre en el sentido **L1 -> L2**
 La forma de obtener la comparación es por la clave, posición a posición, donde si L1 tiene más cantidad de claves
 mayores que L2 se considera L1 > L2, por el contrario se considera L1 < L2, o de lo contrario L1 será igual a L2.
 
-```C
+```c
     enum Comparacion {
         MENOR = -1,
         IGUAL = 0,
@@ -187,7 +187,7 @@ mayores que L2 se considera L1 > L2, por el contrario se considera L1 < L2, o de
 
 #### Casos de prueba
 
-```C
+```c
     lista1 = [2, 5, 7, 3];
     lista2 = [8, 20, 28, 12];
     lista3 = [1, 6, 28, 2];
@@ -211,7 +211,7 @@ valores de `Y` o `F(x)`.
 Ejemplo: si el polinomio es `F(x) = 2x + 1`. Se pide retornar los valores de `F(x)` entre los `X` `-1` y `1` de a `0,5`.
 Es decir se deberían retornar los valores de `F(-1)`, `F(-0,5)`, `F(0)`, `F(0,5)` y `F(1)`.
 
-```C
+```c
     struct Polinomio {
         Lista coeficientes;
     };
@@ -227,7 +227,7 @@ Es decir se deberían retornar los valores de `F(-1)`, `F(-0,5)`, `F(0)`, `F(0,5
 
 #### Casos de prueba
 
-```C
+```c
     polinomio1 => [1, 2] //(o sea 2x + 1)
     polinomio2 => [3, 1, 2] //(o sea 2x^2 + x + 3)
 
@@ -257,7 +257,7 @@ sumen una cantidad dada. Por ejemplo: Dado el conjunto A = {10, 3, 1, 7, 4, 2}. 
 lista de los conjuntos que sumen 7 sería: R = [{3, 4}, {1, 4, 2}, {7}]
 Ejemplos:
 
-```C
+```c
     subconjuntosQueSumanN ({10, 3, 1, 7, 4, 2}, 7) // { {3, 4}, {1, 4, 2}, {7} }
     subconjuntosQueSumanN ({10, 3, 1, 7, 4, 2}, 10) // { {10}, {3,7}, {3, 1, 4, 2}, {1, 7, 2} }
 ```

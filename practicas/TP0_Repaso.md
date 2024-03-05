@@ -2,7 +2,7 @@
 
 ## Actividades de Aprendizaje
 
-> Para la resolución de esta práctica ponemos a tu disposición el archivo de encabezados [TP0_Repaso.h](C/TP0_Repaso.h "Archivo de encabezado de la Práctica de Repaso del lenguaje C") de tal manera que solo te queda implementar las funciones que te pedimos y alguna forma de probar los algoritmos que escribiste.
+> Para la resolución de las prácticas, cada equipo debe iniciar un nuevo repositorio utilizando [este repositorio](https://github.com/unlu-prog-2/guia-base) como plantilla.
 
 ### Ejercicio 1
 
@@ -170,12 +170,19 @@ Se pide escribir funciones que informen:
 typedef struct ViviendaRep {
     short piso;
     char depto;
+} Vivienda;#define CANT_PISOS 8
+
+typedef struct ViviendaRep {
+    short piso;
+    char depto;
 } Vivienda;
 
 int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 int cantidadDeViviendasVacias(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 float promedioHabitantesPorVivienda(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
 Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
+void cantidadDeViviendasVaciasPorPiso(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS], int vaciasPorPiso[CANT_PISOS]);
+void viviendasVacias(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS], Vivienda viviendasVacias[CANT_PISOS * CANT_DEPARTAMENTOS]);
 ```
 
 #### Casos de prueba
@@ -192,17 +199,19 @@ Vivienda viviendaConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
         {0, 0, 1, 1, 1}
     };
 
-    pisoConMasHabitantes(edificio) // 2
-    cantidadDeViviendasVacias(edificio) // 12
-    promedioHabitantesPorVivienda(edificio) // 1.325
-    viviendaConMasHabitantes(edificio) // 1B
+    pisoConMasHabitantes(edificio)             // 2
+    cantidadDeViviendasVacias(edificio)        // 12
+    cantidadDeViviendasVaciasPorPiso(edificio) // 1 => 1   2 => 1   3 => 1   4 => 4   5 => 0   6 => 1   7 => 2   8 => 2
+    viviendasVacias(edificio)                  // 1E  2D  3B  4A  4C  4D  4E  6C  7B  7C  8A  8B
+    promedioHabitantesPorVivienda(edificio)    // 1.325
+    viviendaConMasHabitantes(edificio)         // 1B
 ```
 
 ### Ejercicio 6
 
 Dado un archivo de texto que contiene datos de minutos trabajos por personal de una consultora de sistemas informáticos a diferentes clientes, se pide obtener los totales por cliente/año en forma de grilla como se muestra debajo.
 
-El archivo contiene los siguientes datos: “Cliente Año Mes Minutos_Trabajados”. El separador de campos es un **_Tabulador_**.
+El archivo contiene los siguientes datos: `Cliente Año Mes Minutos_Trabajados`. El separador de campos es un `Tabulador`.
 
 A continuación se muestra un pequeño ejemplo. Si tuviera el siguiente contenido:
 
@@ -223,7 +232,22 @@ La tabla a producir por el programa debería ser:
 | 1000            | 1051 |      |      |      |
 | 1001            |      | 120  | 96   | 48   |
 
-Se adjunta un TXT con estos datos según lo especificado a procesar con el nombre [TP0_EJ6.txt](C/archivos/TP0_EJ6.txt) que contiene aprox. unas 65500 filas a procesar.
+La guía incluye un TXT con estos datos según lo especificado a procesar con el nombre `TP0_EJ6.txt` que contiene aprox. unas 65500 filas a procesar.
+
+La función a implementar tiene la siguiente firma:
+
+```c
+#define CANT_MAX_ANIOS 100
+#define CANT_MAX_CLIENTES 10000
+#define ANIO_INICIO 2013
+
+struct Cliente {
+    int id;
+    int totalesPorAnio[CANT_MAX_ANIOS];
+};
+
+void procesarArchivo(const char *nombreArchivo);
+```
 
 ---
 
