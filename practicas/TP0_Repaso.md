@@ -170,11 +170,6 @@ Se pide escribir funciones que informen:
 typedef struct ViviendaRep {
     short piso;
     char depto;
-} Vivienda;#define CANT_PISOS 8
-
-typedef struct ViviendaRep {
-    short piso;
-    char depto;
 } Vivienda;
 
 int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]);
