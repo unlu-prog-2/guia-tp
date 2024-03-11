@@ -1,41 +1,36 @@
 # Práctica 1: Introducción a los TAD
 
-**En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita al usuario el ingreso de una o más instancias (según sea
-necesario), la aplicación de cualquiera de las operaciones y luego la obtención del resultado.**
+En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita al usuario el ingreso de una o más instancias (según sea
+necesario), la aplicación de cualquiera de las operaciones y luego la obtención del resultado.
 
 ## Ejercicio 1
 
-Crear un TAD `NRacional`.
+Crear un TAD `NumeroRacional`.
 
 ```c
-    struct NRacional {
+    struct NumeroRacional {
         int numerador;
-        unsigned int denominador;
+        int denominador;
     };
 ```
 
 El TAD debe disponer de las siguientes operaciones:
 
 ```c
-bool nRacional_inicializar(int numerador, unsigned int denominador, struct NRacional f);
-
-struct nRacional nRacional_simplificar(struct NRacional f1);
-
-struct nRacional nRacional_sumar(struct NRacional f1, struct NRacional f2);
-
-struct nRacional nRacional_restar(struct NRacional f1, struct NRacional f2);
-
-struct nRacional nRacional_multiplicar(struct NRacional f1, struct NRacional f2);
-
-struct nRacional nRacional_dividir(struct NRacional f1, struct NRacional f2);
-
-struct nRacional nRacional_potencia(struct NRacional f1, struct NRacional f2);
+bool nr_inicializar(int numerador, int denominador, struct NumeroRacional *numeroRacional);
+void nr_simplificar(struct NumeroRacional *numeroRacional);
+struct NumeroRacional nr_sumar(struct NumeroRacional f1, struct NumeroRacional f2);
+struct NumeroRacional nr_restar(struct NumeroRacional f1, struct NumeroRacional f2);
+struct NumeroRacional nr_multiplicar(struct NumeroRacional f1, struct NumeroRacional f2);
+struct NumeroRacional nr_dividir(struct NumeroRacional f1, struct NumeroRacional f2);
 
 enum COMPARACION {
     MAYOR, MENOR, IGUAL
 };
+enum COMPARACION nr_comparar(struct NumeroRacional f1, struct NumeroRacional f2);
 
-enum COMPARACION nRacional_comparar(struct NRacional f1, struct NRacional f2);
+char *comparacion_to_string(enum COMPARACION comparacion);
+char *nr_to_string(struct NumeroRacional numeroRacional);
 ```
 
 ### Casos de testeo
@@ -44,26 +39,24 @@ enum COMPARACION nRacional_comparar(struct NRacional f1, struct NRacional f2);
 
 struct NRacional f1, f2, f3;
 
-nRacional_inicializar(2, 3, f1) => True
-nRacional_inicializar(4, 5, f2) => True
-nRacional_inicializar(2, 0, f3) => False
-nRacional_inicializar(-4, 6, f3) => False
+nr_inicializar(2, 3, &f1);    // true
+nr_inicializar(4, 5, &f2);    // true
+nr_inicializar(2, 0, &f3);    // false
+nr_inicializar(-4, 6, &f3);   // true
 
-nRacional_simplificar(f1); => {2, 3}
-nRacional_simplificar(f3); => {-2, 3}
+nr_simplificar(f1);           // {2/3}
+nr_simplificar(f3);           // {-2/3}
 
-nRacional_sumar(f1, f2); => {22, 15}
+nr_sumar(f1, f2);             // {22/15}
 
-nRacional_restar(f1, f2); => {-2, 15}
+nr_restar(f1, f2);            // {-2/15}
 
-nRacional_multiplicar(f1, f2); => {8, 15}
+nr_multiplicar(f1, f2);       // {8/15}
 
-nRacional_dividir(f1, f2); => {5, 6}
-nRacional_dividir(f2, f3); => {-6, 5}
+nr_dividir(f1, f2);           // {5/6}
+nr_dividir(f2, f3);           // {-6/5}
 
-nRacional_potencia(f1, 2); => {4, 9}
-
-nRacional_comparar(f1, f2); => MENOR
+nr_comparar(f1, f2);          // MENOR
 ```
 
 ## Ejercicio 2
