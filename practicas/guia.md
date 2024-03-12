@@ -4,6 +4,7 @@
 
 * [Práctica de repaso - Introducción a C](TP0_Repaso.md)
 
+<!--
 * [Práctica 1 - Recursividad](TP1_Recursividad.md) ~~[Fecha de Entrega: 11/04]~~ **VENCIDA**
 
 * [Práctica 2 - TADs](TP2_TADs.md) ~~[Fecha de Entrega: 25/04]~~ **VENCIDA**
@@ -19,5 +20,5 @@
 * [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) [Fecha de Entrega: 16/06]
 
 [Práctica 7 - Conjuntos](TP7_Conjuntos.md) [Fecha de Entrega: 21/06]
-<!--
+
 -->
