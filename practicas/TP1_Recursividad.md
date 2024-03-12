@@ -2,8 +2,6 @@
 
 ## Actividades de Aprendizaje
 
-> Para la resolución de esta práctica ponemos a tu disposición el archivo de encabezados [TP1_Recursividad.h](C/TP1_Recursividad.h "Archivo de encabezado de la Práctica de Recursividad C") de tal manera que solo te queda implementar las funciones que te pedimos y alguna forma de probar los algoritmos que escribiste.
-
 ### Ejercicio 1
 
 Construir una función recursiva que retorne verdadero si un número entero recivido como parámetro es capicua.
