@@ -65,15 +65,21 @@ Crear un TAD Fecha, compuesta de día, mes y año.
 
 ```c
     struct Fecha {
-        unsigned short dia, mes;
-        unsigned long anio;
+// A definir por el desarrollador
     };
 ```
 
 El TAD debe disponer de las siguientes operaciones:
 
 ```c
-bool fecha_inicilizar(unsigned short dia, unsigned short mes, unsigned long anio, struct Fecha f);
+
+unsigned short fecha_dia(struct Fecha f);
+
+unsigned short fecha_mes(struct Fecha f);
+
+unsigned int fecha_anio(struct Fecha f);
+
+bool fecha_inicilizar(unsigned short dia, unsigned short mes, unsigned int anio, struct Fecha f);
 
 struct Fecha fecha_sumarDias(struct fecha f, int dias);
 
@@ -93,9 +99,14 @@ char* fecha_nombreMes(struct fecha f);
 ### Casos de testeo
 
 ```c
-struct Fecha fecha1, fecha2, fecha3;
+struct Fecha f1, f2, f3;
 
 fecha_inicializar(20,1,2023, f1); => True
+
+fecha_dia(f1); => 20
+fecha_mes(f1); => 1
+anio(f1); => 2023
+
 fecha_inicializar(30,1,2023, f2); => True
 fecha_inicializar(30,2,2023, f3); => False
 fecha_inicializar(29,2,2024, f3); => True
