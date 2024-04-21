@@ -13,9 +13,9 @@
 
 * [Práctica 4 - Pilas](TP4_Pilas.md) [Fecha de Entrega: 02/05]
   
-<!--
-* [Práctica 5 - Colas](TP5_Colas.md) ~~[Fecha de Entrega: 17/05]~~ **VENCIDA**
+* [Práctica 5 - Colas](TP5_Colas.md) [Fecha de Entrega: 09/05]
 
+<!--
 * [Práctica 6 - Árboles](TP6_Arboles.md) [Fecha de Entrega: 07/06] **ACTUALIZADA**
 
 * [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) [Fecha de Entrega: 16/06]

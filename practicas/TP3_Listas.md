@@ -26,7 +26,7 @@ Invertir una lista devolviendo una nueva lista que tenga los elementos de la ori
     Lista invertirLista(Lista l);
 ```
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     lista = [6, 7, 8]
@@ -47,7 +47,7 @@ Calcular el menor de los datos e indicar la posición ordinal.
     struct ElementoYPosicion menorYPosicion(Lista l);
 ```
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     lista = [7, 6, 8]
@@ -68,7 +68,7 @@ Calcular el dato máximo y contar la cantidad de veces que se repite.
     struct ElementoYOcurrencias mayorYOcurrencias(Lista l);
 ```
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     lista = [7, 6, 8, 7, 8, 8, 8, 8, 6]
@@ -84,7 +84,7 @@ Calcular el dato máximo y contar la cantidad de veces que se repite.
     double promedio(Lista l);
  ```
 
- #### Casos de prueba
+Casos de prueba
 
 ```c
     lista = [7, 6, 8, 7, 8, 8, 8, 8, 6, 6]
@@ -100,7 +100,7 @@ Retornar otra lista con los números múltiplos de otro número que recibe como 
     Lista multiplos(Lista l, int n);
 ```
 
- #### Casos de prueba
+Casos de prueba
 
 ```c
     lista = [7, 6, 8, 1]
@@ -116,7 +116,7 @@ Escribir un algoritmo que genere números al azar únicos dentro de la lista.
     Lista numerosAlAzar(int cantidad);
 ```
 
- #### Casos de prueba
+Casos de prueba
 
 ```c
     numeroAlAzar(3) -> Controlar que sean 3 elementos con valores distintos.
@@ -126,7 +126,7 @@ Escribir un algoritmo que genere números al azar únicos dentro de la lista.
 
 Retornar una lista reflejada o espejada. La función recibirá un parámetro adicional según el cual se repetirá o no el último elemento de la lista original.
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     lista => [6, 7, 8]
@@ -145,7 +145,6 @@ Si el resultado de la división retorna el mismo valor para cada posición se di
 
 > Nota: Para la implementación usar la clave como campo de datos solamente.
 
-
 Entonces `L2` es múltiplo por `L1` porque cada posición de `L2` se divide por el valor de `L1` de la misma posición en
 forma exacta (sin decimales).
 
@@ -155,7 +154,7 @@ Para este caso `4` es el escalar de `L1`.
     bool listaEsMultiplo(Lista l1, Lista l2);
 ```
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     lista1 = [2, 5, 7, 3];
@@ -185,7 +184,7 @@ mayores que L2 se considera L1 > L2, por el contrario se considera L1 < L2, o de
     enum Comparacion compararListas(Lista l1, Lista l2);
 ```
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     lista1 = [2, 5, 7, 3];
@@ -225,7 +224,7 @@ Es decir se deberían retornar los valores de `F(-1)`, `F(-0,5)`, `F(0)`, `F(0,5
     Lista valores(struct Polinomio p, int desde, int hasta, double paso);
 ```
 
-#### Casos de prueba
+Casos de prueba
 
 ```c
     polinomio1 => [1, 2] //(o sea 2x + 1)

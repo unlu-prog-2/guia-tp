@@ -7,11 +7,11 @@
 Construir el TAD de listas correspondientes a las implementaciones de **"Arreglos"** y **"Punteros"**
 teniendo en cuenta:
 
-    a. Usar los `.h` definidos por la cátedra.
+a. Usar los `.h` definidos por la cátedra.
 
-    b. Se los debe implementar cada uno en un `.c` diferente. Es decir un archivo para cada implementación.
+b. Se los debe implementar cada uno en un `.c` diferente. Es decir un archivo para cada implementación.
 
-    c. Se los debe probar y testear de forma tal que se pueda asegurar que el TAD funciona correctamente.
+c. Se los debe probar y testear de forma tal que se pueda asegurar que el TAD funciona correctamente.
 
 ### Ejercicios a resolver con los TAD
 
