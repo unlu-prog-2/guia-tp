@@ -141,17 +141,31 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 El TAD debe disponer de las siguientes operaciones:
 
 ```c
-struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
+struct CajaRegistradora cr_inicializar();
 
-struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
+struct Contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
+
 ```
 
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
-* `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago.
+* `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago y decrementando los dados de vuelto.
 * `Saldo`: devuelve el saldo total del cajero.
-* `CerrarCaja`: retorna los billetes y monedas que quedaron al final del turno en la caja registradora.
+* `CerrarCaja`: retorna un string con el detalle de los billetes y monedas que quedaron al final del turno en la caja registradora.
 
-## Ejercicio 4
+```c
+struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
+
+void cr_cargar(Contenedor cont, CajaRegistradora caja);
+
+struct CajaRegistradora cr_darVuelto(float cantidadACobrar, struct CajaRegistradora billetesDados, struct CajaRegistradora cajaActual);
+
+double cr_saldo(struct CajaRegistradora caja);
+
+char* cr_cerrarCaja(struct CajaRegistradora caja);
+```
+
+
+<!-- ## Ejercicio 4
 
 Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de vencimiento y los límites de crédito en una cuota y en cuotas. Este TAD debe permitir:
 
@@ -173,4 +187,4 @@ Crear un TAD `TarjetaDeCredito` que tiene el número de tarjeta, la fecha de ven
   * que el número sea correcto, que la tarjeta no se encuentre vencida y que le alcance el límite de crédito para realizar la compra.
   * Una vez aceptado el movimiento, se debe reducir el límite de crédito en una cuota teniendo en cuenta que si la tarjeta es una *Visa* o una *American Express* se descuenta el 80% del monto, en el resto de las tarjetas se descuenta el monto completo.
   * En cambio, si se trata de una compra en cuotas, todas las tarjetas descuentan, en compras hasta 6 cuotas, el 90% del monto adeudado (cuotas de la 2ª en adelante) al límite de compras en cuotas, y descuentan del límite de compras en una cuota el monto de la primera cuota. En compras de más de 6 cuotas es igual, salvo que descuentan solo el 70% de las cuotas adeudas del límite de compra en cuotas.
-* `MostrarLimites`: Informar los límites de compras disponibles.
+* `MostrarLimites`: Informar los límites de compras disponibles. -->
