@@ -49,9 +49,13 @@ nuevo elemento (Insertar un elemento nuevo).
 Casos de prueba
 
 ```c
-    Pila p = (1, 6, 3, 7, 4, 8, 3);
+    Pila p = (1, 6, 13, 3, 7, 4, 8, 3);
+    // Se insertan en ese orden, por lo cual el tope sería el 3.
+    
+    //                               9º 8º 7º  6º 5º  4º 3º 2º 1º     
     insertarElemento(p, 5, 20);  // (1, 6, 13, 3, 20, 7, 4, 8, 3)
-    insertarElemento(p, 1, 30);  // (30, 1, 6, 13, 3, 20, 7, 4, 8, 3)
+    // Se empieza a contar desde el tope
+    insertarElemento(p, 1, 30);  // (1, 6, 13, 3, 20, 7, 4, 8, 3, 30)
 ```
 
 #### Eliminar elemento
