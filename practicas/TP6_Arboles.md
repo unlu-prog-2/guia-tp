@@ -8,7 +8,7 @@ utilizando el tipo abstracto de dato, permita al usuario el ingreso de una o má
 Construir el TAD de Arboles correspondiente a la implementación de “Punteros” teniendo en cuenta:
 
 - Definir las estructuras de datos en función a las especificaciones dadas en clase y documentadas en los PDF que se encuentran en el aula virtual de la asignatura.
-- Se las debe implementar mediante objetos y respetar estrictamente los nombres y parámetros de cada una de las operaciones del TAD especificadas.
+- Se las debe implementar respetando estrictamente los nombres y parámetros de cada una de las operaciones del TAD especificadas.
 - Se lo debe probar y testear de forma tal que se pueda asegurar que el TAD funciona correctamente.
 
 ## Arboles Binarios
@@ -30,7 +30,7 @@ Para un `nodo` del árbol binario determinado, se pide implementar funciones que
 
 - El nombre del nodo padre.
 - Una lista con todos sus hijos.
-- Una lista con todos los nodos hermanos.
+- Una lista con su nodo hermano.
 - El nivel en el que se encuentra.
 - La altura de su rama (Altura del Subárbol).
 - Una lista con todos los nodos que están en el mismo nivel.
@@ -40,7 +40,9 @@ Para un `nodo` del árbol binario determinado, se pide implementar funciones que
 
 ### Analizando los árboles
 
-Un árbol n-ario puede ser representado como binario utilizando la transformación de Knuth. Esto puede ser útil para manejar árboles n-arios en estructuras de almacenamiento fijo, sin necesidad de conocer el "n" del árbol. Se propone un árbol binario derivado del n-ario, tal que para cada nodo del árbol n-ario, su primer hijo es el hijo izquierdo en el árbol binario, y los hermanos de cada nodo son sus hijos derechos.
+Un árbol n-ario puede ser representado como binario utilizando la **transformación de Knuth**. Esto puede ser útil para manejar árboles n-arios en estructuras de almacenamiento fijo, sin necesidad de conocer el "n" del árbol.
+
+Se propone un árbol binario derivado del n-ario, tal que para cada nodo del árbol n-ario, su primer hijo es el hijo izquierdo en el árbol binario, y los hermanos de cada nodo son sus hijos derechos.
 
 > Ejemplo: (n-ario a la izquierda, representado en binario a la derecha)
 
@@ -54,8 +56,7 @@ Dado un `árbol N-ario`, se pide implementar funciones que retornen:
 - Un booleano que determine si todas las hojas están al mismo nivel.
 - Una lista con el resultado del recorrido en anchura del árbol.
 - La cantidad de hojas de dicho árbol.
-- Un booleano, que dados dos árboles generales, determine si
-  tienen la misma estructura, sin importar los datos del mismo (árbol similar).
+- Un booleano, que dados dos árboles generales, determine si tienen la misma estructura, sin importar los datos del mismo (árbol similar).
 - El padre de un nodo del árbol.
 - Una lista con los hermanos de un nodo del árbol.
 
