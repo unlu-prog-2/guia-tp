@@ -17,6 +17,18 @@ correspondientes a:
 - Tabla hash usando zona de overflow (usando el TAD).
 - Tabla hash por recolocación cuadrática (en papel).
 
+### ¿Qué estructura de Tabla Hash recomendarias?
+
+- Si se pide desarrollar un algoritmo que dado un archivo que contendrá los datos de alumnos
+(legajo, apellido, nombres, domicilio, TE). Genere una tabla hash donde la clave será el
+legajo y se guardará como dato la posición física del registro para realizar accesos
+directos. El “legajo" es un valor de 6 dígitos.
+
+- Se desea poder implementar una solución para encontrar de forma rápida los datos de
+las personas que a una fecha determinada se presentaron a vacunar contra el COVID.
+Es decir dada una fecha determinada debería obtener quienes se vacunaron. De cada
+persona se guarda básicamente el DNI, Apellido y Nombre. 
+
 ### Comparando tablas Hash
 
 Sea `T` una tabla de hash de tamaño 10 y `h` la siguiente función de hash `h(k) = (4 + 3k) mod 10`.
@@ -35,10 +47,10 @@ El código a utilizar es provisto por la cátedra. La idea es realizar modificac
 
 Se entregan 4 archivos que contienen datos de un producto (código de 7 dígitos, detalle, precio, stock).
 
-* productos_10.dat (contiene 10 registros)
-* productos_100.dat (contiene 100 registros)
-* productos_1000.dat (contiene 1000 registros)
-* productos_10000.dat (contiene 10000 registros)
+- productos_10.dat (contiene 10 registros)
+- productos_100.dat (contiene 100 registros)
+- productos_1000.dat (contiene 1000 registros)
+- productos_10000.dat (contiene 10000 registros)
 
 Son archivos binarios que contienen datos correspondientes a los productos que responden a la siguiente estructura:
 
@@ -104,15 +116,16 @@ responder las preguntas planteadas para cada experimento y para las conclusiones
 #### Preguntas
 
 Para cada uno de los archivos anteriores, responder y justificar las siguientes preguntas:
-* ¿Cómo afecta, en cada caso, el tamaño de la tabla hash? ¿Se comporta mejor cuando falta espacio o cuando sobra? ¿Es mejor que sobre mucho o que sobre poco? ¿Por qué?
-* ¿Qué funciona mejor, la tabla hash con lista de colisiones o la tabla hash con zona de overflow? ¿Por qué?
-* ¿Qué funciona mejor, la tabla hash con lista de colisiones o el árbol AVL? ¿Por qué?
-* ¿Qué funciona mejor, la tabla hash con zona de overflow o el árbol AVL? ¿Por qué?
-* ¿Por qué hay celdas pre-completadas con `NO` en el caso de la tabla hash con zona de overflow?
+
+- ¿Cómo afecta, en cada caso, el tamaño de la tabla hash? ¿Se comporta mejor cuando falta espacio o cuando sobra? ¿Es mejor que sobre mucho o que sobre poco? ¿Por qué?
+- ¿Qué funciona mejor, la tabla hash con lista de colisiones o la tabla hash con zona de overflow? ¿Por qué?
+- ¿Qué funciona mejor, la tabla hash con lista de colisiones o el árbol AVL? ¿Por qué?
+- ¿Qué funciona mejor, la tabla hash con zona de overflow o el árbol AVL? ¿Por qué?
+- ¿Por qué hay celdas pre-completadas con `NO` en el caso de la tabla hash con zona de overflow?
 
 #### Conclusiones generales
 
-* ¿Cómo afecta los tiempos el tamaño del archivo (cantidad de registros)? ¿Y la cantidad de repeticiones de búsqueda?
-* ¿Cómo se puede explicar el hecho de que se tarde menos en buscar cuando hay muchos registros que cuando hay pocos?
-* Mirando el código, ¿en qué se gasta la mayor parte del tiempo?
-* Para este problema, ¿habrá alguna función de hash mejor que la función módulo? ¿Por qué?
+- ¿Cómo afecta los tiempos el tamaño del archivo (cantidad de registros)? ¿Y la cantidad de repeticiones de búsqueda?
+- ¿Cómo se puede explicar el hecho de que se tarde menos en buscar cuando hay muchos registros que cuando hay pocos?
+- Mirando el código, ¿en qué se gasta la mayor parte del tiempo?
+- Para este problema, ¿habrá alguna función de hash mejor que la función módulo? ¿Por qué?
