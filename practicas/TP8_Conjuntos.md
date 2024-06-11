@@ -1,7 +1,7 @@
 # Práctica 8: Conjuntos
 
 **En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita
-al usuario el ingreso de una o más instancias (según sea necesario), la aplicación de cualquiera de las operaciones y
+al usuario el ingreso de una o más instancias (según sea necesario), la a0plicación de cualquiera de las operaciones y
 luego la obtención del resultado.**
 
 ## Para empezar a trabajar
@@ -24,36 +24,36 @@ Desarrollar un algoritmo que:
     >
     > #### Unión
     >
-    > &forall; x &in; A &Union; B  &iff; x &in; A &or; x &in; B.
+    > $\forall x \in A \cup B \Leftrightarrow x \in A \vee x \in B$.
     >
     > #### Intersección
     >
-    > &forall; x &in; A &Intersection; B &iff; x &in; A &and; x &in; B.
+    > $\forall x \in A \cap B \Leftrightarrow x \in A \wedge x \in B$.
     >
     > #### Diferencia
     >
-    > &forall; x &in; A \ B  &iff; x &in; A &and; x &notin; B.
+    > $\forall x \in A \setminus B \Leftrightarrow x \in A \wedge x \notin B$.
     >
     > #### Diferencia Simétrica
     >
-    > &forall; x &in; A &Delta; B &iff; (A \ B) &Union; (B \ A).
+    > $\forall x \in A \bigtriangleup B \Leftrightarrow x \in (A \setminus B) \cup x \in (B \setminus A)$.
     >
-    > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    > &iff; (x &in; A &and; x &notin; B) &or; (x &in; B &and; x &notin; A).
+    > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    > $\Leftrightarrow (x \in A \wedge x \notin B) \vee (x \in B \wedge x \notin A)$.
 
   - si el primero está incluido o si son iguales
 
     >
     > #### Inclusión
     >
-    > A &subset; B &iff; &forall; x &in; A &Implies; x &in; B.
+    > $A \subseteq B \Leftrightarrow \forall x \in \Rightarrow x \in B$.
     >
-    > Igualdad:
+    > #### Igualdad
     >
-    > A = B &iff; [&forall; x, x &in; A &iff; x &in; B]
+    > $A = B \Leftrightarrow [\forall x, x\in A \Leftrightarrow x \in B]$
     >
-    > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    > &iff; [(&forall; x &in; A &Implies; x &in; B) &and; (&forall; x &in; B &Implies; x &in; A)].
+    > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    > $\Leftrightarrow[(\forall x \in A \Rightarrow x \in B) \wedge (\forall x \in B \Rightarrow x \in A)]$.
 
 ### Uniones e Intersecciones Generales
 
