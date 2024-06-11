@@ -27,7 +27,7 @@ directos. El “legajo" es un valor de 6 dígitos.
 - Se desea poder implementar una solución para encontrar de forma rápida los datos de
 las personas que a una fecha determinada se presentaron a vacunar contra el COVID.
 Es decir dada una fecha determinada debería obtener quienes se vacunaron. De cada
-persona se guarda básicamente el DNI, Apellido y Nombre. 
+persona se guarda básicamente el DNI, Apellido y Nombre.
 
 ### Comparando tablas Hash
 
