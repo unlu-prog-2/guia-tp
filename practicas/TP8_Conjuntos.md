@@ -44,7 +44,7 @@ Desarrollar un algoritmo que:
   - si el primero está incluido o si son iguales
 
     >
-    > #### Inclusión:
+    > #### Inclusión
     >
     > A &subset; B &iff; &forall; x &in; A &Implies; x &in; B.
     >
