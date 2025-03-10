@@ -1,10 +1,10 @@
 # GUÍA DE TRABAJOS PRÁCTICOS
 
-## Cursada 2024 – 1º cuatrimestre
+## Cursada 2025 – 1º cuatrimestre
 
 * [Práctica de repaso - Introducción a C](TP0_Repaso.md)
 
-* [Práctica 1 - Recursividad](TP1_Recursividad.md) ~~[Fecha de Entrega: 26/03]~~ **VENCIDA**
+<!-- [Práctica 1 - Recursividad](TP1_Recursividad.md) ~~[Fecha de Entrega: 26/03]~~ **VENCIDA**
 
 * [Práctica 2 - TADs](TP2_TADs.md) ~~[Fecha de Entrega: 18/04]~~ **VENCIDA**
 
@@ -19,3 +19,4 @@
 * [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) ~~[Fecha de Entrega: 06/06]~~ **VENCIDA**
 
 * [Práctica 8 - Conjuntos](TP8_Conjuntos.md) [Fecha de Entrega: 18/06]
+-->

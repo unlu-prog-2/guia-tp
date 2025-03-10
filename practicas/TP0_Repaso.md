@@ -44,7 +44,7 @@ Necesitamos una función que reciba un valor entero `n` y un dígito `d` (entero
 bool digitoEnNumero(long n, short d);
 ```
 
-#### Casos de prueba
+#### Casos de prueba EJ2
 
 ```c
     digitoEnNumero(987, 7); // True
@@ -67,7 +67,7 @@ donde `Punto` se define así:
     };
 ```
 
-### Casos de prueba
+### Casos de prueba EJ3
 
 ```c
     struct Punto centro = {0, 0};
@@ -103,7 +103,7 @@ Se pide escribir funciones que informen:
     float promedioDePartidosJugados(struct Jugador equipo[CANT_JUGADORES], int edad);
 ```
 
-#### Casos de prueba
+#### Casos de prueba EJ4
 
 ```c
     struct Jugador equipo[CANT_JUGADORES] = {
@@ -180,7 +180,7 @@ void cantidadDeViviendasVaciasPorPiso(int edificio[CANT_PISOS][CANT_DEPARTAMENTO
 void viviendasVacias(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS], Vivienda viviendasVacias[CANT_PISOS * CANT_DEPARTAMENTOS]);
 ```
 
-#### Casos de prueba
+#### Casos de prueba EJ5
 
 ```c
     int edificio[CANT_PISOS][CANT_DEPARTAMENTOS] = {
@@ -344,7 +344,7 @@ En cada uno de los siguientes casos, sin ejecutar el código, interpretar y just
             cajas[i].largo = i + 1;
         }
         for(i=0;i<5;i++) {
-            printf("Medidas de cubilete Nº%d: %d alto, %d ancho, %d largo", cubiletes[i].alto, cubilietes[i].ancho, cubilietes[i].largo);
+            printf("Medidas de cajas Nº%d: %d alto, %d ancho, %d largo", cajas[i].alto, cajas[i].ancho, cajas[i].largo);
         }
     }
 ```

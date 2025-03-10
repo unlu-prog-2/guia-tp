@@ -123,6 +123,10 @@ fecha_nombreMes(f1); => "Enero"
 
 ```
 
+## Pensemos distinto
+
+Crear un TAD Fecha, donde todos los cálculos se realicen utilizando días julianos, pero que siga siendo compatible con el TAD anterior, de manera que la implementación utilizada sea transparente al usuario.
+
 ## Ejercicio 3
 
 Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y billete en circulación legal.
@@ -163,7 +167,6 @@ double cr_saldo(struct CajaRegistradora caja);
 
 char* cr_cerrarCaja(struct CajaRegistradora caja);
 ```
-
 
 <!-- ## Ejercicio 4
 

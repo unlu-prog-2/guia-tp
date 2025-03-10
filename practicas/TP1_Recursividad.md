@@ -24,7 +24,7 @@ Construir una función recursiva que retorne verdadero si un número entero reci
 
 ### Ejercicio 2
 
-Construir una función recursiva que retorne verdadero si una cadena de caracteres pasada como parámetro es un palíndromo. 
+Construir una función recursiva que retorne verdadero si una cadena de caracteres pasada como parámetro es un palíndromo.
 
 #### Ejemplo
 
@@ -33,7 +33,7 @@ La palabra "neuquen" ya que se lee igual de atrás hacia adelante.
 #### Declaración / Prototipo
 
 ```c
-    bool esPalindromo(char *palabra);
+bool esPalindromo(char *palabra);
 ```
 
 #### Casos de testeo
