@@ -4,9 +4,9 @@
 
 * [Práctica de repaso - Introducción a C](TP0_Repaso.md)
 
-<!-- [Práctica 1 - Recursividad](TP1_Recursividad.md) ~~[Fecha de Entrega: 26/03]~~ **VENCIDA**
+* [Práctica 1 - Recursividad](TP1_Recursividad.md)
 
-* [Práctica 2 - TADs](TP2_TADs.md) ~~[Fecha de Entrega: 18/04]~~ **VENCIDA**
+<!-- * [Práctica 2 - TADs](TP2_TADs.md) ~~[Fecha de Entrega: 18/04]~~ **VENCIDA**
 
 * [Práctica 3 - Listas](TP3_Listas.md) ~~[Fecha de Entrega: 25/04]~~ **VENCIDA**
 
