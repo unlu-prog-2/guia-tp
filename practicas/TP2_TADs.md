@@ -72,8 +72,8 @@ Realizar otra implementación del TAD `NumeroRacional`, usando la estructura de 
 ```c
     struct NumeroRacional {
         int parteEntera;
-        unsigned int numerador;
-        unsigned int denominador;
+        int numerador;
+        int denominador;
     };
 ```
 
