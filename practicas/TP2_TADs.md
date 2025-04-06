@@ -59,6 +59,24 @@ nr_dividir(f2, f3);           // {-6/5}
 nr_comparar(f1, f2);          // MENOR
 ```
 
+## Ejercicio 1 bis. Pensemos distinto
+
+Realizar otra implementación del TAD `NumeroRacional`, usando la estructura de un numero racional como una fracción mixta, pero que siga siendo compatible con el TAD anterior, de manera que la implementación utilizada sea transparente al usuario.
+
+* **Fraccion Mixta:** El número racional se compone como la suma de una parte entera y una fracción pura (aquella que el denominador es menor que el numerador).
+
+  * **34/15** es impropia y sería equivalente a la fracción mixta 2 4/15, donde 2 sería la `parte entera`, 4 es el `numerador` y 15 el `denominador`.
+
+  * **-21/4** es impropia y sería equivalente a la fracción mixta -5 -1/4, donde -5 sería la `parte entera`, -1 es el `numerador` y 4 el `denominador`.
+
+```c
+    struct NumeroRacional {
+        int parteEntera;
+        unsigned int numerador;
+        unsigned int denominador;
+    };
+```
+
 ## Ejercicio 2
 
 Crear un TAD Fecha, compuesta de día, mes y año.
