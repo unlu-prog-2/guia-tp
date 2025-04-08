@@ -11,6 +11,7 @@ El archivo de entrada contendrá:
 1. La grilla de la sopa de letras, donde cada línea representa una fila de la grilla.
 2. Una línea en blanco (actuando como separador).
 3. La lista de palabras a buscar, una por línea.
+4. Cualquier línea que comience con el caracter `#` se considera un comentario y debe ser ignorada (en cualquier parte del archivo).
 
 ### Formato de salida
 Para cada `palabra` buscada, el programa debe escribir en el archivo de salida:

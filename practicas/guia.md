@@ -8,6 +8,8 @@
 
 * [Práctica 2 - TADs](TP2_TADs.md) [Fecha de Entrega: 18/04]
 
+* [TP Integrador 1 - Sopa de letras](TP_sopa_de_letras.md) [Fecha de Entrega: 18/04]
+
 <!-- * [Práctica 3 - Listas](TP3_Listas.md) ~~[Fecha de Entrega: 25/04]~~ **VENCIDA**
 
 * [Práctica 4 - Pilas](TP4_Pilas.md) ~~[Fecha de Entrega: 02/05]~~ **VENCIDA**
