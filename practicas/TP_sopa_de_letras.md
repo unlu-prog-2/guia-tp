@@ -176,10 +176,10 @@ El trabajo será evaluado según los siguientes criterios:
 4. Eficiencia: El programa debe resolver el problema de manera eficiente.
 
 ## Entrega
-- El código fuente del programa adentro de la práctica de recursividad. Crear un archivo nuevo: `test_tp1_sopa_de_letras.c` y agregar todo el código ahí adentro.
-- Un archivo README.md con instrucciones de compilación y ejecución.
-- Comentarios explicativos en el código.
-- No se requiere documentación adicional.
+- El código fuente del programa adentro de la práctica de recursividad.
+- Crear un archivo nuevo: `test_tp1_sopa_de_letras.c` y agregar todo el código ahí adentro.
+- Comentarios explicativos en el código, solo en las partes que necesiten aclaración.
+- Tiene que correr bien dentro de GitHub Actions y tiene que tener el tilde verde ✅ indicando que pasan todos los tests.
 
 ## Fecha de entrega
 Según lo indicado en la guía de trabajos prácticos.
