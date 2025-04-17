@@ -16,20 +16,37 @@ Crear un TAD `NumeroRacional`.
 
 El TAD debe disponer de las siguientes operaciones:
 
+* `numerador`: Función que retorna el numerador del número racional pasado como parámetro.
+* `denominador`: Función que retorna el denominador del número racional pasado como parámetro.
+* `inicializar`: Función que guarda el numerador y denominador pasados como parámetro en la estructura NúmeroRacional indicada. La función debe retornar un valor booleano indicando si la inicialización fue correcta o no (por ejemplo, si el denominador es cero).
+* `simplificar`: Función que simplifica el número racional pasado como parámetro. La función debe modificar la estructura NúmeroRacional pasada como parámetro, de manera que el numerador y denominador queden simplificados. Por ejemplo, si el número racional es 4/8, la función lo debe modificar a 1/2. La función no debe retornar nada.
+* `sumar`: Función que retorna el número racional resultante de sumar los dos números racionales pasados como parámetro. 
+* `restar`: Función que retorna el número racional resultante de restar los dos números racionales pasados como parámetro. 
+* `multiplicar`: Función que retorna el número racional resultante de multiplicar los dos números racionales pasados como parámetro. 
+* `dividir`: Función que retorna el número racional resultante de dividir los dos números racionales pasados como parámetro. 
+* `comparar`: Función que retorna un valor dentro de los enumerados, dependiendo de si el número racional f1 es mayor, menor o igual al número racional f2. 
+* `to_string`: Función que retorna un string con la representación del número racional pasado como parámetro. 
+* `comparacion_to_string`: Función que retorne un string con la representación del enumerado de comparación pasado como parámetro. 
+
 ```c
 bool nr_inicializar(int numerador, int denominador, struct NumeroRacional *numeroRacional);
 void nr_simplificar(struct NumeroRacional *numeroRacional);
 struct NumeroRacional nr_sumar(struct NumeroRacional f1, struct NumeroRacional f2);
+
 struct NumeroRacional nr_restar(struct NumeroRacional f1, struct NumeroRacional f2);
+
 struct NumeroRacional nr_multiplicar(struct NumeroRacional f1, struct NumeroRacional f2);
+
 struct NumeroRacional nr_dividir(struct NumeroRacional f1, struct NumeroRacional f2);
 
 enum COMPARACION {
     MAYOR, MENOR, IGUAL
 };
+
 enum COMPARACION nr_comparar(struct NumeroRacional f1, struct NumeroRacional f2);
 
 char *comparacion_to_string(enum COMPARACION comparacion);
+
 char *nr_to_string(struct NumeroRacional numeroRacional);
 ```
 
@@ -88,9 +105,17 @@ Crear un TAD Fecha, compuesta de día, mes y año.
 ```
 
 El TAD debe disponer de las siguientes operaciones:
+* ´dia´: Función que retorna el número del dia del mes correspondiente a la fecha pasada como parámetro.
+* ´mes´: Función que retorna el número del mes correspondiente a la fecha pasada como parámetro.
+* ´anio´: Función que retorna el número del año correspondiente a la fecha pasada como parámetro.
+* ´inicializar´: Función que guarda la fecha correspondiente al dia, mes y anio pasados como parámetro en la estructura Fecha indicada.
+* ´sumarDias´: Función que retorna la fecha generada al pasar una cantidad de días despues de la fecha indicada.
+* ´distanciaEnDias´: Función que retorna el número de días que hay entre dos fechas pasadas como parámetro.
+* ´comparar´: Función que retorna un valor dentro de los enumerados, dependiendo de si la fecha f1 es anterior, posterior o igual a la fecha f2.
+* ´enBisiesto´: Función que retorna un valor booleano dependiendo de si la fecha f corresponde a un año  bisiesto o no.
+* ´nombreMes´: Función que retorna un string con el nombre del mes correspondiente a la fecha pasada como parámetro. 
 
 ```c
-
 unsigned short fecha_dia(struct Fecha f);
 
 unsigned short fecha_mes(struct Fecha f);
@@ -123,7 +148,7 @@ fecha_inicializar(20,1,2023, f1); => True
 
 fecha_dia(f1); => 20
 fecha_mes(f1); => 1
-anio(f1); => 2023
+fecha_anio(f1); => 2023
 
 fecha_inicializar(30,1,2023, f2); => True
 fecha_inicializar(30,2,2023, f3); => False
@@ -138,7 +163,6 @@ fecha_enBisiesto(f1); => False
 fecha_enBisiesto(f3); => True
 
 fecha_nombreMes(f1); => "Enero"
-
 ```
 
 ## Pensemos distinto
@@ -162,20 +186,15 @@ Crear un TAD `CajaRegistradora` que tiene contenedores, uno para cada moneda y b
 
 El TAD debe disponer de las siguientes operaciones:
 
-```c
-struct CajaRegistradora cr_inicializar();
-
-struct Contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
-
-```
-
 * `Cargar`: lo cual incrementa un contenedor con la cantidad de billetes indicada.
 * `DarVuelto`: dada una cantidad a cobrar y los billetes con los que se realizó el pago, devuelve el número de billetes de cada tipo que se debe retornar al cliente, utilizando los billetes de mayor valor siempre que haya disponibles e incrementando la cantidad de billetes que ingresaron por el pago y decrementando los dados de vuelto.
 * `Saldo`: devuelve el saldo total del cajero.
 * `CerrarCaja`: retorna un string con el detalle de los billetes y monedas que quedaron al final del turno en la caja registradora.
 
 ```c
-struct contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
+struct CajaRegistradora cr_inicializar();
+
+struct Contenedor contenedor_inicializar(float denominacion, unsigned int cantidad);
 
 void cr_cargar(Contenedor cont, CajaRegistradora caja);
 
