@@ -1,30 +1,39 @@
 # Trabajo Práctico 1: Sopa de Letras
 
 ## Objetivo
+
 Implementar un programa que resuelva sopas de letras, encontrando palabras en una grilla de caracteres en todas las direcciones posibles (horizontal, vertical y diagonal).
 
 ## Descripción
+
 El programa debe leer una sopa de letras desde un archivo de entrada, buscar las palabras especificadas en todas las direcciones posibles, y escribir los resultados en un archivo de salida.
 
 ### Formato de entrada
+
 El archivo de entrada contendrá:
+
 1. La grilla de la sopa de letras, donde cada línea representa una fila de la grilla.
 2. Una línea en blanco (actuando como separador).
 3. La lista de palabras a buscar, una por línea.
 4. Cualquier línea que comience con el caracter `#` se considera un comentario y debe ser ignorada (en cualquier parte del archivo).
 
 ### Formato de salida
+
 Para cada `palabra` buscada, el programa debe escribir en el archivo de salida:
+
 - Si la palabra fue encontrada: `palabra: (fila_inicio,columna_inicio) -> (fila_fin,columna_fin)`
 - Si la palabra no fue encontrada: `palabra: No encontrada`
 
 Las coordenadas deben ser números naturales (no incluye el cero), donde:
+
 - La primera fila es 1.
 - La primera columna es 1.
 
 ### Ejemplo
+
 **Archivo de entrada:**
-```
+
+```text
 XHOLA
 MUNDO
 LMSPG
@@ -37,7 +46,8 @@ NOTA
 ```
 
 **Archivo de salida esperado:**
-```
+
+``` text
 HOLA: (1,2) -> (1,5)
 MUNDO: (2,1) -> (2,5)
 HUMO: (1,2) -> (4,2)
@@ -45,6 +55,7 @@ NOTA: No encontrada
 ```
 
 ## Requisitos
+
 1. El programa debe poder leer la grilla y las palabras desde un archivo
 2. Debe buscar las palabras en todas las direcciones posibles:
    - Horizontal (izquierda a derecha o derecha a izquierda)
@@ -54,6 +65,7 @@ NOTA: No encontrada
 4. El programa debe ser eficiente y manejar correctamente la memoria
 
 ## Estructura del código
+
 Se recomienda implementar las siguientes estructuras y funciones:
 
 ```c
@@ -83,7 +95,9 @@ struct SopaDeLetras {
 ```
 
 ## Comparación de archivos
+
 A la hora de escribir las aserciones, el archivo de salida producido tiene que ser igual a los provistos como ejemplo. Para ello, pueden usar la siguiente función para compararlos.
+
 ```c
 bool file_eq(const char *archivo_esperado, const char *archivo_generado) {
     FILE *esperado = fopen(archivo_esperado, "r");
@@ -110,6 +124,7 @@ bool file_eq(const char *archivo_esperado, const char *archivo_generado) {
             break;
         }
     }
+
     // Si hay diferencia, mostrar las líneas que no coinciden
     if (!son_iguales) {
         printf("Los archivos difieren.\n");
@@ -129,6 +144,7 @@ bool file_eq(const char *archivo_esperado, const char *archivo_generado) {
 ```
 
 Un ejemplo de casos de test podría ser:
+
 ```c
 int main() {
     imprimir_titulo("TP 1 - Sopa de Letras");
@@ -144,22 +160,28 @@ int main() {
 ```
 
 ## Archivos de prueba
+
 Se proporcionarán archivos de prueba con diferentes casos:
+
 - Grillas de diferentes tamaños.
 - Palabras en diferentes direcciones.
 - Palabras que no se encuentran.
 
 ### Ejemplo 1 - Palabras variadas
+
 * [Archivo de entrada](archivos/prueba1_entrada.txt)
 * [Archivo de salida esperado](archivos/prueba1_salida_esperada.txt)
 
 ### Ejemplo 2 - Temática jugadores de fútbol
+
 ![Ejemplo 2](archivos/prueba2.png)
+
 * [Archivo de entrada](archivos/prueba2_entrada.txt)
 * [Archivo de salida esperado](archivos/prueba2_salida_esperada.txt)
 
 Los archivos deben ser colocados adentro de la práctica de recursividad, en la carpeta `archivos`.
 Y deben agregar el siguiente fragmento, adentro del archivo CMakeLists.txt, debajo de `enable_testing()`:
+
 ```cmake
 # Copiar los archivos de datos
 file(GLOB DATA_FILES "archivos/*.txt")
@@ -170,22 +192,27 @@ endforeach ()
 ```
 
 ## Evaluación
+
 El trabajo será evaluado según los siguientes criterios:
+
 1. Correctitud: El programa debe funcionar correctamente "por lo menos" con los archivos de prueba proporcionados.
 2. Estructura del código: Organización, legibilidad y modularidad.
 3. Manejo de memoria: Uso correcto de memoria dinámica.
 4. Eficiencia: El programa debe resolver el problema de manera eficiente.
 
 ## Entrega
+
 - El código fuente del programa adentro de la práctica de recursividad.
 - Crear un archivo nuevo: `test_tp1_sopa_de_letras.c` y agregar todo el código ahí adentro.
 - Comentarios explicativos en el código, solo en las partes que necesiten aclaración.
 - Tiene que correr bien dentro de GitHub Actions y tiene que tener el tilde verde ✅ indicando que pasan todos los tests.
 
 ## Fecha de entrega
+
 Según lo indicado en la guía de trabajos prácticos.
 
 ## Notas
+
 - Se recomienda comenzar con casos simples y luego generalizar.
 - Es importante probar el programa con diferentes casos de entrada.
 - El manejo de archivos debe ser robusto, verificando posibles errores. 
