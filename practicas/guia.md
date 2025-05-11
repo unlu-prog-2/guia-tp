@@ -17,6 +17,7 @@
 * [Práctica 5 - Colas](TP5_Colas.md) [Fecha de Entrega: 13/05]
 
 * [Práctica 6 - Árboles](TP6_Arboles.md) [Fecha de Entrega: 27/05]
+  
 <!--
 * [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) ~~[Fecha de Entrega: 10/06]~~ **VENCIDA**
 
