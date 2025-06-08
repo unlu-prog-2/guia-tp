@@ -14,12 +14,11 @@
 
 * [Práctica 4 - Pilas](TP4_Pilas.md) ~~[Fecha de Entrega: 06/05]~~ **VENCIDA**
   
-* [Práctica 5 - Colas](TP5_Colas.md) [Fecha de Entrega: 13/05]
+* [Práctica 5 - Colas](TP5_Colas.md) ~~[Fecha de Entrega: 13/05]~~ **VENCIDA**
 
-* [Práctica 6 - Árboles](TP6_Arboles.md) [Fecha de Entrega: 27/05]
+* [Práctica 6 - Árboles](TP6_Arboles.md) [Fecha de Entrega: 12/06]
   
-<!--
-* [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) ~~[Fecha de Entrega: 10/06]~~ **VENCIDA**
+* [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) [Fecha de Entrega: 23/06]
 
-* [Práctica 8 - Conjuntos](TP8_Conjuntos.md) [Fecha de Entrega: 17/06]
+* [Práctica 8 - Conjuntos](TP8_Conjuntos.md) [Fecha de Entrega: 26/06]
 -->
