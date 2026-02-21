@@ -1,4 +1,4 @@
-# Práctica 6: Tablas Hash
+# Práctica de TAD Tablas Hash
 
 ## Para empezar a trabajar
 

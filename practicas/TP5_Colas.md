@@ -1,4 +1,4 @@
-# Práctica 4: Colas
+# Práctica de TAD Colas
 
 ## Actividades de Aprendizaje
 

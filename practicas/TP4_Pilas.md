@@ -1,4 +1,4 @@
-# Práctica 3: Pilas
+# Práctica de TAD Pilas
 
 ## Actividades de Aprendizaje
 
