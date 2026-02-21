@@ -35,4 +35,16 @@ Podés acceder al material completo de prácticas y ejercicios aquí:
 
 El cronograma específico con las **fechas de entrega** para esta materia estará disponible próximamente:
 
-- **Cronograma EDA 1** → `practicas/cronograma-eda1.md` *(a publicar)*
+* [Práctica de repaso - Introducción a C](TP0_Repaso.md)
+
+* [Práctica 1 - Recursividad](TP1_Recursividad.md)
+
+* [Práctica 2 - TADs](TP2_TADs.md)
+
+* [TP Integrador 1 - Sopa de letras](TP_sopa_de_letras.md)
+
+* [Práctica 3 - Listas](TP3_Listas.md)
+
+* [Práctica 4 - Pilas](TP4_Pilas.md)
+
+* [Práctica 5 - Colas](TP5_Colas.md)
