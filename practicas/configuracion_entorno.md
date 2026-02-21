@@ -6,8 +6,9 @@ Esta guía te ayudará a configurar tu entorno de desarrollo para programar en C
 
 1. [Instalación de Visual Studio Code](#1-instalación-de-visual-studio-code)
 2. [Instalación de MinGW](#2-instalación-de-mingw)
-3. [Instalación de extensiones de Visual Studio Code](#3-instalación-de-extensiones-de-visual-studio-code)
-4. [Primer programa C en Visual Studio Code](#4-primer-programa-c-en-visual-studio-code)
+3. [Instalación de CMake](#3-instalación-de-cmake)
+4. [Instalación de extensiones de Visual Studio Code](#4-instalación-de-extensiones-de-visual-studio-code)
+5. [Primer programa C en Visual Studio Code](#5-primer-programa-c-en-visual-studio-code)
 
 ---
 
@@ -173,7 +174,127 @@ Si funciona correctamente, verás:
 
 ---
 
-## 3. Instalación de extensiones de Visual Studio Code
+## 3. Instalación de CMake
+
+CMake es un sistema de generación de archivos de construcción multiplataforma que facilita la gestión de proyectos C/C++. Permite definir la estructura del proyecto y sus dependencias de forma independiente del compilador.
+
+### ¿Qué es CMake?
+
+CMake lee archivos de configuración llamados `CMakeLists.txt` y genera los archivos necesarios para compilar tu proyecto (como Makefiles). Esto hace que sea más fácil:
+- Gestionar proyectos con múltiples archivos fuente
+- Organizar el código en bibliotecas y ejecutables
+- Manejar dependencias entre módulos
+- Compilar el proyecto en diferentes plataformas
+
+### Paso 1: Descargar CMake
+
+1. Ve al sitio oficial de CMake: [https://cmake.org/download/](https://cmake.org/download/)
+2. En la sección "Binary distributions", busca la versión para Windows
+3. Descarga el instalador (archivo `.msi`) para la última versión estable
+   - Ejemplo: `cmake-3.XX.X-windows-x86_64.msi`
+
+![Página de descarga de CMake](imagenes/cmake-download.jpg)
+
+### Paso 2: Ejecutar el instalador
+
+1. Ejecuta el archivo `.msi` descargado
+2. Aparecerá el asistente de instalación de CMake
+3. Haz clic en "Next" para continuar
+
+![Instalador de CMake - Bienvenida](imagenes/cmake-installer-welcome.jpg)
+
+### Paso 3: Aceptar la licencia
+
+1. Lee el acuerdo de licencia
+2. Marca "I accept the terms in the License Agreement"
+3. Haz clic en "Next"
+
+![Acuerdo de licencia de CMake](imagenes/cmake-license.jpg)
+
+### Paso 4: Configurar PATH
+
+Esta es la opción más importante. Selecciona:
+- **"Add CMake to the system PATH for all users"** (recomendado)
+  - O "Add CMake to the system PATH for the current user" si no tienes permisos de administrador
+
+Esto te permitirá usar CMake desde cualquier terminal sin necesidad de especificar la ruta completa.
+
+![Configurar PATH de CMake](imagenes/cmake-path-option.jpg)
+
+### Paso 5: Seleccionar carpeta de instalación
+
+1. Mantén la carpeta por defecto: `C:\Program Files\CMake`
+2. O selecciona una ubicación diferente si lo prefieres
+3. Haz clic en "Next"
+
+![Carpeta de instalación de CMake](imagenes/cmake-install-folder.jpg)
+
+### Paso 6: Instalar
+
+1. Haz clic en "Install" para comenzar la instalación
+2. Espera mientras se copian los archivos
+
+![Instalando CMake](imagenes/cmake-installing.jpg)
+
+### Paso 7: Completar la instalación
+
+1. Una vez finalizada la instalación, haz clic en "Finish"
+
+![Instalación completa de CMake](imagenes/cmake-complete.jpg)
+
+### Paso 8: Verificar la instalación
+
+Abre un símbolo del sistema (o PowerShell) y ejecuta:
+
+```bash
+cmake --version
+```
+
+Deberías ver algo como:
+
+```
+cmake version 3.XX.X
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+```
+
+![Verificar instalación de CMake](imagenes/cmake-verify.jpg)
+
+### Uso básico de CMake
+
+Para usar CMake en tus proyectos, necesitarás crear un archivo `CMakeLists.txt` en la raíz de tu proyecto. Ejemplo básico:
+
+```cmake
+# Versión mínima de CMake requerida
+cmake_minimum_required(VERSION 3.10)
+
+# Nombre del proyecto
+project(MiProyecto)
+
+# Estándar de C
+set(CMAKE_C_STANDARD 11)
+
+# Agregar ejecutable
+add_executable(programa main.c funciones.c)
+```
+
+Para compilar tu proyecto con CMake:
+
+```bash
+# Crear carpeta de construcción
+mkdir build
+cd build
+
+# Generar archivos de construcción
+cmake ..
+
+# Compilar el proyecto
+cmake --build .
+```
+
+---
+
+## 4. Instalación de extensiones de Visual Studio Code
 
 Las extensiones añaden funcionalidades específicas para el desarrollo en C/C++.
 
@@ -220,7 +341,7 @@ También es recomendable instalar el "C/C++ Extension Pack" que incluye:
 
 ---
 
-## 4. Primer programa C en Visual Studio Code
+## 5. Primer programa C en Visual Studio Code
 
 ### Paso 1: Crear una carpeta para tu proyecto
 
