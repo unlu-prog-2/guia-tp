@@ -21,4 +21,3 @@
 * [Práctica 7 - Tablas de hash](TP7_Tabla_Hash.md) [Fecha de Entrega: 23/06]
 
 * [Práctica 8 - Conjuntos](TP8_Conjuntos.md) [Fecha de Entrega: 26/06]
--->

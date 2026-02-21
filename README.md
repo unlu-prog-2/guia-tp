@@ -1,25 +1,28 @@
-# Programación II — UNLu
+# Guía de Trabajos Prácticos — UNLu
 
-Bienvenidas y bienvenidos a la **Guía de Trabajos Prácticos** de *Programación II* (UNLu).
+Este repositorio contiene el material de práctica que se utiliza en las cursadas de:
 
-Este repositorio reúne las actividades de práctica **clase a clase**, con consignas y material de apoyo para acompañar el cursado.
+- **EDA 1 (Estructuras de Datos 1)**
+- **Programación II**
+
+> Importante: ambas materias comparten gran parte del contenido, pero pueden tener **cronogramas y fechas de entrega distintas**.
+> Elegí tu materia para ver el calendario que te corresponde.
+
+---
+
+## Elegí tu materia
+
+- **EDA 1** → **[Ir a la landing de EDA 1](eda1.md)**
+- **Programación II** → **[Ir a la landing de Programación II](prog2.md)**
 
 ---
 
 ## Equipo docente
 
-- **Mario Perello** — Profesor Responsable  
+- **Mario Perello** — Profesor Responsable
 - **Jose Racker** — Contacto: [jeracker@yahoo.com.ar](mailto:jeracker@yahoo.com.ar)
 - **Mariano Goldman** — Contacto: [marianogoldman@gmail.com](mailto:marianogoldman@gmail.com)
 - **Claudia Reinaudi** — Contacto: [clau.reinaudi@gmail.com](mailto:clau.reinaudi@gmail.com)
-
-> Si necesitás escribirnos, incluí en el asunto **“Prog II — Consulta”** y, si corresponde, comisión/turno y tema.
-
----
-
-## Guía de trabajos prácticos
-
-- Ir a la guía: **[Guía de trabajos prácticos](practicas/guia.md)**
 
 ---
 
