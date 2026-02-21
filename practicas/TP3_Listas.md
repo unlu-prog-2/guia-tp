@@ -1,4 +1,4 @@
-# Práctica 2: Listas
+# Práctica de TAD Listas
 
 ## Actividades de Aprendizaje
 

@@ -1,4 +1,4 @@
-# Práctica 1: Introducción a los TAD
+# Práctica de introducción a los TAD
 
 En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita al usuario el ingreso de una o más instancias (según sea
 necesario), la aplicación de cualquiera de las operaciones y luego la obtención del resultado.

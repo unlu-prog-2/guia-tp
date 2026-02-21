@@ -1,4 +1,4 @@
-# Práctica 8: Conjuntos
+# Práctica de TAD Conjuntos
 
 **En cada caso se debe implementar el TAD descripto y una aplicación que, utilizando el tipo abstracto de dato, permita
 al usuario el ingreso de una o más instancias (según sea necesario), la a0plicación de cualquiera de las operaciones y

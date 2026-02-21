@@ -12,8 +12,8 @@ Este repositorio contiene el material de práctica que se utiliza en las cursada
 
 ## Elegí tu materia
 
-- **EDA 1** → **[Ir a la landing de EDA 1](practicas/eda1.md)**
-- **Programación II** → **[Ir a la landing de Programación II](practicas/prog2.md)**
+- **EDA 1** → **[Ir a la landing de EDA 1](practicas/guia-eda1.md)**
+- **Programación II** → **[Ir a la landing de Programación II](practicas/guia-prog2.md)**
 
 ---
 

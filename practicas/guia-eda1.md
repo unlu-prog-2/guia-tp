@@ -1,16 +1,16 @@
 ---
-title: Programación II
+title: EDA 1 — Estructuras de Datos 1
 ---
 
-# Programación II
+# EDA 1 — Estructuras de Datos 1
 
-Bienvenidas y bienvenidos a la cursada de **Programación II**.
+Bienvenidas y bienvenidos a la cursada de **Estructuras de Datos 1**.
 
 ---
 
 ## Sobre la materia
 
-**Programación II** cubre un programa completo de estructuras de datos y algoritmos:
+**EDA 1** abarca los contenidos fundamentales de estructuras de datos:
 
 - **Repaso** — Introducción a C
 - **Recursividad**
@@ -18,23 +18,15 @@ Bienvenidas y bienvenidos a la cursada de **Programación II**.
 - **Listas**
 - **Pilas**
 - **Colas**
-- **Árboles**
-- **Tablas Hash**
-- **Conjuntos**
+
+Los temas más avanzados (Árboles, Tablas Hash, Conjuntos) corresponden a **EDA 2** y no se dictan en esta cursada.
 
 ---
 
 ## Materiales y cronograma
 
-### Guía de trabajos prácticos
-
-Podés acceder al material completo de prácticas y ejercicios aquí:
-
-- **[Guía de trabajos prácticos](practicas/guia.md)**
-
-### Cronograma Programación II
-
-El cronograma específico con las **fechas de entrega** para esta materia estará disponible próximamente:
+Podés acceder al material completo de prácticas y ejercicios desde la siguiente tabla. El cronograma específico
+con las **fechas de entrega** para esta materia estará disponible próximamente:
 
 | Práctica                                               | Fecha de entrega |
 |--------------------------------------------------------|------------------|
@@ -45,6 +37,3 @@ El cronograma específico con las **fechas de entrega** para esta materia estar�
 | Práctica 3 - Listas                                    | —                |
 | Práctica 4 - Pilas                                     | —                |
 | Práctica 5 - Colas                                     | —                |
-| Práctica 6 - Árboles                                   | —                |
-| Práctica 7 - Tablas de hash                            | —                |
-| Práctica 8 - Conjuntos                                 | —                |
