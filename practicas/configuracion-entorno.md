@@ -1,6 +1,6 @@
 # Configuración de Visual Studio Code para desarrollar en C
 
-Esta guía te ayudará a configurar tu entorno de desarrollo para programar en C utilizando Visual Studio Code y MinGW.
+Esta guía te ayudará a configurar tu entorno de desarrollo para programar en C utilizando Visual Studio Code con MinGW y CMake.
 
 ## Contenido
 
@@ -114,7 +114,7 @@ En el MinGW Installation Manager:
 ### Paso 8: Aplicar cambios
 
 1. Ve al menú "Installation" > "Apply Changes"
-2. Verás un resumen de los paquetes que se instalarán (29 paquetes nuevos/actualizados aproximadamente)
+2. Verás un resumen de los paquetes que se instalarán
 3. Haz clic en "Apply"
 
 ![Aplicar cambios](imagenes/mingw-apply-changes.jpg)
@@ -166,11 +166,12 @@ This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
+Si funciona correctamente, verás:
+![Verificar GCC - Éxito](imagenes/gcc-verify-success.jpg)
+
+Errores posibles: si faltó agregar la carpeta `C:\MinGW\bin` a la variable PATH verás un error como:
 ![Verificar GCC - Error](imagenes/gcc-verify-error.jpg)
 
-Si funciona correctamente, verás:
-
-![Verificar GCC - Éxito](imagenes/gcc-verify-success.jpg)
 
 ---
 
@@ -193,7 +194,7 @@ CMake lee archivos de configuración llamados `CMakeLists.txt` y genera los arch
 3. Descarga el instalador (archivo `.msi`) para la última versión estable
    - Ejemplo: `cmake-3.XX.X-windows-x86_64.msi`
 
-![Página de descarga de CMake](imagenes/cmake-download.jpg)
+[//]: # (![Página de descarga de CMake]&#40;imagenes/cmake-download.jpg&#41;)
 
 ### Paso 2: Ejecutar el instalador
 
@@ -201,7 +202,7 @@ CMake lee archivos de configuración llamados `CMakeLists.txt` y genera los arch
 2. Aparecerá el asistente de instalación de CMake
 3. Haz clic en "Next" para continuar
 
-![Instalador de CMake - Bienvenida](imagenes/cmake-installer-welcome.jpg)
+[//]: # (![Instalador de CMake - Bienvenida]&#40;imagenes/cmake-installer-welcome.jpg&#41;)
 
 ### Paso 3: Aceptar la licencia
 
@@ -209,7 +210,7 @@ CMake lee archivos de configuración llamados `CMakeLists.txt` y genera los arch
 2. Marca "I accept the terms in the License Agreement"
 3. Haz clic en "Next"
 
-![Acuerdo de licencia de CMake](imagenes/cmake-license.jpg)
+[//]: # (![Acuerdo de licencia de CMake]&#40;imagenes/cmake-license.jpg&#41;)
 
 ### Paso 4: Configurar PATH
 
@@ -219,7 +220,7 @@ Esta es la opción más importante. Selecciona:
 
 Esto te permitirá usar CMake desde cualquier terminal sin necesidad de especificar la ruta completa.
 
-![Configurar PATH de CMake](imagenes/cmake-path-option.jpg)
+[//]: # (![Configurar PATH de CMake]&#40;imagenes/cmake-path-option.jpg&#41;)
 
 ### Paso 5: Seleccionar carpeta de instalación
 
@@ -227,20 +228,20 @@ Esto te permitirá usar CMake desde cualquier terminal sin necesidad de especifi
 2. O selecciona una ubicación diferente si lo prefieres
 3. Haz clic en "Next"
 
-![Carpeta de instalación de CMake](imagenes/cmake-install-folder.jpg)
+[//]: # (![Carpeta de instalación de CMake]&#40;imagenes/cmake-install-folder.jpg&#41;)
 
 ### Paso 6: Instalar
 
 1. Haz clic en "Install" para comenzar la instalación
 2. Espera mientras se copian los archivos
 
-![Instalando CMake](imagenes/cmake-installing.jpg)
+[//]: # (![Instalando CMake]&#40;imagenes/cmake-installing.jpg&#41;)
 
 ### Paso 7: Completar la instalación
 
 1. Una vez finalizada la instalación, haz clic en "Finish"
 
-![Instalación completa de CMake](imagenes/cmake-complete.jpg)
+[//]: # (![Instalación completa de CMake]&#40;imagenes/cmake-complete.jpg&#41;)
 
 ### Paso 8: Verificar la instalación
 
@@ -362,6 +363,7 @@ Navega hasta la carpeta deseada y haz clic en "Seleccionar carpeta"
 2. O usa el menú "File" > "New File"
 
 ![Nuevo archivo](imagenes/vscode-new-file.jpg)
+![Nuevo archivo](imagenes/vscode-new-file-2.jpg)
 
 ### Paso 4: Configurar IntelliSense (si es necesario)
 
@@ -374,7 +376,7 @@ Si aparece un mensaje sobre la configuración de IntelliSense:
 
 ### Paso 5: Escribir tu primer programa
 
-Crea un archivo llamado `HolaMundo.c` y escribe el siguiente código:
+Abre el archivo creado (ej. `HolaMundo.c`) y escribe el siguiente código:
 
 ```c
 #include <stdio.h>
@@ -397,21 +399,8 @@ También puedes ver el archivo `tasks.json` que se genera automáticamente con l
 
 ---
 
-## Notas adicionales
-
-### Pre-requisitos
-
-C es un lenguaje compilado, lo que significa que el código fuente debe ser traducido (compilado) antes de poder ejecutarse en tu computadora. VS Code es solo un editor de texto, por lo que necesitarás instalar:
-
-- **Compilador de C++**: Pre-instalado
-- **Debugger de C++**: Pre-instalado
-
-### Recursos adicionales
+## Recursos adicionales
 
 - [Documentación oficial de VS Code para C/C++](https://code.visualstudio.com/docs/languages/cpp)
 - [Repositorio de la extensión C/C++](https://github.com/Microsoft/vscode-cpptools)
 - [Documentación de MinGW](http://www.mingw.org/)
-
----
-
-**Programación II - Universidad Nacional de Luján**
