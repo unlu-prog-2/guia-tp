@@ -30,9 +30,11 @@ Esta guía te ayudará a configurar tu entorno de desarrollo para programar en C
 ### Paso 3: Configurar la instalación
 
 1. Selecciona la carpeta de destino (por defecto: `C:\Users\[usuario]\AppData\Local\Programs\Microsoft VS Code`)
-2. Selecciona la carpeta del menú inicio (por defecto: `Visual Studio Code`)
-
 ![Carpetas de instalación](imagenes/vscode-folders.jpg)
+
+2. Selecciona la carpeta del menú inicio (por defecto: `Visual Studio Code`)
+![Carpetas de instalación](imagenes/vscode-folders-2.jpg)
+
 
 ### Paso 4: Opciones adicionales
 
