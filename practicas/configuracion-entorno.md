@@ -259,7 +259,7 @@ cmake version 3.XX.X
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
-![Verificar instalación de CMake](imagenes/cmake-verify.jpg)
+[//]: # (![Verificar instalación de CMake]&#40;imagenes/cmake-verify.jpg&#41;)
 
 ### Uso básico de CMake
 

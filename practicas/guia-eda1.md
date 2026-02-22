@@ -1,8 +1,8 @@
 ---
-title: EDA 1 — Estructuras de Datos 1
+title: EDA 1 — Estructuras de Datos y Algoritmos 1
 ---
 
-# EDA 1 — Estructuras de Datos 1
+# EDA 1 — Estructuras de Datos y Algoritmos 1
 
 Bienvenidas y bienvenidos a la cursada de **Estructuras de Datos 1**.
 
