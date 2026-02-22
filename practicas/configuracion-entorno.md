@@ -299,7 +299,7 @@ cmake --build .
 
 Las extensiones añaden funcionalidades específicas para el desarrollo en C/C++.
 
-### Paso 1: Abrir el panel de extensiones
+### Paso 1: Abrir el pan[discord_backup_codes.txt](../../../../Downloads/discord_backup_codes.txt)el de extensiones
 
 1. Abre Visual Studio Code
 2. Haz clic en el icono de extensiones en la barra lateral izquierda (o presiona `Ctrl+Shift+X`)

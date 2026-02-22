@@ -15,6 +15,7 @@ Bienvenidas y bienvenidos a la cursada de **Programación II**.
 - **Repaso** — Introducción a C
 - **Recursividad**
 - **TADs** (Tipos Abstractos de Datos)
+- **Complejidad algorítmica**
 - **Listas**
 - **Pilas**
 - **Colas**
@@ -26,10 +27,15 @@ Bienvenidas y bienvenidos a la cursada de **Programación II**.
 
 ## Materiales y cronograma
 
+### Guías para configurar el ambiente de trabajo
+* Configuración de [Visual Studio Code](./configuracion-entorno.md).
+* Configuración de [Git](./configuracion-git.md).
+
+
 ### Guía de trabajos prácticos
 
-Podés acceder al material completo de prácticas y ejercicios desde la siguiente tabla. El cronograma específico
-con las **fechas de entrega** para esta materia estará disponible próximamente:
+Podés acceder al material completo de prácticas y ejercicios desde la siguiente tabla. El cronograma de entregas 
+específico con las **fechas** para esta materia estará disponible próximamente:
 
 | Práctica                                               | Fecha de entrega |
 |--------------------------------------------------------|------------------|

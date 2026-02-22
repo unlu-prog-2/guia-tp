@@ -15,6 +15,7 @@ Bienvenidas y bienvenidos a la cursada de **Estructuras de Datos 1**.
 - **Repaso** — Introducción a C
 - **Recursividad**
 - **TADs** (Tipos Abstractos de Datos)
+- **Complejidad algorítmica**
 - **Listas**
 - **Pilas**
 - **Colas**
@@ -25,8 +26,12 @@ Los temas más avanzados (Árboles, Tablas Hash, Conjuntos) corresponden a **EDA
 
 ## Materiales y cronograma
 
-Podés acceder al material completo de prácticas y ejercicios desde la siguiente tabla. El cronograma específico
-con las **fechas de entrega** para esta materia estará disponible próximamente:
+### Guías para configurar el ambiente de trabajo
+* Configuración de [Visual Studio Code](./configuracion-entorno.md).
+* Configuración de [Git](./configuracion-git.md).
+
+Podés acceder al material completo de prácticas y ejercicios desde la siguiente tabla. El cronograma de entregas
+específico con las **fechas** para esta materia estará disponible próximamente:
 
 | Práctica                                               | Fecha de entrega |
 |--------------------------------------------------------|------------------|
