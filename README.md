@@ -16,13 +16,3 @@ Este repositorio contiene el material de práctica que se utiliza en las cursada
 - **Claudia Reinaudi** — Contacto: [clau.reinaudi@gmail.com](mailto:clau.reinaudi@gmail.com)
 
 ---
-
-## En memoria de Pablo Chale
-
-![Pablo Chale](practicas/imagenes/pcchale.jpg "Pablo Chale")
-
-**Pablo Chale** fue parte muy valiosa de esta cátedra.  
-Su dedicación a la enseñanza, la cercanía con las y los estudiantes y el compromiso con la Universidad dejaron una huella profunda.
-
-> Lo recordamos con cariño y gratitud.  
-> Su aporte sigue presente en el espíritu de esta guía y en quienes aprendimos con él.

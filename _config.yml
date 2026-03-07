@@ -1,0 +1,9 @@
+title: EDA 1 - Prog 2 - Guía de Trabajos Prácticos
+description: Guía de trabajos prácticos para Programación 2 / EDA 1 de UNLu
+baseurl: ""
+url: "https://unlu-prog-2.github.io/guia-tp"
+
+plugins:
+- jekyll-feed
+
+markdown: GFM
